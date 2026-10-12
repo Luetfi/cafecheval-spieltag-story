@@ -87,28 +87,52 @@ def rendern(daten, ziel: pathlib.Path):
     return ziel
 
 
+def kicker(s, heute: dt.date):
+    """„Heute live bei uns“, „Morgen live bei uns“, „Samstag live bei uns“ (bzw. „… Nacht …“ bei Anstoß nach Mitternacht)."""
+    tage = (s['tag'] - heute).days
+    if tage <= 0:
+        wann = 'Heute Nacht' if s['nacht'] else 'Heute'
+    elif tage == 1:
+        wann = 'Morgen Nacht' if s['nacht'] else 'Morgen'
+    else:
+        wann = WOCHENTAGE[s['tag'].weekday()] + ('nacht' if s['nacht'] else '')
+    return f'{wann} live bei uns'
+
+
+def story_bauen(s, heute: dt.date, ki=True, hintergruende=None, nr=0):
+    """Rendert die Story für ein Spiel nach ausgabe/<spieltag>/. `hintergruende` (dict) teilt einen
+    KI-Hintergrund zwischen allen Spielen eines Wettbewerbs am selben Tag, das spart Kosten."""
+    ordner = AUSGABE / s['tag'].isoformat()
+    name = f"{s['anstoss']:%H%M}-{slug(s['heim']['name'])}-{slug(s['gast']['name'])}"
+    schluessel = (s['tag'], s['wettbewerb'])
+    if hintergruende is not None and schluessel in hintergruende:
+        bg = hintergruende[schluessel]
+    else:
+        bg = hintergrund.hintergrund(s, ordner / 'hintergrund' / f'{name}.png', nr=s['tag'].toordinal() + nr, ki=ki)
+        if hintergruende is not None:
+            hintergruende[schluessel] = bg
+    a = s['anstoss']
+    daten = {
+        'kicker': kicker(s, heute),
+        'wettbewerb': s['wettbewerb'],
+        'runde': s['runde'],
+        'leg': s['leg'],
+        'uhrzeit': f'{a:%H:%M}',
+        'datum': f'{WOCHENTAGE[a.weekday()]} · {a.day}. {MONATE[a.month - 1]}',
+        'hintergrund': bg.as_uri() if bg else '',
+    }
+    for k in ('heim', 'gast'):
+        datei, flagge = wappen(s[k])
+        daten[k] = {'name': s[k]['name'], 'wappen': datei.as_uri(), 'flagge': flagge}
+    ziel = rendern(daten, ordner / f'{name}.jpg')
+    print('Story:', ziel)
+    return {**s, 'datei': ziel}
+
+
 def stories(tag: dt.date, ki=True):
-    ordner = AUSGABE / tag.isoformat()
-    ergebnisse = []
-    for nr, s in enumerate(spielplan.spiele(tag)):
-        name = f"{s['anstoss']:%H%M}-{slug(s['heim']['name'])}-{slug(s['gast']['name'])}"
-        bg = hintergrund.hintergrund(s, ordner / 'hintergrund' / f'{name}.png', nr=tag.toordinal() + nr, ki=ki)
-        a = s['anstoss']
-        daten = {
-            'kicker': 'Heute Nacht live bei uns' if s['nacht'] else 'Heute live bei uns',
-            'wettbewerb': s['wettbewerb'],
-            'runde': s['runde'],
-            'leg': s['leg'],
-            'uhrzeit': f'{a:%H:%M}',
-            'datum': f'{WOCHENTAGE[a.weekday()]} · {a.day}. {MONATE[a.month - 1]}',
-            'hintergrund': bg.as_uri() if bg else '',
-        }
-        for k in ('heim', 'gast'):
-            datei, flagge = wappen(s[k])
-            daten[k] = {'name': s[k]['name'], 'wappen': datei.as_uri(), 'flagge': flagge}
-        ziel = rendern(daten, ordner / f'{name}.jpg')
-        print('Story:', ziel)
-        ergebnisse.append({**s, 'datei': ziel})
+    """Alle Stories für den Morgen von `tag` (empfohlene zuerst)."""
+    geteilt = {}
+    ergebnisse = [story_bauen(s, tag, ki, geteilt, nr) for nr, s in enumerate(spielplan.spiele(tag))]
     if not ergebnisse:
         print(f'{tag}: keine Spiele mit Story')
     return ergebnisse

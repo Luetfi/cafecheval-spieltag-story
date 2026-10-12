@@ -34,15 +34,33 @@ def text(nachricht, chat=None):
         _api('sendMessage', chat_id=c, text=nachricht, parse_mode='HTML', disable_web_page_preview=True)
 
 
-def story_senden(bild_url, titel, details):
-    """Schickt die Story an alle Empfänger, mit den Knöpfen „Posten“ und „Verwerfen“.
+def story_senden(bild_url, titel, details, empfohlen=False, chats=None):
+    """Schickt die Story (an alle Empfänger oder an `chats`), mit den Knöpfen „Posten“ und „Verwerfen“.
     Gibt die gesendeten Nachrichten zurück (eine pro Empfänger)."""
-    caption = (f'<b>{html.escape(titel)}</b>\n{html.escape(details)}\n\n'
+    stern = '⭐ Empfohlen\n' if empfohlen else ''
+    caption = (f'{stern}<b>{html.escape(titel)}</b>\n{html.escape(details)}\n\n'
                f'<a href="{html.escape(bild_url)}">Bild in voller Größe</a>')
     knoepfe = {'inline_keyboard': [[{'text': '✅ Posten', 'callback_data': POSTEN},
                                     {'text': '❌ Verwerfen', 'callback_data': VERWERFEN}]]}
     return [_api('sendPhoto', chat_id=c, photo=bild_url, caption=caption, parse_mode='HTML', reply_markup=knoepfe)
-            for c in empfaenger()]
+            for c in (chats or empfaenger())]
+
+
+KURZ = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So']
+
+
+def auswahl_senden(chat, spiele, ueberschrift='Welches Spiel meinst du?'):
+    """Ein Knopf pro Spiel. callback_data = s|Wettbewerb|ESPN-Datum|Event-ID (max. 64 Byte, Telegram erlaubt 100 Knöpfe)."""
+    knoepfe = [[{'text': f"{KURZ[s['anstoss'].weekday()]} {s['anstoss']:%d.%m. %H:%M}  {s['heim']['name']} – {s['gast']['name']}"[:64],
+                 'callback_data': f"s|{s['slug']}|{s['datum']}|{s['id']}"}] for s in spiele]
+    _api('sendMessage', chat_id=chat, text=ueberschrift, parse_mode='HTML', reply_markup={'inline_keyboard': knoepfe})
+
+
+def ligen_senden(chat, ligen):
+    """Knöpfe für alle Wettbewerbe, zwei pro Zeile. callback_data = l|Slug."""
+    knoepfe = [{'text': text, 'callback_data': f'l|{slug}'} for text, slug in ligen]
+    zeilen = [knoepfe[i:i + 2] for i in range(0, len(knoepfe), 2)]
+    _api('sendMessage', chat_id=chat, text='Welcher Wettbewerb?', reply_markup={'inline_keyboard': zeilen})
 
 
 def bild_url(nachricht):
@@ -64,15 +82,21 @@ def entscheidungen(warten=0):
             q = u['callback_query']
             if q['from']['id'] not in erlaubt and q['message']['chat']['id'] not in erlaubt:
                 continue
-            ergebnis.append({'aktion': q['data'], 'query_id': q['id'], 'nachricht': q['message'],
+            daten = q.get('data', '')
+            aktion = {'s|': 'spiel', 'l|': 'liga'}.get(daten[:2], daten)
+            ergebnis.append({'aktion': aktion, 'daten': daten,
+                             'query_id': q['id'], 'nachricht': q['message'], 'chat': q['message']['chat']['id'],
                              'von': q['from'].get('first_name', '')})
         elif 'message' in u:
             m = u['message']
             chat = m['chat']['id']
+            if chat in erlaubt and m.get('text'):
+                ergebnis.append({'aktion': 'text', 'text': m['text'], 'chat': chat,
+                                 'von': m.get('from', {}).get('first_name', '')})
+                continue
             # Hilfe beim Einrichten: Wer dem Bot schreibt, bekommt seine Chat-ID zurück.
-            status = 'ist freigeschaltet' if chat in erlaubt else 'ist noch nicht freigeschaltet'
             try:
-                text(f'Deine Chat-ID: <code>{chat}</code> ({status}).', chat=chat)
+                text(f'Deine Chat-ID: <code>{chat}</code> (ist noch nicht freigeschaltet).', chat=chat)
             except RuntimeError:
                 pass
 
@@ -88,6 +112,14 @@ def antworten(query_id, hinweis):
         _api('answerCallbackQuery', callback_query_id=query_id, text=hinweis)
     except RuntimeError:
         pass  # ältere Knopfdrücke lassen sich nicht mehr beantworten, das ist egal
+
+
+def knoepfe_entfernen(nachricht):
+    try:
+        _api('editMessageReplyMarkup', chat_id=nachricht['chat']['id'], message_id=nachricht['message_id'],
+             reply_markup={'inline_keyboard': []})
+    except RuntimeError:
+        pass
 
 
 def abschliessen(nachricht, vermerk):

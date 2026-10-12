@@ -1,7 +1,10 @@
 """Welche Spiele eine Story bekommen und wie Vereine auf Deutsch heißen.
 
-Quelle ist die (inoffizielle, kostenlose) ESPN-Scoreboard-API. Jeder Wettbewerb hat eine Liste von
-Regeln, ein Spiel zählt, sobald eine davon zutrifft:
+Quelle ist die (inoffizielle, kostenlose) ESPN-Scoreboard-API.
+
+Morgens kommen alle Spiele des Tages aus WETTBEWERBE als Story zur Auswahl (bei `angebot` nur die passenden).
+`regeln` bestimmt, welche davon als „⭐ Empfohlen“ markiert und zuerst geschickt werden.
+Ein Spiel ist empfohlen, sobald eine Regel zutrifft:
   - 'alle'        jedes Spiel
   - 'vfb'         Spiele mit dem VfB
   - 'topspiel'    beide Vereine stehen in TOPVEREINE (z. B. Bayern gegen Dortmund)
@@ -36,12 +39,62 @@ WETTBEWERBE = [
     {'slug': 'uefa.champions', 'name': 'Champions League', 'regeln': ['deutsch'], 'alle_ab': KO_AB_ACHTELFINALE},
     {'slug': 'uefa.europa', 'name': 'Europa League', 'regeln': ['deutsch'], 'alle_ab': KO_AB_VIERTELFINALE},
     # Die Nations League hat kein Achtelfinale, die K.-o.-Phase beginnt mit dem Viertelfinale.
-    {'slug': 'uefa.nations', 'name': 'Nations League', 'regeln': ['deutschland'], 'alle_ab': KO_AB_VIERTELFINALE},
-    {'slug': 'fifa.worldq.uefa', 'name': 'WM-Qualifikation', 'regeln': ['deutschland']},
-    {'slug': 'uefa.euroq', 'name': 'EM-Qualifikation', 'regeln': ['deutschland']},
+    {'slug': 'uefa.nations', 'name': 'Nations League', 'regeln': ['deutschland'], 'alle_ab': KO_AB_VIERTELFINALE,
+     'angebot': ['deutschland', 'topnation']},
+    {'slug': 'fifa.worldq.uefa', 'name': 'WM-Qualifikation', 'regeln': ['deutschland'], 'angebot': ['deutschland', 'topnation']},
+    {'slug': 'uefa.euroq', 'name': 'EM-Qualifikation', 'regeln': ['deutschland'], 'angebot': ['deutschland', 'topnation']},
 ]
 
-MAX_PRO_TAG = 5
+# Höchstens so viele Stories kommen morgens (empfohlene zuerst).
+MAX_PRO_TAG = 20
+
+# Nur für die Suche per Telegram-Nachricht, morgens kommen sie nicht automatisch.
+SUCH_WETTBEWERBE = [
+    {'slug': 'ger.2', 'name': '2. Bundesliga'},
+    {'slug': 'eng.1', 'name': 'Premier League'},
+    {'slug': 'esp.1', 'name': 'La Liga'},
+    {'slug': 'ita.1', 'name': 'Serie A'},
+    {'slug': 'fra.1', 'name': 'Ligue 1'},
+    {'slug': 'tur.1', 'name': 'Süper Lig'},
+    {'slug': 'uefa.europa.conf', 'name': 'Conference League'},
+    {'slug': 'fifa.friendly', 'name': 'Länderspiel'},
+]
+
+# Wettbewerb per Nachricht abrufen („Champions League“, „alle Bundesliga Spiele“): Name -> ESPN-Slug.
+# Reihenfolge = Reihenfolge der Knöpfe bei /ligen (erster Eintrag pro Slug ist der Knopftext).
+LIGEN = {
+    'Bundesliga': 'ger.1', 'buli': 'ger.1', 'bl': 'ger.1', '1 bundesliga': 'ger.1',
+    '2. Bundesliga': 'ger.2', '2 liga': 'ger.2', 'zweite liga': 'ger.2', '2 bundesliga': 'ger.2',
+    'DFB-Pokal': 'ger.dfb_pokal', 'pokal': 'ger.dfb_pokal', 'dfb pokal': 'ger.dfb_pokal',
+    'Champions League': 'uefa.champions', 'cl': 'uefa.champions', 'champions': 'uefa.champions', 'ucl': 'uefa.champions',
+    'Europa League': 'uefa.europa', 'el': 'uefa.europa', 'europa': 'uefa.europa',
+    'Conference League': 'uefa.europa.conf', 'conference': 'uefa.europa.conf', 'ecl': 'uefa.europa.conf',
+    'Premier League': 'eng.1', 'pl': 'eng.1', 'england liga': 'eng.1',
+    'La Liga': 'esp.1', 'laliga': 'esp.1', 'spanien liga': 'esp.1',
+    'Serie A': 'ita.1', 'italien liga': 'ita.1',
+    'Ligue 1': 'fra.1', 'frankreich liga': 'fra.1',
+    'Süper Lig': 'tur.1', 'super lig': 'tur.1', 'turkei liga': 'tur.1', 'tuerkei liga': 'tur.1',
+    'Relegation': 'ger.playoff.relegation',
+    'WM': 'fifa.world', 'weltmeisterschaft': 'fifa.world',
+    'EM': 'uefa.euro', 'europameisterschaft': 'uefa.euro',
+    'Nations League': 'uefa.nations', 'nations': 'uefa.nations',
+    'WM-Quali': 'fifa.worldq.uefa', 'wm quali': 'fifa.worldq.uefa', 'wm qualifikation': 'fifa.worldq.uefa',
+    'EM-Quali': 'uefa.euroq', 'em quali': 'uefa.euroq', 'em qualifikation': 'uefa.euroq',
+    'Länderspiele': 'fifa.friendly', 'landerspiele': 'fifa.friendly', 'testspiele': 'fifa.friendly',
+}
+# Wörter, die beim Abruf eines Wettbewerbs ignoriert werden („zeig mir alle Spiele der Champions League“)
+LISTEN_WOERTER = {'alle', 'spiele', 'spiel', 'liste', 'zeig', 'zeige', 'mir', 'der', 'die', 'das', 'aus', 'in',
+                  'von', 'heute', 'diese', 'woche', 'bitte', 'naechste', 'nachste'}
+
+# Spitznamen in Suchanfragen -> Wort, das im Vereinsnamen vorkommt
+KUERZEL = {
+    'gala': 'galatasaray', 'barca': 'barcelona', 'bvb': 'dortmund', 'fcb': 'bayern', 'hsv': 'hamburg',
+    'sge': 'frankfurt', 'b04': 'leverkusen', 'bayer': 'leverkusen', 'rbl': 'leipzig', 'gladbach': 'gladbach',
+    'fener': 'fenerbahce', 'bjk': 'besiktas', 'psg': 'paris', 'manu': 'manchester united', 'city': 'manchester city',
+    'juve': 'juventus', 'inter': 'inter', 'milan': 'milan', 'atletico': 'atletico', 'koeln': 'koln', 'muenchen': 'munchen',
+    'dfb': 'deutschland', 'nati': 'deutschland',
+}
+FUELLWOERTER = {'gegen', 'vs', 'v', 'und', 'spiel', 'story', 'fc', 'the', 'bitte', 'mach', 'mal', 'eine', 'fur', 'fuer'}
 
 # Runden-Slugs von ESPN -> Untertitel auf der Story
 RUNDEN = {
@@ -97,6 +150,14 @@ NAMEN = {
     'Tottenham Hotspur': 'Tottenham',
     'Copenhagen': 'FC Kopenhagen',
     'Bodo/Glimt': 'Bodø/Glimt',
+    'Slavia Prague': 'Slavia Prag',
+    'Sparta Prague': 'Sparta Prag',
+    'Shakhtar Donetsk': 'Schachtar Donezk',
+    'Dinamo Zagreb': 'Dinamo Zagreb',
+    'Celtic': 'Celtic Glasgow',
+    'Rangers': 'Glasgow Rangers',
+    'Olympiacos': 'Olympiakos Piräus',
+    'PAOK Salonika': 'PAOK Thessaloniki',
     'Basel': 'FC Basel',
     'Young Boys': 'Young Boys Bern',
     # Nationalteams
