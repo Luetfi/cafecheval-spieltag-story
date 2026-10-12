@@ -1,0 +1,79 @@
+name: Spieltag-Story
+
+on:
+  schedule:
+    - cron: '0 6 * * *'         # morgens Stories erzeugen (8 Uhr Sommerzeit, 7 Uhr Winterzeit)
+    - cron: '*/20 6-20 * * *'   # tagsüber alle 20 Minuten Freigaben abholen
+    - cron: '30 5 * * 1'        # montags Instagram-Token verlängern
+  workflow_dispatch:
+    inputs:
+      befehl:
+        description: 'Was soll laufen?'
+        type: choice
+        options: [morgen, freigaben, token]
+        default: morgen
+      datum:
+        description: 'Nur bei „morgen“: Tag im Format JJJJ-MM-TT (leer = heute)'
+        required: false
+
+permissions:
+  contents: write
+
+# Nie zwei Läufe gleichzeitig, sonst könnten Knopfdrücke doppelt verarbeitet werden.
+concurrency:
+  group: spieltag-story
+  cancel-in-progress: false
+
+jobs:
+  lauf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      KIE_AI_API_KEY: ${{ secrets.KIE_AI_API_KEY }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_IDS: ${{ secrets.TELEGRAM_CHAT_IDS }}
+      INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+      PYTHONIOENCODING: utf-8
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Befehl bestimmen
+        id: befehl
+        run: |
+          case "${{ github.event.schedule }}" in
+            '0 6 * * *')       echo "befehl=morgen" >> "$GITHUB_OUTPUT" ;;
+            '*/20 6-20 * * *') echo "befehl=freigaben" >> "$GITHUB_OUTPUT" ;;
+            '30 5 * * 1')      echo "befehl=token" >> "$GITHUB_OUTPUT" ;;
+            *)                 echo "befehl=${{ inputs.befehl }}" >> "$GITHUB_OUTPUT" ;;
+          esac
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Pillow installieren
+        if: steps.befehl.outputs.befehl == 'morgen'
+        run: pip install -r requirements.txt
+
+      - name: Ausführen
+        run: python lauf.py ${{ steps.befehl.outputs.befehl }} ${{ inputs.datum }}
+
+      - name: Neuen Instagram-Token als Secret speichern
+        if: always() && hashFiles('status/neuer_token') != ''
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -n "$GH_TOKEN" ]; then
+            gh secret set INSTAGRAM_TOKEN < status/neuer_token
+          else
+            echo "::warning::Neuer Instagram-Token, aber kein GH_PAT-Secret zum Speichern"
+          fi
+          rm status/neuer_token
+
+      - name: Status sichern
+        if: always()
+        run: |
+          git config user.name "spieltag-story"
+          git config user.email "actions@users.noreply.github.com"
+          git add status/gepostet.txt
+          git diff --cached --quiet || { git commit -m "Status aktualisiert"; git push; }

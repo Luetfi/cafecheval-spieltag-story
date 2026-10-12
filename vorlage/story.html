@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Spieltag-Story</title>
+<style>
+  @font-face { font-family: 'Cormorant'; src: url('../assets/fonts/cormorant-garamond-latin-wght-normal.woff2') format('woff2'); font-weight: 300 700; }
+  @font-face { font-family: 'Cormorant'; font-style: italic; src: url('../assets/fonts/cormorant-garamond-latin-wght-italic.woff2') format('woff2'); font-weight: 300 700; }
+  @font-face { font-family: 'Manrope'; src: url('../assets/fonts/manrope-latin-wght-normal.woff2') format('woff2'); font-weight: 200 800; }
+
+  :root { --bg:#0b110e; --text:#ebe6d9; --muted:#b9bdb2; --accent:#c8864f; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; background: var(--bg); overflow: hidden; }
+  body { color: var(--text); font-family: 'Manrope', sans-serif; -webkit-font-smoothing: antialiased; }
+
+  .bg { position: absolute; inset: 0; background-size: cover; background-position: center; filter: blur(3px) saturate(.9); transform: scale(1.04); }
+  .shade { position: absolute; inset: 0; background:
+      linear-gradient(180deg, rgb(11 17 14 / .92) 0%, rgb(11 17 14 / .6) 24%, rgb(11 17 14 / .62) 50%, rgb(11 17 14 / .74) 72%, rgb(11 17 14 / .95) 100%); }
+
+  /* Instagram blendet oben ~250 px (Profil) und unten ~320 px (Antwortfeld) ein: dort nichts Wichtiges. */
+  .content { position: absolute; left: 0; right: 0; top: 250px; bottom: 330px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; text-align: center; padding: 0 70px; }
+
+  .logo { width: 170px; }
+  .kicker { display: flex; align-items: center; gap: 28px; font-size: 30px; font-weight: 700; letter-spacing: .32em; text-transform: uppercase; color: var(--accent); }
+  .kicker::before, .kicker::after { content: ''; width: 90px; height: 2px; background: currentColor; opacity: .7; }
+
+  .comp { font-family: 'Cormorant', serif; font-weight: 600; font-size: 74px; line-height: 1; }
+  .round { margin-top: 18px; font-size: 28px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); min-height: 1em; }
+
+  .match { display: grid; grid-template-columns: 1fr 120px 1fr; align-items: start; width: 100%; }
+  .team { display: flex; flex-direction: column; align-items: center; gap: 34px; }
+  .disc { width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle at 50% 40%, #f4f0e6, #dcd5c4); display: grid; place-items: center;
+          box-shadow: 0 24px 60px rgb(0 0 0 / .55), 0 0 0 6px rgb(200 134 79 / .55); overflow: hidden; }
+  .disc img { width: 200px; height: 200px; object-fit: contain; }
+  .disc.flagge img { width: 230px; height: auto; max-height: 170px; object-fit: contain; border-radius: 12px; box-shadow: 0 6px 18px rgb(0 0 0 / .25); }
+  .tname { font-size: 36px; font-weight: 700; line-height: 1.2; letter-spacing: .04em; text-transform: uppercase; max-width: 400px; }
+  .vs { align-self: center; margin-top: -70px; font-family: 'Cormorant', serif; font-style: italic; font-weight: 500; font-size: 96px; color: var(--accent); }
+
+  .when { display: flex; flex-direction: column; align-items: center; }
+  .time { font-family: 'Cormorant', serif; font-variant-numeric: lining-nums; font-weight: 600; font-size: 230px; line-height: .9; letter-spacing: -.01em; }
+  .time small { font-size: 72px; font-weight: 500; margin-left: 14px; color: var(--muted); }
+  .date { margin-top: 40px; font-size: 34px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; }
+
+  .foot { font-size: 27px; letter-spacing: .24em; text-transform: uppercase; color: var(--muted); }
+  .foot b { color: var(--text); font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="bg" id="bg"></div><div class="shade"></div>
+<div class="content">
+  <img class="logo" src="../assets/logo/cheval-logo-light.svg" alt="">
+  <div class="kicker" id="kicker">Heute live bei uns</div>
+  <div>
+    <div class="comp" id="comp"></div>
+    <div class="round" id="round"></div>
+  </div>
+  <div class="match">
+    <div class="team"><div class="disc" id="d-heim"><img id="w-heim" alt=""></div><div class="tname" id="n-heim"></div></div>
+    <div class="vs">vs</div>
+    <div class="team"><div class="disc" id="d-gast"><img id="w-gast" alt=""></div><div class="tname" id="n-gast"></div></div>
+  </div>
+  <div class="when">
+    <div class="time" id="time"></div>
+    <div class="date" id="date"></div>
+  </div>
+  <div class="foot"><b>Café Cheval</b> · Asperger Str. 16 · Ludwigsburg</div>
+</div>
+<script>
+  const d = JSON.parse(new URLSearchParams(location.search).get('d'));
+  const $ = (id) => document.getElementById(id);
+  if (d.hintergrund) $('bg').style.backgroundImage = `url('${d.hintergrund}')`;
+  if (d.kicker) $('kicker').textContent = d.kicker;
+  $('comp').textContent = d.wettbewerb;
+  $('round').textContent = [d.runde, d.leg].filter(Boolean).join(' · ');
+  for (const k of ['heim', 'gast']) {
+    $('w-' + k).src = d[k].wappen;
+    $('n-' + k).textContent = d[k].name;
+    if (d[k].flagge) $('d-' + k).classList.add('flagge');
+    if (d[k].name.length > 18) $('n-' + k).style.fontSize = '30px';
+  }
+  $('time').innerHTML = `${d.uhrzeit}<small>Uhr</small>`;
+  $('date').textContent = d.datum;
+</script>
+</body>
+</html>

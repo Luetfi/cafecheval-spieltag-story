@@ -1,0 +1,5 @@
+ausgabe/
+cache/
+__pycache__/
+.env
+status/neuer_token
