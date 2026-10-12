@@ -18,6 +18,10 @@ Im Bot (nur für freigeschaltete Chat-IDs):
   (bei mehreren Treffern Auswahl per Knopf). Bei späteren Tagen steht „Samstag live bei uns“ auf der Story.
 - Wettbewerb schreiben, z. B. „Champions League“, oder `/ligen`: alle Spiele der nächsten 10 Tage als Knöpfe.
 - `/heute`: alle Spiele von heute noch einmal.
+- `/allgemein`: allgemeine Stories auf echten Café-Fotos („Wir haben geöffnet“, „Zeit für einen Drink“,
+  „Endlich Wochenende“, „Lust zu feiern?“, „Heute Fußball live“ und „Heute <Wettbewerb>“ mit Spieleliste).
+  Stichwörter wie „geöffnet“ oder „Cocktails“ funktionieren auch. Texte und Fotos: `allgemein.py`.
+- `/text Titel | Untertitel`: Story mit eigenem Text, *Wort* wird hervorgehoben.
 
 Das Repository ist öffentlich, damit die Actions-Minuten nichts kosten. Zugangsdaten liegen nur in den Secrets:
 `KIE_AI_API_KEY`, `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_IDS` (kommagetrennt), `INSTAGRAM_TOKEN`,
@@ -42,6 +46,7 @@ python spielplan.py 2026-10-17  # nur anzeigen, welche Spiele eine Story bekäme
 | `hintergrund.py` | Hintergrund mit kie.ai (`google/nano-banana`), Fallback auf `hintergruende/` |
 | `story.py` | Wappen cachen, Vorlage füllen, mit Chrome headless rendern, Text „Heute/Morgen/Samstag live“ |
 | `lauf.py` | Einstieg: `morgen`, `bot`, `freigaben`, `token` |
+| `allgemein.py`, `vorlage/allgemein.html`, `assets/fotos/` | Allgemeine Stories |
 | `telegram_bot.py` | Freigabe per Telegram (Knöpfe, Bild-Link steckt in der Bildunterschrift) |
 | `instagram.py` | Story über graph.instagram.com posten, Token verlängern |
 | `status/gepostet.txt` | Bereits gepostete Bilder, damit nichts doppelt rausgeht |

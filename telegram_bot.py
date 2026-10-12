@@ -56,6 +56,12 @@ def auswahl_senden(chat, spiele, ueberschrift='Welches Spiel meinst du?'):
     _api('sendMessage', chat_id=chat, text=ueberschrift, parse_mode='HTML', reply_markup={'inline_keyboard': knoepfe})
 
 
+def vorlagen_senden(chat, knoepfe_):
+    """Knöpfe für allgemeine Stories, einer pro Zeile. callback_data = a|Schlüssel."""
+    zeilen = [[{'text': text, 'callback_data': f'a|{k}'}] for text, k in knoepfe_]
+    _api('sendMessage', chat_id=chat, text='Welche Story soll ich erstellen?', reply_markup={'inline_keyboard': zeilen})
+
+
 def ligen_senden(chat, ligen):
     """Knöpfe für alle Wettbewerbe, zwei pro Zeile. callback_data = l|Slug."""
     knoepfe = [{'text': text, 'callback_data': f'l|{slug}'} for text, slug in ligen]
@@ -83,7 +89,7 @@ def entscheidungen(warten=0):
             if q['from']['id'] not in erlaubt and q['message']['chat']['id'] not in erlaubt:
                 continue
             daten = q.get('data', '')
-            aktion = {'s|': 'spiel', 'l|': 'liga'}.get(daten[:2], daten)
+            aktion = {'s|': 'spiel', 'l|': 'liga', 'a|': 'allgemein'}.get(daten[:2], daten)
             ergebnis.append({'aktion': aktion, 'daten': daten,
                              'query_id': q['id'], 'nachricht': q['message'], 'chat': q['message']['chat']['id'],
                              'von': q['from'].get('first_name', '')})

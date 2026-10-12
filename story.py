@@ -74,8 +74,8 @@ def wappen(team):
     return datei, ist_flagge(Image.open(datei).convert('RGBA'))
 
 
-def rendern(daten, ziel: pathlib.Path):
-    url = VORLAGE.as_uri() + '?d=' + urllib.parse.quote(json.dumps(daten, ensure_ascii=False))
+def rendern(daten, ziel: pathlib.Path, vorlage=VORLAGE):
+    url = vorlage.as_uri() + '?d=' + urllib.parse.quote(json.dumps(daten, ensure_ascii=False))
     png = ziel.with_suffix('.png')
     ziel.parent.mkdir(parents=True, exist_ok=True)
     subprocess.run([chrome(), '--headless=new', '--disable-gpu', '--hide-scrollbars', '--force-device-scale-factor=1',

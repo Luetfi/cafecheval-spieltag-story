@@ -24,6 +24,15 @@ TOPVEREINE = {'132', '124', '131', '11420', '125'}
 TOPNATIONEN = {'Spain', 'France', 'England', 'Brazil', 'Argentina', 'Portugal', 'Netherlands', 'Italy',
                'Belgium', 'Croatia'}
 
+# Publikumsmagneten (ESPN-Namen): Ihre Spiele stehen bei gleicher Empfehlung weiter oben,
+# morgens in der Reihenfolge und in Listen-Stories („Heute Champions League“).
+BELIEBTE = {'Bayern Munich', 'Borussia Dortmund', 'VfB Stuttgart', 'Bayer Leverkusen', 'RB Leipzig', 'Eintracht Frankfurt',
+            'Real Madrid', 'Barcelona', 'Atletico Madrid', 'Atlético Madrid', 'Paris Saint-Germain', 'Manchester City',
+            'Liverpool', 'Arsenal', 'Manchester United', 'Chelsea', 'Tottenham Hotspur', 'Internazionale', 'Juventus',
+            'AC Milan', 'Napoli', 'Galatasaray', 'Fenerbahce', 'Besiktas', 'Benfica', 'FC Porto',
+            'Germany', 'Spain', 'France', 'England', 'Brazil', 'Argentina', 'Portugal', 'Netherlands', 'Italy', 'Turkey',
+            'Türkiye', 'Croatia', 'Greece'}
+
 KO_AB_ACHTELFINALE = ['round-of-16', 'quarterfinals', 'semifinals', '3rd-place-match', 'final']
 KO_AB_VIERTELFINALE = ['quarterfinals', 'semifinals', '3rd-place-match', 'final']
 

@@ -97,6 +97,7 @@ def spiel(e, w, datum, deutsch):
         'empfohlen': runde in w.get('alle_ab', []) or any(treffer(r, liste, deutsch) for r in regeln),
         'angebot': runde in w.get('alle_ab', []) or any(treffer(r, liste, deutsch) for r in w.get('angebot', ['alle'])),
         'wichtig': wichtig(liste, deutsch),
+        'beliebt': sum(t.get('displayName') in config.BELIEBTE for t in liste),
         'heim': {'id': teams['home']['id'], 'name': name(teams['home']), 'logo': teams['home'].get('logo'),
                  'such': [teams['home'].get(k) or '' for k in ('displayName', 'shortDisplayName', 'abbreviation')]},
         'gast': {'id': teams['away']['id'], 'name': name(teams['away']), 'logo': teams['away'].get('logo'),
@@ -128,7 +129,7 @@ def spiele(tag: dt.date):
     """Alle Spiele, die am Morgen von `tag` als Story kommen: empfohlene zuerst, dann der Rest nach Uhrzeit."""
     prio = {w['slug']: i for i, w in enumerate(config.WETTBEWERBE)}
     alle = [s for s in sammeln(config.WETTBEWERBE, {tag}) if s['angebot'] or s['empfohlen']]
-    alle.sort(key=lambda s: (not s['empfohlen'], not s['wichtig'], prio[s['slug']], s['anstoss']))
+    alle.sort(key=lambda s: (not s['empfohlen'], not s['wichtig'], -s['beliebt'], prio[s['slug']], s['anstoss']))
     return alle[:config.MAX_PRO_TAG]
 
 

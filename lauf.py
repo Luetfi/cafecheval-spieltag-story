@@ -43,7 +43,16 @@ HILFE = ('<b>Story für ein bestimmtes Spiel:</b> Schreib mir die Mannschaften, 
          '<i>VfB</i> oder <i>England Spanien</i>. Ich suche in den nächsten 14 Tagen.\n\n'
          '<b>Alle Spiele eines Wettbewerbs:</b> Schreib z. B. <i>Champions League</i>, <i>Bundesliga</i>, '
          '<i>Premier League</i> oder <i>WM</i>, oder tippe /ligen für die Auswahl.\n\n'
+         '<b>Allgemeine Story:</b> /allgemein zeigt die Vorlagen (Wir haben geöffnet, Zeit für einen Drink, '
+         'Endlich Wochenende, Feiern, Heute Champions League …). Stichwörter gehen auch, z. B. <i>geöffnet</i>.\n'
+         'Eigener Text: <code>/text Titel | Untertitel</code>, z. B. <code>/text Poker-*Abend* | Heute ab *20 Uhr*</code> '
+         '(*Wort* wird hervorgehoben).\n\n'
          '/heute schickt alle Spiele von heute noch einmal.')
+
+
+TEXT_HILFE = ('Schick mir den Text so: <code>/text Titel | Untertitel</code>\n'
+              'Beispiel: <code>/text Poker-*Abend* | Heute ab *20 Uhr*, Anmeldung am Tresen</code>\n'
+              '*Wort* wird hervorgehoben, der Untertitel ist optional.')
 
 
 def jetzt():
@@ -129,12 +138,29 @@ class Bot:
             if not self.tagesstories(jetzt().date(), [e['chat']]):
                 telegram_bot.text('Heute laufen keine Spiele aus unseren Wettbewerben.', chat=e['chat'])
             return
+        if befehl == '/allgemein':
+            import allgemein
+            heute = jetzt().date()
+            telegram_bot.vorlagen_senden(e['chat'], allgemein.knoepfe(heute, spielplan.spiele(heute)))
+            return
+        if befehl == '/text':
+            eigener = text.split(None, 1)[1] if len(text.split(None, 1)) > 1 else ''
+            if not eigener:
+                telegram_bot.text(TEXT_HILFE, chat=e['chat'])
+                return
+            self.allgemein_erstellen('eigen', e['chat'], eigener)
+            return
         if befehl == '/ligen':
             telegram_bot.ligen_senden(e['chat'], spielplan.ligen())
             return
         slug = spielplan.liga_erkennen(text)
         if slug:
             self.liste(slug, e['chat'])
+            return
+        import allgemein
+        vorlage = allgemein.stichwort(text)
+        if vorlage:
+            self.allgemein_erstellen(vorlage, e['chat'])
             return
         treffer = spielplan.suchen(text, jetzt().date())
         if not treffer:
@@ -155,6 +181,27 @@ class Bot:
         telegram_bot.auswahl_senden(chat, spiele[:MAX_LISTE],
                                     f'<b>{html.escape(name)}</b>: Spiele der nächsten {LISTE_TAGE} Tage{mehr}. '
                                     'Tippe auf ein Spiel, dann erstelle ich die Story.')
+
+    def allgemein_erstellen(self, schluessel, chat, text=None):
+        import allgemein
+        import hintergrund
+        telegram_bot.text('⏳ Ich erstelle die Story …', chat=chat)
+        heute = jetzt().date()
+        try:
+            datei, beschreibung = allgemein.bauen(schluessel, heute, text)
+        except ValueError as fehler:
+            telegram_bot.text(f'Das geht gerade nicht: {html.escape(str(fehler))}.', chat=chat)
+            return
+        url = hintergrund.hochladen(datei, ordner=f'cafecheval-stories/allgemein/{heute.isoformat()}')
+        self.kopien[url] = telegram_bot.story_senden(url, beschreibung, 'Allgemeine Story', chats=[chat])
+
+    def allgemein(self, e):
+        schluessel = e['daten'].split('|', 1)[1]
+        telegram_bot.antworten(e['query_id'], 'Einen Moment …')
+        if schluessel == 'eigen':
+            telegram_bot.text(TEXT_HILFE, chat=e['chat'])
+            return
+        self.allgemein_erstellen(schluessel, e['chat'])
 
     def liga(self, e):
         telegram_bot.antworten(e['query_id'], 'Einen Moment …')
@@ -178,7 +225,7 @@ class Bot:
     def bearbeiten(self, e):
         try:
             {'posten': self.posten, 'verwerfen': self.verwerfen, 'spiel': self.auswahl,
-             'liga': self.liga, 'text': self.anfrage}.get(e['aktion'], lambda _: None)(e)
+             'liga': self.liga, 'allgemein': self.allgemein, 'text': self.anfrage}.get(e['aktion'], lambda _: None)(e)
         except Exception as fehler:
             traceback.print_exc()
             telegram_bot.text(f'⚠️ Das hat nicht geklappt: {html.escape(str(fehler))}', chat=e['chat'])

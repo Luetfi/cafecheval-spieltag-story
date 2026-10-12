@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Allgemeine Story</title>
+<style>
+  @font-face { font-family: 'Cormorant'; src: url('../assets/fonts/cormorant-garamond-latin-wght-normal.woff2') format('woff2'); font-weight: 300 700; }
+  @font-face { font-family: 'Cormorant'; font-style: italic; src: url('../assets/fonts/cormorant-garamond-latin-wght-italic.woff2') format('woff2'); font-weight: 300 700; }
+  @font-face { font-family: 'Manrope'; src: url('../assets/fonts/manrope-latin-wght-normal.woff2') format('woff2'); font-weight: 200 800; }
+
+  :root { --bg:#0b110e; --text:#ebe6d9; --muted:#c3c6bc; --accent:#c8864f; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1920px; background: var(--bg); overflow: hidden; }
+  body { color: var(--text); font-family: 'Manrope', sans-serif; -webkit-font-smoothing: antialiased; }
+
+  .bg { position: absolute; inset: 0; background-size: cover; background-position: center; filter: saturate(.9); }
+  .shade { position: absolute; inset: 0; background:
+      linear-gradient(180deg, rgb(11 17 14 / .9) 0%, rgb(11 17 14 / .35) 22%, rgb(11 17 14 / .45) 45%, rgb(11 17 14 / .8) 68%, rgb(11 17 14 / .96) 100%); }
+  .liste-an .shade { background:
+      linear-gradient(180deg, rgb(11 17 14 / .9) 0%, rgb(11 17 14 / .55) 22%, rgb(11 17 14 / .78) 45%, rgb(11 17 14 / .9) 68%, rgb(11 17 14 / .97) 100%); }
+
+  /* Instagram blendet oben ~250 px (Profil) und unten ~320 px (Antwortfeld) ein: dort nichts Wichtiges. */
+  .content { position: absolute; left: 0; right: 0; top: 250px; bottom: 330px; display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 80px; }
+  .logo { width: 170px; }
+  .mitte { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; padding-bottom: 40px; width: 100%; }
+  .liste-an .mitte { justify-content: center; padding-bottom: 0; }
+
+  .kicker { display: flex; align-items: center; gap: 28px; font-size: 30px; font-weight: 700; letter-spacing: .32em; text-transform: uppercase; color: var(--accent); }
+  .kicker::before, .kicker::after { content: ''; width: 90px; height: 2px; background: currentColor; opacity: .7; }
+  h1 { margin-top: 40px; font-family: 'Cormorant', serif; font-weight: 600; font-size: 150px; line-height: .95; letter-spacing: -.01em; text-wrap: balance; }
+  h1 em { font-style: italic; font-weight: 500; color: var(--accent); }
+  .unter { margin-top: 40px; font-size: 40px; line-height: 1.45; color: var(--muted); max-width: 860px; text-wrap: balance; }
+  .unter b { color: var(--text); font-weight: 700; }
+
+  .spiele { margin-top: 56px; width: 100%; display: flex; flex-direction: column; gap: 22px; }
+  .spiel { display: grid; grid-template-columns: 140px 96px 1fr; align-items: center; gap: 22px; padding: 22px 30px; text-align: left;
+           background: rgb(235 230 217 / .08); border: 1.5px solid rgb(235 230 217 / .16); border-radius: 22px; }
+  .spiel .zeit { font-family: 'Cormorant', serif; font-variant-numeric: lining-nums; font-weight: 600; font-size: 52px; color: var(--accent); }
+  .spiel .wappen { display: flex; }
+  .spiel .wappen img { width: 52px; height: 52px; object-fit: contain; background: #efe9dc; border-radius: 50%; padding: 6px; }
+  .spiel .wappen img + img { margin-left: -14px; }
+  .spiel .namen { font-size: 31px; font-weight: 700; line-height: 1.25; }
+  .mehr { margin-top: 6px; font-size: 28px; color: var(--muted); letter-spacing: .06em; }
+
+  .foot { font-size: 27px; letter-spacing: .24em; text-transform: uppercase; color: var(--muted); }
+  .foot b { color: var(--text); font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="bg" id="bg"></div><div class="shade"></div>
+<div class="content">
+  <img class="logo" src="../assets/logo/cheval-logo-light.svg" alt="">
+  <div class="mitte">
+    <div class="kicker" id="kicker"></div>
+    <h1 id="titel"></h1>
+    <p class="unter" id="unter"></p>
+    <div class="spiele" id="spiele"></div>
+  </div>
+  <div class="foot"><b>Café Cheval</b> · Asperger Str. 16 · Ludwigsburg</div>
+</div>
+<script>
+  const d = JSON.parse(new URLSearchParams(location.search).get('d'));
+  const $ = (id) => document.getElementById(id);
+  const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  if (d.hintergrund) $('bg').style.backgroundImage = `url('${d.hintergrund}')`;
+  if (d.weich) $('bg').style.filter = 'blur(3px) saturate(.9)';
+  $('kicker').textContent = d.kicker || '';
+  if (!d.kicker) $('kicker').remove();
+  // *Wort* im Titel wird kursiv in Kupfer, | erzwingt einen Zeilenumbruch
+  $('titel').innerHTML = esc(d.titel).replace(/\*(.+?)\*/g, '<em>$1</em>').replace(/\s*\|\s*/g, '<br>');
+  if (d.titel.length > 22) $('titel').style.fontSize = '120px';
+  if (d.titel.length > 40) $('titel').style.fontSize = '96px';
+  $('unter').innerHTML = esc(d.unter || '').replace(/\*(.+?)\*/g, '<b>$1</b>');
+  if (!d.unter) $('unter').remove();
+  if (d.spiele && d.spiele.length) {
+    document.body.classList.add('liste-an');
+    if (d.spiele.length > 3) $('titel').style.fontSize = '110px';
+    $('spiele').innerHTML = d.spiele.map((s) => `
+      <div class="spiel"><div class="zeit">${esc(s.uhrzeit)}</div>
+        <div class="wappen"><img src="${s.heim_wappen}"><img src="${s.gast_wappen}"></div>
+        <div class="namen">${esc(s.heim)} – ${esc(s.gast)}</div></div>`).join('')
+      + (d.mehr ? `<div class="mehr">${esc(d.mehr)}</div>` : '');
+  } else {
+    $('spiele').remove();
+  }
+</script>
+</body>
+</html>
