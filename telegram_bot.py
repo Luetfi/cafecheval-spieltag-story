@@ -35,13 +35,14 @@ def text(nachricht, chat=None):
 
 
 def story_senden(bild_url, titel, details):
-    """Schickt die Story an alle Empfänger, mit den Knöpfen „Posten“ und „Verwerfen“."""
+    """Schickt die Story an alle Empfänger, mit den Knöpfen „Posten“ und „Verwerfen“.
+    Gibt die gesendeten Nachrichten zurück (eine pro Empfänger)."""
     caption = (f'<b>{html.escape(titel)}</b>\n{html.escape(details)}\n\n'
                f'<a href="{html.escape(bild_url)}">Bild in voller Größe</a>')
     knoepfe = {'inline_keyboard': [[{'text': '✅ Posten', 'callback_data': POSTEN},
                                     {'text': '❌ Verwerfen', 'callback_data': VERWERFEN}]]}
-    for c in empfaenger():
-        _api('sendPhoto', chat_id=c, photo=bild_url, caption=caption, parse_mode='HTML', reply_markup=knoepfe)
+    return [_api('sendPhoto', chat_id=c, photo=bild_url, caption=caption, parse_mode='HTML', reply_markup=knoepfe)
+            for c in empfaenger()]
 
 
 def bild_url(nachricht):
@@ -51,10 +52,11 @@ def bild_url(nachricht):
     return None
 
 
-def entscheidungen():
+def entscheidungen(warten=0):
     """Liest neue Knopfdrücke und Nachrichten. Gibt (Liste der Entscheidungen, Bestätigungs-Funktion) zurück.
+    Mit `warten` (Sekunden, höchstens 50) hält Telegram die Anfrage offen, bis etwas passiert (Long Polling).
     Erst nach dem Bestätigen gelten die Updates bei Telegram als abgeholt."""
-    updates = _api('getUpdates', timeout=0, allowed_updates=['message', 'callback_query'])
+    updates = _api('getUpdates', timeout=max(0, min(int(warten), 50)), allowed_updates=['message', 'callback_query'])
     erlaubt = set(empfaenger())
     ergebnis = []
     for u in updates:

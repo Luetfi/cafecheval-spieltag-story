@@ -2,8 +2,8 @@ name: Spieltag-Story
 
 on:
   schedule:
-    - cron: '0 6 * * *'         # morgens Stories erzeugen (8 Uhr Sommerzeit, 7 Uhr Winterzeit)
-    - cron: '*/20 6-20 * * *'   # tagsüber alle 20 Minuten Freigaben abholen
+    - cron: '0 6 * * *'         # morgens Stories erzeugen und live auf Freigaben warten (8 Uhr Sommerzeit, 7 Uhr Winterzeit)
+    - cron: '*/20 6-20 * * *'   # Reserve: Klicks nach dem Live-Fenster abholen
     - cron: '30 5 * * 1'        # montags Instagram-Token verlängern
   workflow_dispatch:
     inputs:
@@ -27,7 +27,7 @@ concurrency:
 jobs:
   lauf:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 420   # der Morgen-Lauf wartet bis zu 14 Uhr auf Freigaben
     env:
       KIE_AI_API_KEY: ${{ secrets.KIE_AI_API_KEY }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}

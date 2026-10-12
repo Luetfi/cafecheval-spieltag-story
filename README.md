@@ -9,9 +9,11 @@ gehen sie über die Instagram API auf @cafechevallb.
 
 | Wann (UTC) | Befehl | Was passiert |
 | --- | --- | --- |
-| täglich 6:00 | `python lauf.py morgen` | Stories erzeugen, Bild zu kie.ai hochladen (öffentliche URL), an Telegram schicken |
-| 6–20 Uhr alle 20 Min. | `python lauf.py freigaben` | Knopfdrücke abholen, freigegebene Stories posten |
+| täglich 6:00 | `python lauf.py morgen` | Stories erzeugen, Bild zu kie.ai hochladen (öffentliche URL), an Telegram schicken, dann live auf die Knöpfe warten (bis alle entschieden sind, höchstens bis 14 Uhr bzw. erstem Anstoß) |
+| 6–20 Uhr alle 20 Min. | `python lauf.py freigaben` | Reserve für spätere Klicks (GitHub startet geplante Läufe oft verspätet) |
 | montags 5:30 | `python lauf.py token` | Instagram-Token verlängern |
+
+Das Repository ist öffentlich, damit die Actions-Minuten fürs Warten nichts kosten. Zugangsdaten liegen nur in den Secrets.
 
 Von Hand starten: GitHub → Actions → Spieltag-Story → „Run workflow“.
 

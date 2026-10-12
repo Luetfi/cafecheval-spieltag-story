@@ -1,8 +1,12 @@
 """Einstieg für den Zeitplan (GitHub Actions) und für Tests von Hand.
 
-    python lauf.py morgen [JJJJ-MM-TT]   # Stories erzeugen, hochladen, zur Freigabe an Telegram schicken
+    python lauf.py morgen [JJJJ-MM-TT]   # Stories erzeugen, an Telegram schicken, dann live auf Klicks warten
+    python lauf.py morgen JJJJ-MM-TT --ohne-warten   # nur erzeugen und schicken
     python lauf.py freigaben             # Knopfdrücke abholen, freigegebene Stories auf Instagram posten
     python lauf.py token                 # Instagram-Token verlängern (läuft wöchentlich)
+
+Nach dem Verschicken wartet `morgen` live auf die Knöpfe, bis jede Story entschieden ist, höchstens bis
+14 Uhr bzw. bis zum ersten Anstoß. Spätere Klicks holt der Zeitplan mit `freigaben` ab.
 
 `status/gepostet.txt` merkt sich bereits gepostete Bilder. Haben mehrere Personen die Nachricht,
 wird eine Story trotzdem nur einmal gepostet. GitHub Actions committet die Datei nach jedem Lauf.
@@ -27,44 +31,89 @@ def jetzt():
 
 
 def morgen(tag):
+    """Erzeugt und verschickt die Stories. Gibt ({Bild-URL: [Telegram-Nachrichten]}, erster Anstoß) zurück."""
     import hintergrund  # erst hier laden: braucht Pillow und Chrome, die Freigabe-Läufe nicht
     import story
+    kopien, erster = {}, None
     for s in story.stories(tag):
         url = hintergrund.hochladen(s['datei'], ordner=f'cafecheval-stories/{tag.isoformat()}')
         a = s['anstoss']
         details = ' · '.join(filter(None, [s['wettbewerb'], s['runde'], s['leg'],
                                            f'{KURZ[a.weekday()]} {a:%d.%m.} {a:%H:%M} Uhr']))
-        telegram_bot.story_senden(url, f"{s['heim']['name']} – {s['gast']['name']}", details)
+        kopien[url] = telegram_bot.story_senden(url, f"{s['heim']['name']} – {s['gast']['name']}", details)
+        erster = min(erster or a, a)
         print('an Telegram geschickt:', s['datei'].name)
+    return kopien, erster
 
 
-def freigaben():
-    gepostet = set(GEPOSTET.read_text(encoding='utf-8').split()) if GEPOSTET.exists() else set()
-    liste, bestaetigen = telegram_bot.entscheidungen()
+def lade_gepostet():
+    return set(GEPOSTET.read_text(encoding='utf-8').split()) if GEPOSTET.exists() else set()
+
+
+def speichere_gepostet(gepostet):
+    GEPOSTET.parent.mkdir(exist_ok=True)
+    GEPOSTET.write_text('\n'.join(sorted(gepostet)[-300:]) + '\n', encoding='utf-8')
+
+
+def verarbeiten(liste, gepostet, kopien=None):
+    """Führt die Knopfdrücke aus. Gibt die Bild-URLs zurück, über die jetzt entschieden ist.
+    `kopien`: gleiche Story bei anderen Empfängern, deren Knöpfe ebenfalls entfernt werden."""
+    entschieden = set()
+
+    def abschliessen(msg, url, vermerk):
+        telegram_bot.abschliessen(msg, vermerk)
+        for k in (kopien or {}).get(url, []):
+            if (k['chat']['id'], k['message_id']) != (msg['chat']['id'], msg['message_id']):
+                telegram_bot.abschliessen(k, vermerk)
+
     for e in liste:
         msg, url = e['nachricht'], telegram_bot.bild_url(e['nachricht'])
+        if not url:
+            continue
         if e['aktion'] == telegram_bot.VERWERFEN:
             telegram_bot.antworten(e['query_id'], 'Verworfen')
-            telegram_bot.abschliessen(msg, f"❌ Verworfen von {e['von']}")
-        elif e['aktion'] == telegram_bot.POSTEN and url:
+            abschliessen(msg, url, f"❌ Verworfen von {e['von']}")
+            entschieden.add(url)
+        elif e['aktion'] == telegram_bot.POSTEN:
             if url in gepostet:
                 telegram_bot.antworten(e['query_id'], 'Ist schon gepostet')
-                telegram_bot.abschliessen(msg, '✅ Bereits gepostet')
+                abschliessen(msg, url, '✅ Bereits gepostet')
+                entschieden.add(url)
                 continue
+            telegram_bot.antworten(e['query_id'], 'Wird gepostet …')
             try:
                 instagram.story_posten(url)
             except Exception as fehler:
                 # Knöpfe bleiben stehen, man kann es später noch einmal versuchen.
-                telegram_bot.antworten(e['query_id'], 'Posten fehlgeschlagen')
                 telegram_bot.text(f'⚠️ Posten fehlgeschlagen: {fehler}', chat=msg['chat']['id'])
                 continue
             gepostet.add(url)
-            telegram_bot.antworten(e['query_id'], 'Gepostet')
-            telegram_bot.abschliessen(msg, f"✅ Gepostet von {e['von']} um {jetzt():%H:%M} Uhr")
+            speichere_gepostet(gepostet)
+            abschliessen(msg, url, f"✅ Gepostet von {e['von']} um {jetzt():%H:%M} Uhr")
+            entschieden.add(url)
             print('gepostet:', url)
-    GEPOSTET.parent.mkdir(exist_ok=True)
-    GEPOSTET.write_text('\n'.join(sorted(gepostet)[-300:]) + '\n', encoding='utf-8')
+    return entschieden
+
+
+def freigaben():
+    gepostet = lade_gepostet()
+    liste, bestaetigen = telegram_bot.entscheidungen()
+    verarbeiten(liste, gepostet)
+    speichere_gepostet(gepostet)
     bestaetigen()
+
+
+def zuhoeren(kopien, bis):
+    """Wartet live auf Knopfdrücke, bis alle Stories entschieden sind oder `bis` erreicht ist."""
+    offen = set(kopien)
+    gepostet = lade_gepostet()
+    print(f'warte auf Freigaben bis {bis:%H:%M} Uhr')
+    while offen and jetzt() < bis:
+        liste, bestaetigen = telegram_bot.entscheidungen(warten=(bis - jetzt()).total_seconds())
+        offen -= verarbeiten(liste, gepostet, kopien)
+        bestaetigen()
+    speichere_gepostet(gepostet)
+    print('alle Stories entschieden' if not offen else f'{len(offen)} Stories noch offen, der Zeitplan übernimmt')
 
 
 def token():
@@ -84,8 +133,14 @@ if __name__ == '__main__':
     befehl = sys.argv[1] if len(sys.argv) > 1 else ''
     try:
         if befehl == 'morgen':
-            tag = dt.date.fromisoformat(sys.argv[2]) if len(sys.argv) > 2 else jetzt().date()
-            morgen(tag)
+            args = [a for a in sys.argv[2:] if not a.startswith('--')]
+            tag = dt.date.fromisoformat(args[0]) if args else jetzt().date()
+            kopien, erster = morgen(tag)
+            if kopien and '--ohne-warten' not in sys.argv:
+                bis = min(dt.datetime.combine(jetzt().date(), dt.time(14), spielplan.BERLIN), erster)
+                if bis <= jetzt():  # von Hand am Nachmittag gestartet
+                    bis = jetzt() + dt.timedelta(minutes=30)
+                zuhoeren(kopien, bis)
         elif befehl == 'freigaben':
             freigaben()
         elif befehl == 'token':
