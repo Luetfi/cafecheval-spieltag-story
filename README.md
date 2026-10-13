@@ -7,7 +7,22 @@ gehen sie über die Instagram API auf @cafechevallb.
 
 ## Ablauf (GitHub Actions, `.github/workflows/spieltag-story.yml`)
 
-- **Morgens** (Weckzeiten 5:00, 5:30, 6:00 UTC, der erste gewinnt): `python lauf.py morgen` schickt alle Spiele
+**Wecker:** GitHubs eigener Zeitplan (`schedule`) hat in diesem Repository nie zuverlässig ausgelöst. Deshalb
+startet [cron-job.org](https://console.cron-job.org) (Konto des Betreuers) den Workflow per API:
+
+| Uhrzeit (Europe/Berlin) | Body |
+| --- | --- |
+| 07:00 | `{"ref":"main","inputs":{"befehl":"morgen"}}` |
+| 12:30 | `{"ref":"main","inputs":{"befehl":"bot"}}` (Sicherheitsnetz) |
+| 17:30 | `{"ref":"main","inputs":{"befehl":"bot"}}` (Sicherheitsnetz) |
+
+Jeweils `POST https://api.github.com/repos/Luetfi/cafecheval-spieltag-story/actions/workflows/spieltag-story.yml/dispatches`
+mit den Headern `Authorization: Bearer <Fine-grained Token, nur dieses Repo, Actions: Read and write>`,
+`Accept: application/vnd.github+json`, `X-GitHub-Api-Version: 2022-11-28`, `Content-Type: application/json`.
+Läuft der Token ab, kommt der neue in alle drei Cronjobs. Läuft der Bot schon, ersetzt ein weiterer Start
+nur den wartenden Lauf, es passiert nichts doppelt. Die `schedule`-Einträge im Workflow bleiben als Reserve.
+
+- **Morgens** (cron-job.org 7:00, Reserve: GitHub-Zeitplan): `python lauf.py morgen` schickt alle Spiele
   des Tages aus `WETTBEWERBE` als Story, empfohlene zuerst (⭐). Danach läuft derselbe Lauf als Bot weiter.
 - **Bot** bis 23 Uhr: bearbeitet „Posten“/„Verwerfen“ sofort und beantwortet Anfragen. Nach 5:40 Stunden
   startet sich der Lauf selbst neu (GitHub erlaubt höchstens 6 Stunden pro Lauf).
