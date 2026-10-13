@@ -1,0 +1,107 @@
+{
+ "nr": 1,
+ "stories": {
+  "S1": {
+   "id": "S1",
+   "art": "allgemein",
+   "vorlage": "allgemein",
+   "titel": "Heute Fußball live",
+   "details": "Allgemeine Story",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-13/fussball-102303.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "titel": "Fußball *live*",
+    "unter": "Alle Spiele auf großer Leinwand.",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/hintergruende/f741166d2f81f5700ac299ac09d95a0e.png",
+    "weich": true,
+    "spiele": [
+     {
+      "uhrzeit": "21:00",
+      "heim": "RB Leipzig",
+      "gast": "PSV Eindhoven",
+      "heim_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/11420.png",
+      "gast_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/148.png"
+     },
+     {
+      "uhrzeit": "21:00",
+      "heim": "Viking FK",
+      "gast": "FC Bayern München",
+      "heim_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/510.png",
+      "gast_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/132.png"
+     },
+     {
+      "uhrzeit": "21:00",
+      "heim": "Atlético Madrid",
+      "gast": "Manchester United",
+      "heim_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/1068.png",
+      "gast_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/360.png"
+     },
+     {
+      "uhrzeit": "21:00",
+      "heim": "Galatasaray",
+      "gast": "FC Barcelona",
+      "heim_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/432.png",
+      "gast_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/83.png"
+     },
+     {
+      "uhrzeit": "21:00",
+      "heim": "Arsenal",
+      "gast": "Lille",
+      "heim_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/359.png",
+      "gast_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/166.png"
+     }
+    ],
+    "mehr": "… und 4 weitere Spiele"
+   },
+   "logos": {
+    "11420": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
+    "148": "https://a.espncdn.com/i/teamlogos/soccer/500/148.png",
+    "510": "https://a.espncdn.com/i/teamlogos/soccer/500/510.png",
+    "132": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
+    "1068": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+    "360": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
+    "432": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png",
+    "83": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+    "359": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
+    "166": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
+    "110": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
+    "570": "https://a.espncdn.com/i/teamlogos/soccer/500/570.png",
+    "102": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
+    "114": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
+    "175": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
+    "2250": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png",
+    "21922": "https://a.espncdn.com/i/teamlogos/soccer/500/21922.png",
+    "494": "https://a.espncdn.com/i/teamlogos/soccer/500/494.png"
+   },
+   "tag": "2026-10-13",
+   "wettbewerb": "",
+   "status": "gepostet",
+   "erstellt": "2026-10-13T12:23:15.717497+02:00",
+   "nachrichten": [
+    {
+     "message_id": 69,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Heute Fußball live\nAllgemeine Story · S1\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 18,
+       "type": "bold"
+      },
+      {
+       "offset": 42,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-13/fussball-102303.jpg"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "verlauf": {}
+}
