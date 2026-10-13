@@ -31,17 +31,18 @@ def call(method, url, key, body=None):
         return json.loads(r.read().decode())
 
 
-def prompt(spiel, nr):
-    stimmung = config.STIMMUNGEN[nr % len(config.STIMMUNGEN)]
+def prompt(spiel, nr, wunsch=None):
+    """`wunsch`: eigene Bildbeschreibung (englisch), z. B. vom Assistenten. Sonst eine der Stimmungen aus config."""
+    stimmung = wunsch or config.STIMMUNGEN[nr % len(config.STIMMUNGEN)]
     return f'{stimmung}. Mood for a {spiel["wettbewerb"]} match night. {config.STIL}'
 
 
-def erzeugen(spiel, ziel: pathlib.Path, nr=0, timeout=300):
+def erzeugen(spiel, ziel: pathlib.Path, nr=0, timeout=300, wunsch=None):
     """Erzeugt ein Bild nach `ziel`. Gibt den Pfad zurück oder None bei Fehler."""
     key = api_key()
     res = call('POST', f'{API}/api/v1/jobs/createTask', key, {
         'model': MODELL,
-        'input': {'prompt': prompt(spiel, nr), 'output_format': 'png', 'image_size': '9:16'}})
+        'input': {'prompt': prompt(spiel, nr, wunsch), 'output_format': 'png', 'image_size': '9:16'}})
     if res.get('code') != 200:
         raise RuntimeError(f'kie.ai Task fehlgeschlagen: {res}')
     task = res['data']['taskId']
@@ -61,10 +62,10 @@ def erzeugen(spiel, ziel: pathlib.Path, nr=0, timeout=300):
     raise RuntimeError('kie.ai: Zeitüberschreitung')
 
 
-def hintergrund(spiel, ziel: pathlib.Path, nr=0, ki=True):
+def hintergrund(spiel, ziel: pathlib.Path, nr=0, ki=True, wunsch=None):
     if ki:
         try:
-            return erzeugen(spiel, ziel, nr)
+            return erzeugen(spiel, ziel, nr, wunsch=wunsch)
         except Exception as e:
             print(f'Warnung: KI-Hintergrund fehlgeschlagen ({e}), nehme Bild aus dem Vorrat')
     bilder = sorted(VORRAT.glob('*.png')) if VORRAT.exists() else []
@@ -73,6 +74,11 @@ def hintergrund(spiel, ziel: pathlib.Path, nr=0, ki=True):
     ziel.parent.mkdir(parents=True, exist_ok=True)
     ziel.write_bytes(random.choice(bilder).read_bytes())
     return ziel
+
+
+def aus_vorrat():
+    bilder = sorted(VORRAT.glob('*.png')) if VORRAT.exists() else []
+    return random.choice(bilder) if bilder else None
 
 
 def hochladen(datei: pathlib.Path, ordner='cafecheval-stories'):

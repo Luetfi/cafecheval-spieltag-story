@@ -17,7 +17,9 @@ Spiel anfordern: dem Bot den Namen schreiben, z. B. „Gala Barça“ oder „Vf
 """
 import datetime as dt
 import html
+import json
 import pathlib
+import random
 import sys
 import time
 import traceback
@@ -32,6 +34,9 @@ STATUS = HIER / 'status'
 GEPOSTET = STATUS / 'gepostet.txt'
 MORGEN = STATUS / 'morgen.txt'
 WEITER = STATUS / 'weiter'
+STORIES = STATUS / 'stories.json'   # Bausteine der letzten Stories, damit sie sich ändern lassen
+MAX_STORIES = 40
+MAX_VERLAUF = 6                      # so viele letzte Dialoge pro Chat bekommt der Assistent als Kontext
 KURZ = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So']
 LAUFZEIT = dt.timedelta(hours=5, minutes=40)   # GitHub bricht Läufe nach 6 Stunden ab
 FEIERABEND = dt.time(23, 0)                     # danach hört der Bot bis zum nächsten Morgen auf
@@ -39,15 +44,15 @@ MAX_TREFFER = 8
 MAX_LISTE = 60          # Telegram erlaubt höchstens 100 Knöpfe pro Nachricht
 LISTE_TAGE = 10
 
-HILFE = ('<b>Story für ein bestimmtes Spiel:</b> Schreib mir die Mannschaften, z. B. <i>Gala Barça</i>, '
-         '<i>VfB</i> oder <i>England Spanien</i>. Ich suche in den nächsten 14 Tagen.\n\n'
-         '<b>Alle Spiele eines Wettbewerbs:</b> Schreib z. B. <i>Champions League</i>, <i>Bundesliga</i>, '
-         '<i>Premier League</i> oder <i>WM</i>, oder tippe /ligen für die Auswahl.\n\n'
-         '<b>Allgemeine Story:</b> /allgemein zeigt die Vorlagen (Wir haben geöffnet, Zeit für einen Drink, '
-         'Endlich Wochenende, Feiern, Heute Champions League …). Stichwörter gehen auch, z. B. <i>geöffnet</i>.\n'
-         'Eigener Text: <code>/text Titel | Untertitel</code>, z. B. <code>/text Poker-*Abend* | Heute ab *20 Uhr*</code> '
-         '(*Wort* wird hervorgehoben).\n\n'
-         '/heute schickt alle Spiele von heute noch einmal.')
+HILFE = ('Schreib mir einfach, was du brauchst, ganz normal, zum Beispiel:\n'
+         '• <i>Mach eine Story für Gala gegen Barça</i>\n'
+         '• <i>Welche Bundesliga-Spiele laufen am Samstag?</i>\n'
+         '• <i>Story, dass wir heute geöffnet haben, mit Cocktail-Foto</i>\n'
+         '• <i>Ändere oben den Text zu „Heute Abend bei uns“</i> (oder antworte direkt auf eine Story)\n'
+         '• <i>Anderer Hintergrund, mehr Flutlicht und Regen</i>\n\n'
+         'Gepostet wird nur, wenn du bei einer Story auf <b>Posten</b> tippst.\n\n'
+         'Feste Befehle: /ligen (Spiele eines Wettbewerbs), /allgemein (Vorlagen), /heute (alle Spiele von heute), '
+         '<code>/text Titel | Untertitel</code> (eigener Text).')
 
 
 TEXT_HILFE = ('Schick mir den Text so: <code>/text Titel | Untertitel</code>\n'
@@ -69,24 +74,62 @@ def speichere_gepostet(gepostet):
 
 
 class Bot:
+    """Der Telegram-Bot. Jede verschickte Story bekommt eine Nummer (S1, S2 …) und wird mit allen Bausteinen
+    in status/stories.json gemerkt, damit sie sich später ändern lässt, auch nach einem Neustart."""
+
     def __init__(self):
         self.gepostet = lade_gepostet()
-        self.kopien = {}          # Bild-URL -> alle Telegram-Nachrichten mit dieser Story
         self.hintergruende = {}   # (Spieltag, Wettbewerb) -> gemeinsamer KI-Hintergrund
+        gespeichert = json.loads(STORIES.read_text(encoding='utf-8')) if STORIES.exists() else {}
+        self.stories = gespeichert.get('stories', {})
+        self.nr = gespeichert.get('nr', 0)
+        self.verlauf = {int(k): v for k, v in gespeichert.get('verlauf', {}).items()}  # Chat -> letzte Dialoge
+        self._assistent = None
 
-    # Stories erzeugen und schicken
+    def speichern(self):
+        STATUS.mkdir(exist_ok=True)
+        neueste = dict(sorted(self.stories.items(), key=lambda kv: kv[1]['erstellt'])[-MAX_STORIES:])
+        self.stories = neueste
+        STORIES.write_text(json.dumps({'nr': self.nr, 'stories': neueste,
+                                       'verlauf': {str(k): v[-MAX_VERLAUF:] for k, v in self.verlauf.items()}},
+                                      ensure_ascii=False, indent=1), encoding='utf-8')
 
-    def story(self, s, chats=None):
-        import hintergrund  # erst hier laden: braucht Pillow und Chrome
+    # Stories erzeugen, merken und schicken
+
+    def senden(self, art, daten, vorlage, titel, details, chats=None, empfohlen=False, logos=None, datei=None,
+               tag=None, wettbewerb=''):
+        """Rendert (falls nötig), lädt hoch, schickt mit Knöpfen und merkt sich die Story. Gibt die Nummer zurück."""
+        import hintergrund
         import story
-        r = story.story_bauen(s, jetzt().date(), hintergruende=self.hintergruende)
-        url = hintergrund.hochladen(r['datei'], ordner=f"cafecheval-stories/{s['tag'].isoformat()}")
+        tag = tag or jetzt().date()
+        if datei is None:
+            ziel = story.AUSGABE / tag.isoformat() / 'aenderung' / f'{self.nr + 1}-{dt.datetime.now():%H%M%S}.jpg'
+            datei = story.rendern(daten, ziel, story.HIER / 'vorlage' / f'{vorlage}.html')
+        url = hintergrund.hochladen(datei, ordner=f'cafecheval-stories/{tag.isoformat()}')
+        self.nr += 1
+        sid = f'S{self.nr}'
+        nachrichten = telegram_bot.story_senden(url, titel, f'{details} · {sid}', empfohlen, chats)
+        self.stories[sid] = {
+            'id': sid, 'art': art, 'vorlage': vorlage, 'titel': titel, 'details': details, 'url': url,
+            'daten': daten, 'logos': logos or {}, 'tag': tag.isoformat(), 'wettbewerb': wettbewerb,
+            'status': 'offen', 'erstellt': jetzt().isoformat(),
+            'nachrichten': [{k: m.get(k) for k in ('message_id', 'chat', 'caption', 'caption_entities')}
+                            for m in nachrichten],
+        }
+        self.speichern()
+        print('an Telegram geschickt:', sid, titel)
+        return sid
+
+    def story(self, s, chats=None, wunsch=None, kicker_text=None):
+        import story
+        r = story.story_bauen(s, jetzt().date(), hintergruende=self.hintergruende, wunsch=wunsch,
+                              kicker_text=kicker_text)
         a = s['anstoss']
         details = ' · '.join(filter(None, [s['wettbewerb'], s['runde'], s['leg'],
                                            f'{KURZ[a.weekday()]} {a:%d.%m.} {a:%H:%M} Uhr']))
-        titel = f"{s['heim']['name']} – {s['gast']['name']}"
-        self.kopien[url] = telegram_bot.story_senden(url, titel, details, s.get('empfohlen', False), chats)
-        print('an Telegram geschickt:', r['datei'].name)
+        logos = {s[k]['id']: s[k].get('logo') for k in ('heim', 'gast')}
+        return self.senden('spiel', r['daten'], 'story', f"{s['heim']['name']} – {s['gast']['name']}", details,
+                           chats, s.get('empfohlen', False), logos, r['datei'], s['tag'], s['wettbewerb'])
 
     def tagesstories(self, tag, chats=None):
         spiele = spielplan.spiele(tag)
@@ -94,13 +137,71 @@ class Bot:
             self.story(s, chats)
         return len(spiele)
 
+    def allgemeine_story(self, schluessel, chat, text=None):
+        """Gibt die Story-Nummer zurück. ValueError, wenn es die Vorlage gerade nicht gibt (z. B. keine Spiele)."""
+        import allgemein
+        heute = jetzt().date()
+        datei, beschreibung, daten, logos = allgemein.bauen(schluessel, heute, text)
+        return self.senden('allgemein', daten, 'allgemein', beschreibung, 'Allgemeine Story', [chat], logos=logos,
+                           datei=datei, tag=heute)
+
+    def aendern(self, sid, chat, felder=None, foto=None, neuer_hintergrund=False, wunsch=None):
+        """Neue Version einer Story mit geänderten Bausteinen. Die alte Version wird als ersetzt markiert.
+        `felder`: z. B. {'kicker': …, 'titel': …}. Gibt die neue Nummer zurück."""
+        import allgemein
+        import hintergrund
+        import story
+        alt = self.stories.get(sid)
+        if not alt:
+            raise ValueError(f'Story {sid} kenne ich nicht (mehr)')
+        daten = json.loads(json.dumps(alt['daten']))
+        for feld, wert in (felder or {}).items():
+            if feld in ('heim', 'gast'):
+                daten[feld]['name'] = wert
+            elif feld == 'runde':
+                daten['runde'], daten['leg'] = wert, ''
+            else:
+                daten[feld] = wert
+        if foto:
+            daten['hintergrund'], daten['weich'] = allgemein.foto(foto)
+        if neuer_hintergrund or wunsch:
+            tag = dt.date.fromisoformat(alt['tag'])
+            ziel = story.AUSGABE / tag.isoformat() / 'hintergrund' / f'{sid}-neu-{dt.datetime.now():%H%M%S}.png'
+            bg = hintergrund.hintergrund({'wettbewerb': alt.get('wettbewerb') or 'football'}, ziel,
+                                         nr=random.randint(0, 99), wunsch=wunsch)
+            if bg:
+                daten['hintergrund'] = bg.as_uri()
+                if alt['vorlage'] == 'allgemein':
+                    daten['weich'] = True
+        daten = story.pfade_reparieren(daten, alt['logos'])
+        titel = alt['titel']
+        if alt['vorlage'] == 'story' and ('heim' in (felder or {}) or 'gast' in (felder or {})):
+            titel = f"{daten['heim']['name']} – {daten['gast']['name']}"
+        elif alt['vorlage'] == 'allgemein' and 'titel' in (felder or {}):
+            titel = str(daten['titel']).replace('*', '').replace('|', ' ')
+        neu = self.senden(alt['art'], daten, alt['vorlage'], titel, alt['details'], [chat], logos=alt['logos'],
+                          tag=dt.date.fromisoformat(alt['tag']), wettbewerb=alt.get('wettbewerb', ''))
+        if alt['status'] == 'offen':
+            alt['status'] = 'ersetzt'
+            for m in alt['nachrichten']:
+                telegram_bot.abschliessen(m, f'↪️ Ersetzt durch {neu}')
+        self.speichern()
+        return neu
+
     # Eingänge bearbeiten
 
-    def abschliessen(self, msg, url, vermerk):
+    def story_zu_url(self, url):
+        return next((s for s in self.stories.values() if s['url'] == url), None)
+
+    def abschliessen(self, msg, url, vermerk, status):
         telegram_bot.abschliessen(msg, vermerk)
-        for k in self.kopien.get(url, []):
-            if (k['chat']['id'], k['message_id']) != (msg['chat']['id'], msg['message_id']):
-                telegram_bot.abschliessen(k, vermerk)
+        eintrag = self.story_zu_url(url)
+        if eintrag:
+            eintrag['status'] = status
+            for m in eintrag['nachrichten']:
+                if (m['chat']['id'], m['message_id']) != (msg['chat']['id'], msg['message_id']):
+                    telegram_bot.abschliessen(m, vermerk)
+            self.speichern()
 
     def posten(self, e):
         msg, url = e['nachricht'], telegram_bot.bild_url(e['nachricht'])
@@ -108,7 +209,7 @@ class Bot:
             return
         if url in self.gepostet:
             telegram_bot.antworten(e['query_id'], 'Ist schon gepostet')
-            self.abschliessen(msg, url, '✅ Bereits gepostet')
+            self.abschliessen(msg, url, '✅ Bereits gepostet', 'gepostet')
             return
         telegram_bot.antworten(e['query_id'], 'Wird gepostet …')
         try:
@@ -119,13 +220,13 @@ class Bot:
             return
         self.gepostet.add(url)
         speichere_gepostet(self.gepostet)
-        self.abschliessen(msg, url, f"✅ Gepostet von {e['von']} um {jetzt():%H:%M} Uhr")
+        self.abschliessen(msg, url, f"✅ Gepostet von {e['von']} um {jetzt():%H:%M} Uhr", 'gepostet')
         print('gepostet:', url)
 
     def verwerfen(self, e):
         url = telegram_bot.bild_url(e['nachricht'])
         telegram_bot.antworten(e['query_id'], 'Verworfen')
-        self.abschliessen(e['nachricht'], url, f"❌ Verworfen von {e['von']}")
+        self.abschliessen(e['nachricht'], url, f"❌ Verworfen von {e['von']}", 'verworfen')
 
     def anfrage(self, e):
         text = e['text'].strip()
@@ -153,23 +254,36 @@ class Bot:
         if befehl == '/ligen':
             telegram_bot.ligen_senden(e['chat'], spielplan.ligen())
             return
+        if umgebung.wert('ANTHROPIC_API_KEY', pflicht=False):
+            self.assistent().antworten(e)  # freie Nachricht: Claude versteht und handelt
+            return
+        self.suche_ohne_ki(text, e['chat'])
+
+    def assistent(self):
+        if self._assistent is None:
+            import ki
+            self._assistent = ki.Assistent(self)
+        return self._assistent
+
+    def suche_ohne_ki(self, text, chat):
+        """Feste Muster, falls kein ANTHROPIC_API_KEY gesetzt ist."""
         slug = spielplan.liga_erkennen(text)
         if slug:
-            self.liste(slug, e['chat'])
+            self.liste(slug, chat)
             return
         import allgemein
         vorlage = allgemein.stichwort(text)
         if vorlage:
-            self.allgemein_erstellen(vorlage, e['chat'])
+            self.allgemein_erstellen(vorlage, chat)
             return
         treffer = spielplan.suchen(text, jetzt().date())
         if not treffer:
             telegram_bot.text(f'Ich habe in den nächsten 14 Tagen kein Spiel zu „{html.escape(text)}“ gefunden. '
-                              'Versuch es mit dem Vereinsnamen, z. B. <i>Bayern</i> oder <i>Galatasaray</i>.', chat=e['chat'])
+                              'Versuch es mit dem Vereinsnamen, z. B. <i>Bayern</i> oder <i>Galatasaray</i>.', chat=chat)
         elif len(treffer) == 1:
-            self.erstellen(treffer[0], e['chat'])
+            self.erstellen(treffer[0], chat)
         else:
-            telegram_bot.auswahl_senden(e['chat'], treffer[:MAX_TREFFER])
+            telegram_bot.auswahl_senden(chat, treffer[:MAX_TREFFER])
 
     def liste(self, slug, chat):
         name = next((t for t, s in spielplan.ligen() if s == slug), slug)
@@ -183,17 +297,11 @@ class Bot:
                                     'Tippe auf ein Spiel, dann erstelle ich die Story.')
 
     def allgemein_erstellen(self, schluessel, chat, text=None):
-        import allgemein
-        import hintergrund
         telegram_bot.text('⏳ Ich erstelle die Story …', chat=chat)
-        heute = jetzt().date()
         try:
-            datei, beschreibung = allgemein.bauen(schluessel, heute, text)
+            self.allgemeine_story(schluessel, chat, text)
         except ValueError as fehler:
             telegram_bot.text(f'Das geht gerade nicht: {html.escape(str(fehler))}.', chat=chat)
-            return
-        url = hintergrund.hochladen(datei, ordner=f'cafecheval-stories/allgemein/{heute.isoformat()}')
-        self.kopien[url] = telegram_bot.story_senden(url, beschreibung, 'Allgemeine Story', chats=[chat])
 
     def allgemein(self, e):
         schluessel = e['daten'].split('|', 1)[1]
@@ -243,6 +351,7 @@ class Bot:
             for e in liste:
                 self.bearbeiten(e)
         speichere_gepostet(self.gepostet)
+        self.speichern()
 
 
 def ende_des_laufs(start):

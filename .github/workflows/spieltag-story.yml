@@ -39,6 +39,7 @@ jobs:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_IDS: ${{ secrets.TELEGRAM_CHAT_IDS }}
       INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       PYTHONIOENCODING: utf-8
     steps:
       - uses: actions/checkout@v4
@@ -59,7 +60,7 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Pillow installieren
+      - name: Pakete installieren
         run: pip install -r requirements.txt
 
       - name: Ausführen
@@ -85,7 +86,7 @@ jobs:
         run: |
           git config user.name "spieltag-story"
           git config user.email "actions@users.noreply.github.com"
-          git add status/gepostet.txt status/morgen.txt 2>/dev/null || true
+          git add status/gepostet.txt status/morgen.txt status/stories.json 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "Status aktualisiert"
             git pull --rebase --quiet && git push

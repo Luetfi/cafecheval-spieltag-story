@@ -29,6 +29,14 @@ nur den wartenden Lauf, es passiert nichts doppelt. Die `schedule`-Einträge im 
 - **Montags** 4:30 UTC: `python lauf.py token` verlängert den Instagram-Token.
 
 Im Bot (nur für freigeschaltete Chat-IDs):
+
+**Freie Nachrichten** versteht Claude Haiku 5.5 (`ki.py`, Secret `ANTHROPIC_API_KEY`). Claude hat Werkzeuge zum
+Suchen von Spielen, Erstellen von Spiel- und allgemeinen Stories und Ändern bestehender Stories (Texte, Foto,
+Titelgröße, neuer KI-Hintergrund nach Wunsch), aber keins zum Posten. Jede Story hat eine Nummer (S12) und wird
+mit ihren Bausteinen in `status/stories.json` gemerkt, damit „ändere oben den Text“ auch nach einem Neustart
+funktioniert. Ohne Key oder wenn die API nicht erreichbar ist, greifen die festen Muster unten.
+
+Feste Muster und Befehle:
 - Mannschaften schreiben, z. B. „Gala Barça“ oder „VfB“: Story für das passende Spiel der nächsten 14 Tage
   (bei mehreren Treffern Auswahl per Knopf). Bei späteren Tagen steht „Samstag live bei uns“ auf der Story.
 - Wettbewerb schreiben, z. B. „Champions League“, oder `/ligen`: alle Spiele der nächsten 10 Tage als Knöpfe.
@@ -62,6 +70,8 @@ python spielplan.py 2026-10-17  # nur anzeigen, welche Spiele eine Story bekäme
 | `story.py` | Wappen cachen, Vorlage füllen, mit Chrome headless rendern, Text „Heute/Morgen/Samstag live“ |
 | `lauf.py` | Einstieg: `morgen`, `bot`, `freigaben`, `token` |
 | `allgemein.py`, `vorlage/allgemein.html`, `assets/fotos/` | Allgemeine Stories |
+| `ki.py` | Assistent für freie Nachrichten (Claude Haiku 5.5 mit Werkzeugen) |
+| `status/stories.json` | Letzte Stories mit Bausteinen und letzte Dialoge (für Änderungen) |
 | `telegram_bot.py` | Freigabe per Telegram (Knöpfe, Bild-Link steckt in der Bildunterschrift) |
 | `instagram.py` | Story über graph.instagram.com posten, Token verlängern |
 | `status/gepostet.txt` | Bereits gepostete Bilder, damit nichts doppelt rausgeht |

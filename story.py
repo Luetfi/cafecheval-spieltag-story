@@ -99,21 +99,24 @@ def kicker(s, heute: dt.date):
     return f'{wann} live bei uns'
 
 
-def story_bauen(s, heute: dt.date, ki=True, hintergruende=None, nr=0):
+def story_bauen(s, heute: dt.date, ki=True, hintergruende=None, nr=0, wunsch=None, kicker_text=None):
     """Rendert die Story für ein Spiel nach ausgabe/<spieltag>/. `hintergruende` (dict) teilt einen
-    KI-Hintergrund zwischen allen Spielen eines Wettbewerbs am selben Tag, das spart Kosten."""
+    KI-Hintergrund zwischen allen Spielen eines Wettbewerbs am selben Tag, das spart Kosten.
+    `wunsch`: eigene Beschreibung für einen neuen KI-Hintergrund (wird dann nicht geteilt).
+    Gibt das Spiel plus `datei` und `daten` (alle Bausteine, für spätere Änderungen) zurück."""
     ordner = AUSGABE / s['tag'].isoformat()
     name = f"{s['anstoss']:%H%M}-{slug(s['heim']['name'])}-{slug(s['gast']['name'])}"
     schluessel = (s['tag'], s['wettbewerb'])
-    if hintergruende is not None and schluessel in hintergruende:
+    if hintergruende is not None and schluessel in hintergruende and not wunsch:
         bg = hintergruende[schluessel]
     else:
-        bg = hintergrund.hintergrund(s, ordner / 'hintergrund' / f'{name}.png', nr=s['tag'].toordinal() + nr, ki=ki)
-        if hintergruende is not None:
+        bg = hintergrund.hintergrund(s, ordner / 'hintergrund' / f'{name}.png', nr=s['tag'].toordinal() + nr, ki=ki,
+                                     wunsch=wunsch)
+        if hintergruende is not None and not wunsch:
             hintergruende[schluessel] = bg
     a = s['anstoss']
     daten = {
-        'kicker': kicker(s, heute),
+        'kicker': kicker_text or kicker(s, heute),
         'wettbewerb': s['wettbewerb'],
         'runde': s['runde'],
         'leg': s['leg'],
@@ -126,7 +129,28 @@ def story_bauen(s, heute: dt.date, ki=True, hintergruende=None, nr=0):
         daten[k] = {'name': s[k]['name'], 'wappen': datei.as_uri(), 'flagge': flagge}
     ziel = rendern(daten, ordner / f'{name}.jpg')
     print('Story:', ziel)
-    return {**s, 'datei': ziel}
+    return {**s, 'datei': ziel, 'daten': daten}
+
+
+def pfade_reparieren(daten, logos):
+    """Nach einem Neustart fehlen Cache-Dateien (Wappen, KI-Hintergrund). Lädt Wappen neu bzw. nimmt
+    einen Hintergrund aus dem Vorrat. `logos`: {Team-ID: Logo-URL}."""
+    def pruefen(wert, schluessel=''):
+        if isinstance(wert, dict):
+            return {k: pruefen(v, k) for k, v in wert.items()}
+        if isinstance(wert, list):
+            return [pruefen(v) for v in wert]
+        if isinstance(wert, str) and wert.startswith('file:'):
+            pfad = pathlib.Path(urllib.request.url2pathname(urllib.parse.urlparse(wert).path))
+            if pfad.exists():
+                return wert
+            if pfad.parent == WAPPEN and pfad.stem in logos:
+                return wappen({'id': pfad.stem, 'logo': logos[pfad.stem]})[0].as_uri()
+            if schluessel == 'hintergrund':
+                ersatz = hintergrund.aus_vorrat()
+                return ersatz.as_uri() if ersatz else ''
+        return wert
+    return pruefen(daten)
 
 
 def stories(tag: dt.date, ki=True):

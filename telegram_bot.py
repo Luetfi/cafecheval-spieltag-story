@@ -98,7 +98,8 @@ def entscheidungen(warten=0):
             chat = m['chat']['id']
             if chat in erlaubt and m.get('text'):
                 ergebnis.append({'aktion': 'text', 'text': m['text'], 'chat': chat,
-                                 'von': m.get('from', {}).get('first_name', '')})
+                                 'von': m.get('from', {}).get('first_name', ''),
+                                 'antwort_auf': (m.get('reply_to_message') or {}).get('message_id')})
                 continue
             # Hilfe beim Einrichten: Wer dem Bot schreibt, bekommt seine Chat-ID zurück.
             try:
@@ -118,6 +119,14 @@ def antworten(query_id, hinweis):
         _api('answerCallbackQuery', callback_query_id=query_id, text=hinweis)
     except RuntimeError:
         pass  # ältere Knopfdrücke lassen sich nicht mehr beantworten, das ist egal
+
+
+def tippt(chat):
+    """Zeigt in Telegram „schreibt …“ an, solange der Bot arbeitet (hält ca. 5 Sekunden)."""
+    try:
+        _api('sendChatAction', chat_id=chat, action='typing')
+    except RuntimeError:
+        pass
 
 
 def knoepfe_entfernen(nachricht):

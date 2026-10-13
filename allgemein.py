@@ -111,38 +111,65 @@ def knoepfe(tag, spiele_heute):
     return liste
 
 
-def bauen(schluessel, tag: dt.date, text=None):
-    """Rendert eine allgemeine Story. Gibt (Datei, Kurzbeschreibung) zurück.
+# Foto-Arten, die man per Wunsch wählen kann („nimm ein Cocktail-Foto“)
+FOTO_ARTEN = {'bar': BAR, 'cocktails': COCKTAILS, 'fassade': ['fassade-asperger-strasse'], 'stadion': FUSSBALL}
+
+
+def foto(art):
+    """Zufälliges Foto einer Art. Gibt (URI, weich) zurück; KI-Hintergründe werden leicht weichgezeichnet."""
+    namen = FOTO_ARTEN[art]
+    return _foto(namen), namen == 'ki-vorrat'
+
+
+def daten(schluessel, tag: dt.date, text=None):
+    """Bausteine einer allgemeinen Story. Gibt (daten, Kurzbeschreibung, {Team-ID: Logo-URL}) zurück.
     `schluessel`: Vorlage aus VORLAGEN, 'w:<Wettbewerb>' oder 'eigen' (dann `text` = 'Titel | Untertitel')."""
+    logos = {}
+
+    def merken(spiele):
+        for s in spiele:
+            for k in ('heim', 'gast'):
+                logos[s[k]['id']] = s[k].get('logo')
+
     if schluessel == 'eigen':
         titel, _, unter = (text or '').partition('|')
         if not titel.strip():
             raise ValueError('Kein Text angegeben')
-        daten = {'kicker': '', 'titel': titel.strip(), 'unter': unter.strip(), 'hintergrund': _foto(BAR)}
+        d = {'kicker': '', 'titel': titel.strip(), 'unter': unter.strip(), 'hintergrund': _foto(BAR)}
         beschreibung = titel.replace('*', '').strip()
     elif schluessel.startswith('w:'):
         slug = schluessel[2:]
-        spiele = [s for s in spielplan.spiele(tag) if s['slug'] == slug] or \
-                 [s for s in spielplan.spiele_im_wettbewerb(slug, tag, 1) if s['tag'] == tag]
+        spiele = [s for s in spielplan.spiele(tag) if s['slug'] == slug] or                  [s for s in spielplan.spiele_im_wettbewerb(slug, tag, 1) if s['tag'] == tag]
         if not spiele:
             raise ValueError('Heute keine Spiele in diesem Wettbewerb')
+        merken(spiele)
         name = spiele[0]['wettbewerb']
         liste, mehr = _spiele_daten(spiele)
-        daten = {'kicker': 'Heute live bei uns', 'titel': name, 'unter': '', 'spiele': liste, 'mehr': mehr,
-                 'hintergrund': _foto(FUSSBALL), 'weich': True}
+        d = {'kicker': 'Heute live bei uns', 'titel': name, 'unter': '', 'spiele': liste, 'mehr': mehr,
+             'hintergrund': _foto(FUSSBALL), 'weich': True}
         beschreibung = f'Heute {name}'
     else:
         v = VORLAGEN[schluessel]
-        daten = {**v['inhalt'](tag), 'hintergrund': _foto(v['fotos']), 'weich': v['fotos'] == 'ki-vorrat'}
+        d = {**v['inhalt'](tag), 'hintergrund': _foto(v['fotos']), 'weich': v['fotos'] == 'ki-vorrat'}
         if v.get('spiele'):
             spiele = spielplan.spiele(tag)
             if not spiele:
                 raise ValueError('Heute keine Spiele')
-            daten['spiele'], daten['mehr'] = _spiele_daten(spiele)
+            merken(spiele)
+            d['spiele'], d['mehr'] = _spiele_daten(spiele)
         beschreibung = v['knopf'].split(' ', 1)[1]
-    name = f"{schluessel.replace(':', '-').replace('.', '-')}-{dt.datetime.now():%H%M%S}"
-    ziel = story.AUSGABE / tag.isoformat() / 'allgemein' / f'{story.slug(name)}.jpg'
-    return story.rendern(daten, ziel, VORLAGE), beschreibung
+    return d, beschreibung, logos
+
+
+def rendern(d, tag: dt.date, name):
+    ziel = story.AUSGABE / tag.isoformat() / 'allgemein' / f"{story.slug(name)}-{dt.datetime.now():%H%M%S}.jpg"
+    return story.rendern(d, ziel, VORLAGE)
+
+
+def bauen(schluessel, tag: dt.date, text=None):
+    """Rendert eine allgemeine Story. Gibt (Datei, Kurzbeschreibung, daten, logos) zurück."""
+    d, beschreibung, logos = daten(schluessel, tag, text)
+    return rendern(d, tag, schluessel.replace(':', '-').replace('.', '-')), beschreibung, d, logos
 
 
 if __name__ == '__main__':

@@ -72,9 +72,10 @@
   if (d.titel.length > 40) $('titel').style.fontSize = '96px';
   $('unter').innerHTML = esc(d.unter || '').replace(/\*(.+?)\*/g, '<b>$1</b>');
   if (!d.unter) $('unter').remove();
+  if (d.titel_px) $('titel').style.fontSize = d.titel_px + 'px';  // vom Assistenten gewünschte Größe
   if (d.spiele && d.spiele.length) {
     document.body.classList.add('liste-an');
-    if (d.spiele.length > 3) $('titel').style.fontSize = '110px';
+    if (d.spiele.length > 3 && !d.titel_px) $('titel').style.fontSize = '110px';
     $('spiele').innerHTML = d.spiele.map((s) => `
       <div class="spiel"><div class="zeit">${esc(s.uhrzeit)}</div>
         <div class="wappen"><img src="${s.heim_wappen}"><img src="${s.gast_wappen}"></div>
