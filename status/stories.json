@@ -1,5 +1,5 @@
 {
- "nr": 29,
+ "nr": 30,
  "stories": {
   "S1": {
    "id": "S1",
@@ -1791,6 +1791,65 @@
        "length": 20,
        "type": "text_link",
        "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-15/2100-stade-rennais-ofi-crete.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S30": {
+   "id": "S30",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Eintracht Frankfurt – 1. FC Köln",
+   "details": "Bundesliga · Fr 16.10. 20:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-16/2030-eintracht-frankfurt-1-fc-koeln.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "20:30",
+    "datum": "Freitag · 16. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-16/hintergrund/2030-eintracht-frankfurt-1-fc-koeln.png",
+    "heim": {
+     "name": "Eintracht Frankfurt",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/125.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "1. FC Köln",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/122.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "125": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png",
+    "122": "https://a.espncdn.com/i/teamlogos/soccer/500/122.png"
+   },
+   "tag": "2026-10-16",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-10-16T07:01:33.462365+02:00",
+   "nachrichten": [
+    {
+     "message_id": 109,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Eintracht Frankfurt – 1. FC Köln\nBundesliga · Fr 16.10. 20:30 Uhr · S30\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 32,
+       "type": "bold"
+      },
+      {
+       "offset": 73,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-16/2030-eintracht-frankfurt-1-fc-koeln.jpg"
       }
      ]
     }
