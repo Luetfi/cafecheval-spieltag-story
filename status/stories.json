@@ -1,5 +1,5 @@
 {
- "nr": 36,
+ "nr": 38,
  "stories": {
   "S1": {
    "id": "S1",
@@ -2204,6 +2204,124 @@
        "length": 20,
        "type": "text_link",
        "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-17/1530-sv-werder-bremen-sc-paderborn-07.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S37": {
+   "id": "S37",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Bayer Leverkusen – SC Freiburg",
+   "details": "Bundesliga · So 18.10. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-18/1530-bayer-leverkusen-sc-freiburg.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Sonntag · 18. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-18/hintergrund/1530-bayer-leverkusen-sc-freiburg.png",
+    "heim": {
+     "name": "Bayer Leverkusen",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/131.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "SC Freiburg",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/126.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "131": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png",
+    "126": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png"
+   },
+   "tag": "2026-10-18",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-10-18T07:06:05.321900+02:00",
+   "nachrichten": [
+    {
+     "message_id": 116,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Bayer Leverkusen – SC Freiburg\nBundesliga · So 18.10. 15:30 Uhr · S37\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 30,
+       "type": "bold"
+      },
+      {
+       "offset": 71,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-18/1530-bayer-leverkusen-sc-freiburg.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S38": {
+   "id": "S38",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Borussia M'gladbach – TSG Hoffenheim",
+   "details": "Bundesliga · So 18.10. 17:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-18/1730-borussia-m-gladbach-tsg-hoffenheim.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "17:30",
+    "datum": "Sonntag · 18. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-18/hintergrund/1530-bayer-leverkusen-sc-freiburg.png",
+    "heim": {
+     "name": "Borussia M'gladbach",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/268.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "TSG Hoffenheim",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/7911.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "268": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png",
+    "7911": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png"
+   },
+   "tag": "2026-10-18",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-10-18T07:06:09.890349+02:00",
+   "nachrichten": [
+    {
+     "message_id": 117,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Borussia M'gladbach – TSG Hoffenheim\nBundesliga · So 18.10. 17:30 Uhr · S38\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 36,
+       "type": "bold"
+      },
+      {
+       "offset": 77,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-18/1730-borussia-m-gladbach-tsg-hoffenheim.jpg"
       }
      ]
     }
