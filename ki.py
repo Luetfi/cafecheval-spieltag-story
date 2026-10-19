@@ -9,6 +9,7 @@ die letzten Dialoge), steht als Kontext in der Nachricht. So bleibt jede Anfrage
 import datetime as dt
 import html
 import json
+import re
 
 import anthropic
 
@@ -41,6 +42,9 @@ zeig sie ebenfalls mit auswahl_anzeigen, dann reicht als Antwort ein kurzer Satz
 im Titel bricht | die Zeile um.
 - Keine Inhalte über Dinge, die es im Café nicht gibt (Essen, Kaffee, Angebote, Preise), außer der \
 Mensch nennt sie ausdrücklich.
+- Einige allgemeine Stories postet der Bot automatisch nach Zeitplan. Sagt der Mensch, dass das Café \
+geschlossen ist (Ruhetag, Urlaub, Feiertag), pausiere den Zeitplan für die passenden Tage mit dem Werkzeug \
+zeitplan und sag, bis wann.
 - Wünsche für einen neuen KI-Hintergrund formulierst du als kurze englische Bildbeschreibung ohne Text, \
 Logos oder erkennbare Personen.
 - Antworte danach in ein bis zwei kurzen Sätzen auf Deutsch, ohne Formatierung. Nenne die Nummer der \
@@ -115,6 +119,16 @@ TOOLS = [
             'kicker': {'type': 'string', 'description': 'Kurzer Text über dem Titel, optional'},
             'foto': {'type': 'string', 'enum': FOTO_ARTEN, 'description': 'Optional: Art des Hintergrundfotos'},
         }, 'required': ['vorlage']},
+    },
+    {
+        'name': 'zeitplan',
+        'description': 'Automatische allgemeine Stories, die der Bot ohne Freigabe nach festem Plan postet '
+                       '(z. B. täglich 14 Uhr „Wir haben geöffnet“). anzeigen = Plan und Pause-Status, pausieren = '
+                       'aussetzen für tage Tage ab heute (1 = nur heute), fortsetzen = Pause aufheben.',
+        'input_schema': {'type': 'object', 'properties': {
+            'aktion': {'type': 'string', 'enum': ['anzeigen', 'pausieren', 'fortsetzen']},
+            'tage': {'type': 'integer', 'description': 'Nur bei pausieren: Anzahl Tage ab heute'},
+        }, 'required': ['aktion']},
     },
     {
         'name': 'story_aendern',
@@ -220,6 +234,12 @@ class Assistent:
             return f'Story {sid} erstellt und geschickt.'
         if name == 'allgemeine_story_erstellen':
             return self.allgemein(eingabe, chat, heute)
+        if name == 'zeitplan':
+            if eingabe['aktion'] == 'pausieren':
+                return self.bot.pausieren(max(int(eingabe.get('tage') or 1), 1))
+            if eingabe['aktion'] == 'fortsetzen':
+                return self.bot.pausieren(0)
+            return re.sub(r'<[^>]+>', '', self.bot.zeitplan_text())
         if name == 'story_aendern':
             felder = {k: eingabe[k] for k in ('kicker', 'titel', 'wettbewerb', 'runde', 'heim', 'gast', 'uhrzeit', 'datum')
                       if k in eingabe}

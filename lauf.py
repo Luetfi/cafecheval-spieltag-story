@@ -18,12 +18,14 @@ Spiel anfordern: dem Bot den Namen schreiben, z. B. „Gala Barça“ oder „Vf
 import datetime as dt
 import html
 import json
+import os
 import pathlib
 import random
 import sys
 import time
 import traceback
 
+import config
 import instagram
 import spielplan
 import telegram_bot
@@ -34,6 +36,8 @@ STATUS = HIER / 'status'
 GEPOSTET = STATUS / 'gepostet.txt'
 MORGEN = STATUS / 'morgen.txt'
 WEITER = STATUS / 'weiter'
+ZEITPLAN_DATEI = STATUS / 'zeitplan.json'   # erledigte automatische Stories und Pause
+TOKEN_DATEI = STATUS / 'token.txt'          # Datum der letzten Instagram-Token-Verlängerung
 STORIES = STATUS / 'stories.json'   # Bausteine der letzten Stories, damit sie sich ändern lassen
 MAX_STORIES = 40
 MAX_VERLAUF = 6                      # so viele letzte Dialoge pro Chat bekommt der Assistent als Kontext
@@ -52,7 +56,10 @@ HILFE = ('Schreib mir einfach, was du brauchst, ganz normal, zum Beispiel:\n'
          '• <i>Anderer Hintergrund, mehr Flutlicht und Regen</i>\n\n'
          'Gepostet wird nur, wenn du bei einer Story auf <b>Posten</b> tippst.\n\n'
          'Feste Befehle: /ligen (Spiele eines Wettbewerbs), /allgemein (Vorlagen), /heute (alle Spiele von heute), '
-         '<code>/text Titel | Untertitel</code> (eigener Text).')
+         '<code>/text Titel | Untertitel</code> (eigener Text).\n\n'
+         'Automatische Stories (ohne Freigabe): /zeitplan zeigt den Plan, /pause setzt ihn für heute aus '
+         '(<code>/pause 7</code> für eine Woche), /weiter startet ihn wieder. Oder schreib einfach '
+         '<i>Wir haben morgen zu</i>.')
 
 
 TEXT_HILFE = ('Schick mir den Text so: <code>/text Titel | Untertitel</code>\n'
@@ -254,6 +261,17 @@ class Bot:
         if befehl == '/ligen':
             telegram_bot.ligen_senden(e['chat'], spielplan.ligen())
             return
+        if befehl == '/zeitplan':
+            telegram_bot.text(self.zeitplan_text(), chat=e['chat'])
+            return
+        if befehl == '/pause':
+            teile = text.split()
+            tage = int(teile[1]) if len(teile) > 1 and teile[1].isdigit() else 1
+            telegram_bot.text(self.pausieren(max(tage, 1)), chat=e['chat'])
+            return
+        if befehl == '/weiter':
+            telegram_bot.text(self.pausieren(0), chat=e['chat'])
+            return
         if umgebung.wert('ANTHROPIC_API_KEY', pflicht=False):
             self.assistent().antworten(e)  # freie Nachricht: Claude versteht und handelt
             return
@@ -338,11 +356,107 @@ class Bot:
             traceback.print_exc()
             telegram_bot.text(f'⚠️ Das hat nicht geklappt: {html.escape(str(fehler))}', chat=e['chat'])
 
+    # Zeitplan: allgemeine Stories automatisch posten (config.ZEITPLAN)
+
+    def zeitplan_status(self):
+        if ZEITPLAN_DATEI.exists():
+            return json.loads(ZEITPLAN_DATEI.read_text(encoding='utf-8'))
+        return {'erledigt': [], 'pause_bis': None}
+
+    def zeitplan_speichern(self, st):
+        STATUS.mkdir(exist_ok=True)
+        st['erledigt'] = st['erledigt'][-60:]
+        ZEITPLAN_DATEI.write_text(json.dumps(st, ensure_ascii=False, indent=1), encoding='utf-8')
+
+    def pausiert(self, st):
+        return bool(st.get('pause_bis')) and st['pause_bis'] >= jetzt().date().isoformat()
+
+    def termine_heute(self):
+        heute = jetzt().date()
+        for t in config.ZEITPLAN:
+            if heute.weekday() in t['tage']:
+                zeit = dt.datetime.combine(heute, dt.time.fromisoformat(t['zeit']), spielplan.BERLIN)
+                yield t, zeit, f"{heute.isoformat()}|{t['vorlage']}|{t['zeit']}"
+
+    def naechster_termin(self):
+        st = self.zeitplan_status()
+        if self.pausiert(st):
+            return None
+        kommend = [z for t, z, k in self.termine_heute()
+                   if k not in st['erledigt'] and z + dt.timedelta(minutes=config.ZEITPLAN_NACHHOLEN) > jetzt()]
+        return min(kommend) if kommend else None
+
+    def zeitplan_pruefen(self):
+        st = self.zeitplan_status()
+        for t, zeit, schluessel in self.termine_heute():
+            if schluessel in st['erledigt'] or not zeit <= jetzt() <= zeit + dt.timedelta(minutes=config.ZEITPLAN_NACHHOLEN):
+                continue
+            st['erledigt'].append(schluessel)
+            self.zeitplan_speichern(st)  # vor dem Posten merken: lieber einmal auslassen als doppelt posten
+            if self.pausiert(st):
+                print('pausiert, ausgelassen:', schluessel)
+                continue
+            self.automatisch_posten(t)
+
+    def automatisch_posten(self, t):
+        import allgemein
+        import hintergrund
+        heute = jetzt().date()
+        name = allgemein.VORLAGEN[t['vorlage']]['knopf'].split(' ', 1)[1]
+        try:
+            d, beschreibung, _ = allgemein.daten(t['vorlage'], heute)
+            datei = allgemein.rendern(d, heute, f"auto-{t['vorlage']}")
+            url = hintergrund.hochladen(datei, ordner=f'cafecheval-stories/{heute.isoformat()}')
+            instagram.story_posten(url)
+        except Exception as fehler:
+            traceback.print_exc()
+            telegram_bot.text(f"⚠️ Automatische Story „{html.escape(name)}“ ({t['zeit']} Uhr) fehlgeschlagen: "
+                              f'{html.escape(str(fehler))}')
+            return
+        self.gepostet.add(url)
+        speichere_gepostet(self.gepostet)
+        telegram_bot.info_senden(url, f"🤖 Automatisch gepostet ({t['zeit']} Uhr): <b>{html.escape(name)}</b>\n"
+                                      '/pause setzt die automatischen Stories aus, /zeitplan zeigt den Plan.')
+        print('automatisch gepostet:', t['vorlage'], url)
+
+    def pausieren(self, tage):
+        """tage = 0 hebt die Pause auf, 1 = nur heute, 7 = eine Woche."""
+        st = self.zeitplan_status()
+        if tage <= 0:
+            st['pause_bis'] = None
+            self.zeitplan_speichern(st)
+            return 'Die automatischen Stories laufen wieder.'
+        bis = jetzt().date() + dt.timedelta(days=tage - 1)
+        st['pause_bis'] = bis.isoformat()
+        self.zeitplan_speichern(st)
+        wann = 'heute' if tage == 1 else f'einschließlich {KURZ[bis.weekday()]} {bis:%d.%m.}'
+        return f'Automatische Stories sind {wann} pausiert. /weiter startet sie früher wieder.'
+
+    def zeitplan_text(self):
+        import allgemein
+        zeilen = ['<b>Automatische Stories</b> (werden ohne Freigabe gepostet):']
+        for t in config.ZEITPLAN:
+            tage = 'täglich' if len(t['tage']) == 7 else ', '.join(KURZ[i] for i in t['tage'])
+            name = allgemein.VORLAGEN[t['vorlage']]['knopf']
+            zeilen.append(f"• {tage}, {t['zeit']} Uhr: {html.escape(name)}")
+        st = self.zeitplan_status()
+        if self.pausiert(st):
+            bis = dt.date.fromisoformat(st['pause_bis'])
+            zeilen.append(f'\n⏸ Pausiert bis einschließlich {KURZ[bis.weekday()]} {bis:%d.%m.} (/weiter)')
+        else:
+            zeilen.append('\n/pause setzt sie für heute aus, /pause 7 für eine Woche.')
+        return '\n'.join(zeilen)
+
     def laufen(self, bis):
         print(f'Bot läuft bis {bis:%H:%M} Uhr')
         while jetzt() < bis:
+            self.zeitplan_pruefen()
+            warten = (bis - jetzt()).total_seconds()
+            termin = self.naechster_termin()
+            if termin:
+                warten = max(1, min(warten, (termin - jetzt()).total_seconds() + 1))
             try:
-                liste, bestaetigen = telegram_bot.entscheidungen(warten=(bis - jetzt()).total_seconds())
+                liste, bestaetigen = telegram_bot.entscheidungen(warten=warten)
             except Exception as fehler:  # z. B. Netzwerk weg: kurz warten, weitermachen
                 print('Warnung:', fehler)
                 time.sleep(30)
@@ -371,14 +485,18 @@ def bot(start):
 
 
 def morgen(tag, start, als_bot=True):
-    if MORGEN.exists() and MORGEN.read_text(encoding='utf-8').strip() == tag.isoformat():
-        print(f'Stories für {tag} wurden schon geschickt')
-        return  # ein früherer Weckruf hat das schon erledigt und läuft als Bot
     b = Bot()
-    anzahl = b.tagesstories(tag)
-    STATUS.mkdir(exist_ok=True)
-    MORGEN.write_text(tag.isoformat(), encoding='utf-8')
-    print(f'{anzahl} Stories für {tag} geschickt')
+    if MORGEN.exists() and MORGEN.read_text(encoding='utf-8').strip() == tag.isoformat():
+        # Ein früherer Weckruf hat das schon erledigt. Trotzdem als Bot weiterlaufen, damit die Kette
+        # nicht abreißt, falls dieser Lauf den wartenden Bot-Lauf ersetzt hat.
+        print(f'Stories für {tag} wurden schon geschickt')
+    else:
+        anzahl = b.tagesstories(tag)
+        STATUS.mkdir(exist_ok=True)
+        MORGEN.write_text(tag.isoformat(), encoding='utf-8')
+        print(f'{anzahl} Stories für {tag} geschickt')
+        if tag.weekday() == 0:
+            token_pruefen()
     if als_bot:
         ende = ende_des_laufs(start)
         b.laufen(ende)
@@ -393,6 +511,22 @@ def freigaben():
     for e in liste:
         b.bearbeiten(e)
     speichere_gepostet(b.gepostet)
+
+
+def token_pruefen():
+    """Montags: Instagram-Token verlängern, wenn der Workflow ihn danach speichern kann (Secret GH_PAT).
+    Sonst nur warnen, wenn der zuletzt gespeicherte Token bald abläuft (gilt 60 Tage)."""
+    try:
+        if os.environ.get('GH_PAT_GESETZT'):
+            token()
+            TOKEN_DATEI.write_text(jetzt().date().isoformat(), encoding='utf-8')
+            return
+        seit = dt.date.fromisoformat(TOKEN_DATEI.read_text(encoding='utf-8').strip()) if TOKEN_DATEI.exists() else None
+        if seit and (jetzt().date() - seit).days >= 50:
+            telegram_bot.text(f'⚠️ Der Instagram-Token ist seit {seit:%d.%m.} nicht verlängert worden und läuft '
+                              f'um den {seit + dt.timedelta(days=60):%d.%m.} ab. Bitte Bescheid geben, damit er erneuert wird.')
+    except Exception as fehler:
+        print('Warnung Token:', fehler)
 
 
 def token():

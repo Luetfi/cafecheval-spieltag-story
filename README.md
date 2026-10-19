@@ -20,13 +20,24 @@ Jeweils `POST https://api.github.com/repos/Luetfi/cafecheval-spieltag-story/acti
 mit den Headern `Authorization: Bearer <Fine-grained Token, nur dieses Repo, Actions: Read and write>`,
 `Accept: application/vnd.github+json`, `X-GitHub-Api-Version: 2022-11-28`, `Content-Type: application/json`.
 Läuft der Token ab, kommt der neue in alle drei Cronjobs. Läuft der Bot schon, ersetzt ein weiterer Start
-nur den wartenden Lauf, es passiert nichts doppelt. Die `schedule`-Einträge im Workflow bleiben als Reserve.
+nur den wartenden Lauf, es passiert nichts doppelt. GitHubs eigener `schedule` ist aus dem Workflow entfernt.
+
+**Automatische allgemeine Stories** (`ZEITPLAN` in `config.py`) postet der Bot ohne Freigabe und schickt danach
+eine Info in Telegram: täglich 14:00 „Wir haben geöffnet“, Di–Do 18:30 und Sa 19:00 „Zeit für einen Drink“,
+Fr 17:00 „Endlich Wochenende“, So 16:00 „Feiern bei uns“. Die Texte wechseln täglich zwischen Varianten
+(`allgemein.py`), die Fotos zufällig. `/pause` (heute), `/pause 7`, `/weiter`, `/zeitplan`, oder per Nachricht
+(„wir haben morgen zu“). Verpasste Termine werden bis 60 Minuten später nachgeholt, nie doppelt
+(`status/zeitplan.json`).
+
+**Instagram-Token:** gilt 60 Tage, beim Verlängern gibt Instagram einen neuen Token aus. Montags verlängert der
+Morgen-Lauf ihn und speichert ihn als Secret, wenn das Secret `GH_PAT` existiert (Fine-grained Token, nur dieses
+Repo, Rechte „Secrets: Read and write“). Ohne `GH_PAT` warnt der Bot in Telegram, sobald der zuletzt gespeicherte
+Token (`status/token.txt`) 50 Tage alt ist.
 
 - **Morgens** (cron-job.org 7:00, Reserve: GitHub-Zeitplan): `python lauf.py morgen` schickt alle Spiele
   des Tages aus `WETTBEWERBE` als Story, empfohlene zuerst (⭐). Danach läuft derselbe Lauf als Bot weiter.
 - **Bot** bis 23 Uhr: bearbeitet „Posten“/„Verwerfen“ sofort und beantwortet Anfragen. Nach 5:40 Stunden
   startet sich der Lauf selbst neu (GitHub erlaubt höchstens 6 Stunden pro Lauf).
-- **Montags** 4:30 UTC: `python lauf.py token` verlängert den Instagram-Token.
 
 Im Bot (nur für freigeschaltete Chat-IDs):
 

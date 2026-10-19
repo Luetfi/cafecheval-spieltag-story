@@ -279,3 +279,16 @@ STIL = (
     'Keep the centre of the image calm and uncluttered, no main subject in the middle. '
     'Absolutely no text, no letters, no numbers, no logos, no club crests, no jerseys with names, no watermark.'
 )
+
+# Allgemeine Stories, die der Bot ohne Freigabe automatisch postet (deutsche Zeit, Tage: Mo = 0 … So = 6).
+# Nach dem Posten kommt eine Info in Telegram. /pause setzt die automatischen Stories aus (z. B. wenn
+# das Café zu hat), /weiter startet sie wieder, /zeitplan zeigt den Plan.
+ZEITPLAN = [
+    {'vorlage': 'geoeffnet', 'tage': [0, 1, 2, 3, 4, 5, 6], 'zeit': '14:00'},  # zur Öffnung
+    {'vorlage': 'cocktails', 'tage': [1, 2, 3], 'zeit': '18:30'},              # Di–Do zum Feierabend
+    {'vorlage': 'wochenende', 'tage': [4], 'zeit': '17:00'},                   # Freitag nach der Arbeit
+    {'vorlage': 'cocktails', 'tage': [5], 'zeit': '19:00'},                    # Samstagabend
+    {'vorlage': 'feiern', 'tage': [6], 'zeit': '16:00'},                       # Sonntag, wenn man die Woche plant
+]
+# Wird ein Termin verpasst (z. B. während eines Neustarts), holt der Bot ihn bis zu so viele Minuten später nach.
+ZEITPLAN_NACHHOLEN = 60

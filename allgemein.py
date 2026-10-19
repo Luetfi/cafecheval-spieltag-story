@@ -24,23 +24,41 @@ COCKTAILS = ['cocktail-caipirinha', 'cocktail-cuba-libre', 'cocktail-long-island
 FUSSBALL = 'ki-vorrat'
 
 
+WOCHENTAGE = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag']
+
+
 def _zeiten(tag):
     auf, zu = ZEITEN[tag.weekday()]
     return f'{auf} bis {zu} Uhr'
+
+
+def _variante(tag, varianten):
+    """Wechselt täglich zwischen mehreren Texten, damit automatische Stories nicht jeden Tag gleich aussehen."""
+    return dict(varianten[tag.toordinal() % len(varianten)])
 
 
 # Schlüssel -> Knopftext, Inhalt (Funktion des Tages) und Fotos
 VORLAGEN = {
     'geoeffnet': {
         'knopf': '🟢 Wir haben geöffnet',
-        'inhalt': lambda tag: {'kicker': 'Heute für euch da', 'titel': 'Wir haben *geöffnet*',
-                               'unter': f'Heute von *{_zeiten(tag)}*. Kommt vorbei!'},
+        'inhalt': lambda tag: _variante(tag, [
+            {'kicker': 'Heute für euch da', 'titel': 'Wir haben *geöffnet*',
+             'unter': f'Heute von *{_zeiten(tag)}*. Kommt vorbei!'},
+            {'kicker': 'Ab jetzt geöffnet', 'titel': 'Die Bar ist *offen*',
+             'unter': f'Heute von *{_zeiten(tag)}*. Wir freuen uns auf euch.'},
+            {'kicker': f'{WOCHENTAGE[tag.weekday()]} bei uns', 'titel': 'Tür auf, *Licht an*',
+             'unter': f'Heute geöffnet von *{_zeiten(tag)}*.'},
+        ]),
         'fotos': ['fassade-asperger-strasse'] + BAR,
     },
     'cocktails': {
         'knopf': '🍹 Zeit für einen Drink',
-        'inhalt': lambda tag: {'kicker': 'Feierabend', 'titel': 'Zeit für einen *Drink*',
-                               'unter': f'Cocktails und Longdrinks, heute von *{_zeiten(tag)}*.'},
+        'inhalt': lambda tag: _variante(tag, [
+            {'kicker': 'Feierabend', 'titel': 'Zeit für einen *Drink*',
+             'unter': f'Cocktails und Longdrinks, heute von *{_zeiten(tag)}*.'},
+            {'kicker': 'Heute Abend', 'titel': 'Cheers auf den *Feierabend*',
+             'unter': f'Cocktails und Longdrinks an der Bar, heute bis *{ZEITEN[tag.weekday()][1]} Uhr*.'},
+        ]),
         'fotos': COCKTAILS,
     },
     'wochenende': {
@@ -51,8 +69,12 @@ VORLAGEN = {
     },
     'feiern': {
         'knopf': '🥂 Feiern bei uns',
-        'inhalt': lambda tag: {'kicker': 'Euer Anlass bei uns', 'titel': 'Lust zu *feiern*?',
-                               'unter': f'Geburtstag, Abschied oder einfach so. Ruft uns an: *{TELEFON}*'},
+        'inhalt': lambda tag: _variante(tag, [
+            {'kicker': 'Euer Anlass bei uns', 'titel': 'Lust zu *feiern*?',
+             'unter': f'Geburtstag, Abschied oder einfach so. Ruft uns an: *{TELEFON}*'},
+            {'kicker': 'Euer Anlass bei uns', 'titel': 'Euer Fest, *unsere Bar*',
+             'unter': f'Fragt uns nach eurer Feier: *{TELEFON}*'},
+        ]),
         'fotos': BAR,
     },
     'fussball': {

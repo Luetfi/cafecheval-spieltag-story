@@ -1,15 +1,8 @@
 name: Spieltag-Story
 
 on:
-  schedule:
-    # Morgens alle Spiele des Tages schicken, danach läuft der Bot bis 23 Uhr.
-    # Drei Weckzeiten, weil GitHub geplante Läufe manchmal auslässt. Der erste erledigt es,
-    # die anderen sehen in status/morgen.txt, dass schon geschickt wurde.
-    # (UTC: 5:00 = 7 Uhr Sommerzeit / 6 Uhr Winterzeit)
-    - cron: '0 5 * * *'
-    - cron: '30 5 * * *'
-    - cron: '0 6 * * *'
-    - cron: '30 4 * * 1'   # montags Instagram-Token verlängern
+  # Gestartet wird von außen (cron-job.org, siehe README): 7:00 morgen, 12:30 und 17:30 bot.
+  # GitHubs eigener Zeitplan (schedule) war zu unzuverlässig und ist deshalb entfernt.
   workflow_dispatch:
     inputs:
       befehl:
@@ -44,18 +37,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Befehl bestimmen
-        id: befehl
-        env:
-          ZEITPLAN: ${{ github.event.schedule }}
-          EINGABE: ${{ inputs.befehl }}
-        run: |
-          case "$ZEITPLAN" in
-            '30 4 * * 1') echo "befehl=token" >> "$GITHUB_OUTPUT" ;;
-            '')           echo "befehl=$EINGABE" >> "$GITHUB_OUTPUT" ;;
-            *)            echo "befehl=morgen" >> "$GITHUB_OUTPUT" ;;
-          esac
-
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -65,8 +46,9 @@ jobs:
 
       - name: Ausführen
         env:
-          BEFEHL: ${{ steps.befehl.outputs.befehl }}
+          BEFEHL: ${{ inputs.befehl }}
           DATUM: ${{ inputs.datum }}
+          GH_PAT_GESETZT: ${{ secrets.GH_PAT != '' && 'ja' || '' }}   # montags Token verlängern und speichern
         run: python lauf.py "$BEFEHL" $DATUM
 
       - name: Neuen Instagram-Token als Secret speichern
@@ -86,7 +68,7 @@ jobs:
         run: |
           git config user.name "spieltag-story"
           git config user.email "actions@users.noreply.github.com"
-          git add status/gepostet.txt status/morgen.txt status/stories.json 2>/dev/null || true
+          git add status/gepostet.txt status/morgen.txt status/stories.json status/zeitplan.json status/token.txt 2>/dev/null || true
           if ! git diff --cached --quiet; then
             git commit -m "Status aktualisiert"
             git pull --rebase --quiet && git push

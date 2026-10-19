@@ -69,6 +69,15 @@ def ligen_senden(chat, ligen):
     _api('sendMessage', chat_id=chat, text='Welcher Wettbewerb?', reply_markup={'inline_keyboard': zeilen})
 
 
+def info_senden(bild_url, text_html):
+    """Bild mit Text, ohne Knöpfe, an alle Empfänger (z. B. „Automatisch gepostet“)."""
+    for c in empfaenger():
+        try:
+            _api('sendPhoto', chat_id=c, photo=bild_url, caption=text_html, parse_mode='HTML')
+        except RuntimeError as e:
+            print('Warnung:', e)
+
+
 def bild_url(nachricht):
     for e in nachricht.get('caption_entities', []):
         if e.get('type') == 'text_link':
