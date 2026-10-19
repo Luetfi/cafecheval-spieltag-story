@@ -1,5 +1,5 @@
 {
- "nr": 38,
+ "nr": 39,
  "stories": {
   "S1": {
    "id": "S1",
@@ -2326,6 +2326,50 @@
      ]
     }
    ]
+  },
+  "S39": {
+   "id": "S39",
+   "art": "allgemein",
+   "vorlage": "allgemein",
+   "titel": "Zeit für einen Drink",
+   "details": "Allgemeine Story",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-19/cocktails-082710.jpg",
+   "daten": {
+    "kicker": "Feierabend",
+    "titel": "Zeit für einen *Drink*",
+    "unter": "Cocktails und Longdrinks, heute von *14 bis 3 Uhr*.",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/assets/fotos/cocktail-cuba-libre.jpg",
+    "weich": false
+   },
+   "logos": {},
+   "tag": "2026-10-19",
+   "wettbewerb": "",
+   "status": "gepostet",
+   "erstellt": "2026-10-19T10:27:23.187095+02:00",
+   "nachrichten": [
+    {
+     "message_id": 125,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Zeit für einen Drink\nAllgemeine Story · S39\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 20,
+       "type": "bold"
+      },
+      {
+       "offset": 45,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-19/cocktails-082710.jpg"
+      }
+     ]
+    }
+   ]
   }
  },
  "verlauf": {
@@ -2337,6 +2381,14 @@
    [
     "welche gute spiele gibt es bald",
     "Hier sind die nächsten Spiele, die sich gut anbieten. Ein Tipp auf einen Knopf erstellt die Story dazu."
+   ],
+   [
+    "gibt es heute fussball spiele ?",
+    "Heute, Montag, gibt es im Café keine Fußballspiele, die wir live zeigen. Am Wochenende geht es mit der Bundesliga weiter, wenn du möchtest, suche ich dir die Spiele raus."
+   ],
+   [
+    "gibt es montag heute keine anderen spiele andere turniere etc?",
+    "Auch über alle Wettbewerbe, die wir sonst zeigen, gibt es heute keine Spiele. Soll ich dir stattdessen die Spiele fürs Wochenende heraussuchen?"
    ]
   ]
  }
