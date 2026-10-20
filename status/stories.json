@@ -1,579 +1,6 @@
 {
- "nr": 43,
+ "nr": 52,
  "stories": {
-  "S4": {
-   "id": "S4",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Manchester City – Paris Saint-Germain",
-   "details": "Champions League · Ligaphase · Mi 14.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-14/2100-manchester-city-paris-saint-germain.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Mittwoch · 14. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-14/hintergrund/2100-bodo-glimt-borussia-dortmund.png",
-    "heim": {
-     "name": "Manchester City",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/382.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Paris Saint-Germain",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/160.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "382": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
-    "160": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png"
-   },
-   "tag": "2026-10-14",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-14T07:02:28.692313+02:00",
-   "nachrichten": [
-    {
-     "message_id": 72,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Manchester City – Paris Saint-Germain\nChampions League · Ligaphase · Mi 14.10. 21:00 Uhr · S4\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 37,
-       "type": "bold"
-      },
-      {
-       "offset": 95,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-14/2100-manchester-city-paris-saint-germain.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S5": {
-   "id": "S5",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "LASK Linz – Liverpool",
-   "details": "Champions League · Ligaphase · Mi 14.10. 18:45 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-14/1845-lask-linz-liverpool.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "18:45",
-    "datum": "Mittwoch · 14. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-14/hintergrund/2100-bodo-glimt-borussia-dortmund.png",
-    "heim": {
-     "name": "LASK Linz",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/4411.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Liverpool",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/364.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "4411": "https://a.espncdn.com/i/teamlogos/soccer/500/4411.png",
-    "364": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png"
-   },
-   "tag": "2026-10-14",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-14T07:02:32.383095+02:00",
-   "nachrichten": [
-    {
-     "message_id": 73,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "LASK Linz – Liverpool\nChampions League · Ligaphase · Mi 14.10. 18:45 Uhr · S5\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 21,
-       "type": "bold"
-      },
-      {
-       "offset": 79,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-14/1845-lask-linz-liverpool.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S6": {
-   "id": "S6",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "AS Rom – Real Madrid",
-   "details": "Champions League · Ligaphase · Mi 14.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-14/2100-as-rom-real-madrid.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Mittwoch · 14. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-14/hintergrund/2100-bodo-glimt-borussia-dortmund.png",
-    "heim": {
-     "name": "AS Rom",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/104.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Real Madrid",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/86.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "104": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
-    "86": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
-   },
-   "tag": "2026-10-14",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-14T07:02:36.705852+02:00",
-   "nachrichten": [
-    {
-     "message_id": 74,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "AS Rom – Real Madrid\nChampions League · Ligaphase · Mi 14.10. 21:00 Uhr · S6\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 20,
-       "type": "bold"
-      },
-      {
-       "offset": 78,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-14/2100-as-rom-real-madrid.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S7": {
-   "id": "S7",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Aston Villa – Fenerbahçe",
-   "details": "Champions League · Ligaphase · Mi 14.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-14/2100-aston-villa-fenerbahce.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Mittwoch · 14. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-14/hintergrund/2100-bodo-glimt-borussia-dortmund.png",
-    "heim": {
-     "name": "Aston Villa",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/362.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Fenerbahçe",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/436.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "362": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
-    "436": "https://a.espncdn.com/i/teamlogos/soccer/500/436.png"
-   },
-   "tag": "2026-10-14",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-14T07:02:40.780623+02:00",
-   "nachrichten": [
-    {
-     "message_id": 75,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Aston Villa – Fenerbahçe\nChampions League · Ligaphase · Mi 14.10. 21:00 Uhr · S7\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 24,
-       "type": "bold"
-      },
-      {
-       "offset": 82,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-14/2100-aston-villa-fenerbahce.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S8": {
-   "id": "S8",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Real Betis – FC Porto",
-   "details": "Champions League · Ligaphase · Mi 14.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-14/2100-real-betis-fc-porto.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Mittwoch · 14. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-14/hintergrund/2100-bodo-glimt-borussia-dortmund.png",
-    "heim": {
-     "name": "Real Betis",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/244.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "FC Porto",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/437.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "244": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
-    "437": "https://a.espncdn.com/i/teamlogos/soccer/500/437.png"
-   },
-   "tag": "2026-10-14",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-14T07:02:44.088301+02:00",
-   "nachrichten": [
-    {
-     "message_id": 76,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Real Betis – FC Porto\nChampions League · Ligaphase · Mi 14.10. 21:00 Uhr · S8\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 21,
-       "type": "bold"
-      },
-      {
-       "offset": 79,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-14/2100-real-betis-fc-porto.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S9": {
-   "id": "S9",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Feyenoord Rotterdam – Como",
-   "details": "Champions League · Ligaphase · Mi 14.10. 18:45 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-14/1845-feyenoord-rotterdam-como.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "18:45",
-    "datum": "Mittwoch · 14. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-14/hintergrund/2100-bodo-glimt-borussia-dortmund.png",
-    "heim": {
-     "name": "Feyenoord Rotterdam",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/142.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Como",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/2572.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "142": "https://a.espncdn.com/i/teamlogos/soccer/500/142.png",
-    "2572": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png"
-   },
-   "tag": "2026-10-14",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-14T07:02:48.017488+02:00",
-   "nachrichten": [
-    {
-     "message_id": 77,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Feyenoord Rotterdam – Como\nChampions League · Ligaphase · Mi 14.10. 18:45 Uhr · S9\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 26,
-       "type": "bold"
-      },
-      {
-       "offset": 84,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-14/1845-feyenoord-rotterdam-como.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S10": {
-   "id": "S10",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Schachtar Donezk – AEK Athens",
-   "details": "Champions League · Ligaphase · Mi 14.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-14/2100-schachtar-donezk-aek-athens.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Mittwoch · 14. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-14/hintergrund/2100-bodo-glimt-borussia-dortmund.png",
-    "heim": {
-     "name": "Schachtar Donezk",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/493.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "AEK Athens",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/887.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "493": "https://a.espncdn.com/i/teamlogos/soccer/500/493.png",
-    "887": "https://a.espncdn.com/i/teamlogos/soccer/500/887.png"
-   },
-   "tag": "2026-10-14",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-14T07:02:51.474386+02:00",
-   "nachrichten": [
-    {
-     "message_id": 78,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Schachtar Donezk – AEK Athens\nChampions League · Ligaphase · Mi 14.10. 21:00 Uhr · S10\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 29,
-       "type": "bold"
-      },
-      {
-       "offset": 88,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-14/2100-schachtar-donezk-aek-athens.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S11": {
-   "id": "S11",
-   "art": "allgemein",
-   "vorlage": "allgemein",
-   "titel": "Champions League",
-   "details": "Allgemeine Story",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-14/w-uefa-champions-083802.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "titel": "Champions League",
-    "unter": "",
-    "spiele": [
-     {
-      "uhrzeit": "18:45",
-      "heim": "LASK Linz",
-      "gast": "Liverpool",
-      "heim_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/4411.png",
-      "gast_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/364.png"
-     },
-     {
-      "uhrzeit": "21:00",
-      "heim": "Bodø/Glimt",
-      "gast": "Borussia Dortmund",
-      "heim_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/2980.png",
-      "gast_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/124.png"
-     },
-     {
-      "uhrzeit": "21:00",
-      "heim": "Slovan Bratislava",
-      "gast": "VfB Stuttgart",
-      "heim_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/521.png",
-      "gast_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/134.png"
-     },
-     {
-      "uhrzeit": "21:00",
-      "heim": "Manchester City",
-      "gast": "Paris Saint-Germain",
-      "heim_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/382.png",
-      "gast_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/160.png"
-     },
-     {
-      "uhrzeit": "21:00",
-      "heim": "AS Rom",
-      "gast": "Real Madrid",
-      "heim_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/104.png",
-      "gast_wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/86.png"
-     }
-    ],
-    "mehr": "… und 4 weitere Spiele",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/hintergruende/78e1dee06168caaedf5433399ea5c6c7.png",
-    "weich": true
-   },
-   "logos": {
-    "2980": "https://a.espncdn.com/i/teamlogos/soccer/500/2980.png",
-    "124": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png",
-    "521": "https://a.espncdn.com/i/teamlogos/soccer/500/521.png",
-    "134": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
-    "382": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
-    "160": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
-    "4411": "https://a.espncdn.com/i/teamlogos/soccer/500/4411.png",
-    "364": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
-    "104": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
-    "86": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
-    "362": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
-    "436": "https://a.espncdn.com/i/teamlogos/soccer/500/436.png",
-    "244": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
-    "437": "https://a.espncdn.com/i/teamlogos/soccer/500/437.png",
-    "142": "https://a.espncdn.com/i/teamlogos/soccer/500/142.png",
-    "2572": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png",
-    "493": "https://a.espncdn.com/i/teamlogos/soccer/500/493.png",
-    "887": "https://a.espncdn.com/i/teamlogos/soccer/500/887.png"
-   },
-   "tag": "2026-10-14",
-   "wettbewerb": "",
-   "status": "gepostet",
-   "erstellt": "2026-10-14T10:38:07.093451+02:00",
-   "nachrichten": [
-    {
-     "message_id": 81,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Champions League\nAllgemeine Story · S11\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 16,
-       "type": "bold"
-      },
-      {
-       "offset": 41,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-14/w-uefa-champions-083802.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S12": {
-   "id": "S12",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Lech Poznan – Bayer Leverkusen",
-   "details": "Europa League · Ligaphase · Do 15.10. 18:45 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-15/1845-lech-poznan-bayer-leverkusen.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Europa League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "18:45",
-    "datum": "Donnerstag · 15. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-15/hintergrund/1845-lech-poznan-bayer-leverkusen.png",
-    "heim": {
-     "name": "Lech Poznan",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/2990.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Bayer Leverkusen",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/131.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "2990": "https://a.espncdn.com/i/teamlogos/soccer/500/2990.png",
-    "131": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png"
-   },
-   "tag": "2026-10-15",
-   "wettbewerb": "Europa League",
-   "status": "offen",
-   "erstellt": "2026-10-15T07:01:45.785725+02:00",
-   "nachrichten": [
-    {
-     "message_id": 88,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "⭐ Empfohlen\nLech Poznan – Bayer Leverkusen\nEuropa League · Ligaphase · Do 15.10. 18:45 Uhr · S12\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 12,
-       "length": 30,
-       "type": "bold"
-      },
-      {
-       "offset": 98,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-15/1845-lech-poznan-bayer-leverkusen.jpg"
-      }
-     ]
-    }
-   ]
-  },
   "S13": {
    "id": "S13",
    "art": "spiel",
@@ -2339,6 +1766,537 @@
        "length": 20,
        "type": "text_link",
        "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-19/43-124651.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S44": {
+   "id": "S44",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "VfB Stuttgart – Atlético Madrid",
+   "details": "Champions League · Ligaphase · Di 20.10. 21:00 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-vfb-stuttgart-atletico-madrid.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Champions League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "21:00",
+    "datum": "Dienstag · 20. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-20/hintergrund/2100-vfb-stuttgart-atletico-madrid.png",
+    "heim": {
+     "name": "VfB Stuttgart",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/134.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Atlético Madrid",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/1068.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "134": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
+    "1068": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
+   },
+   "tag": "2026-10-20",
+   "wettbewerb": "Champions League",
+   "status": "offen",
+   "erstellt": "2026-10-20T07:01:15.789725+02:00",
+   "nachrichten": [
+    {
+     "message_id": 151,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "⭐ Empfohlen\nVfB Stuttgart – Atlético Madrid\nChampions League · Ligaphase · Di 20.10. 21:00 Uhr · S44\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 12,
+       "length": 31,
+       "type": "bold"
+      },
+      {
+       "offset": 102,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-vfb-stuttgart-atletico-madrid.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S45": {
+   "id": "S45",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Sabah FK – Borussia Dortmund",
+   "details": "Champions League · Ligaphase · Di 20.10. 18:45 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/1845-sabah-fk-borussia-dortmund.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Champions League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "18:45",
+    "datum": "Dienstag · 20. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-20/hintergrund/2100-vfb-stuttgart-atletico-madrid.png",
+    "heim": {
+     "name": "Sabah FK",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/21922.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Borussia Dortmund",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/124.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "21922": "https://a.espncdn.com/i/teamlogos/soccer/500/21922.png",
+    "124": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png"
+   },
+   "tag": "2026-10-20",
+   "wettbewerb": "Champions League",
+   "status": "offen",
+   "erstellt": "2026-10-20T07:01:19.995450+02:00",
+   "nachrichten": [
+    {
+     "message_id": 152,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "⭐ Empfohlen\nSabah FK – Borussia Dortmund\nChampions League · Ligaphase · Di 20.10. 18:45 Uhr · S45\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 12,
+       "length": 28,
+       "type": "bold"
+      },
+      {
+       "offset": 99,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/1845-sabah-fk-borussia-dortmund.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S46": {
+   "id": "S46",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Paris Saint-Germain – FC Barcelona",
+   "details": "Champions League · Ligaphase · Di 20.10. 21:00 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-paris-saint-germain-fc-barcelona.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Champions League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "21:00",
+    "datum": "Dienstag · 20. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-20/hintergrund/2100-vfb-stuttgart-atletico-madrid.png",
+    "heim": {
+     "name": "Paris Saint-Germain",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/160.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "FC Barcelona",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/83.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "160": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
+    "83": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
+   },
+   "tag": "2026-10-20",
+   "wettbewerb": "Champions League",
+   "status": "offen",
+   "erstellt": "2026-10-20T07:01:23.922598+02:00",
+   "nachrichten": [
+    {
+     "message_id": 153,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Paris Saint-Germain – FC Barcelona\nChampions League · Ligaphase · Di 20.10. 21:00 Uhr · S46\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 34,
+       "type": "bold"
+      },
+      {
+       "offset": 93,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-paris-saint-germain-fc-barcelona.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S47": {
+   "id": "S47",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Fenerbahçe – Slavia Prag",
+   "details": "Champions League · Ligaphase · Di 20.10. 18:45 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/1845-fenerbahce-slavia-prag.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Champions League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "18:45",
+    "datum": "Dienstag · 20. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-20/hintergrund/2100-vfb-stuttgart-atletico-madrid.png",
+    "heim": {
+     "name": "Fenerbahçe",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/436.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Slavia Prag",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/494.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "436": "https://a.espncdn.com/i/teamlogos/soccer/500/436.png",
+    "494": "https://a.espncdn.com/i/teamlogos/soccer/500/494.png"
+   },
+   "tag": "2026-10-20",
+   "wettbewerb": "Champions League",
+   "status": "offen",
+   "erstellt": "2026-10-20T07:01:27.826464+02:00",
+   "nachrichten": [
+    {
+     "message_id": 154,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Fenerbahçe – Slavia Prag\nChampions League · Ligaphase · Di 20.10. 18:45 Uhr · S47\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 24,
+       "type": "bold"
+      },
+      {
+       "offset": 83,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/1845-fenerbahce-slavia-prag.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S48": {
+   "id": "S48",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "FC Porto – PSV Eindhoven",
+   "details": "Champions League · Ligaphase · Di 20.10. 21:00 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-fc-porto-psv-eindhoven.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Champions League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "21:00",
+    "datum": "Dienstag · 20. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-20/hintergrund/2100-vfb-stuttgart-atletico-madrid.png",
+    "heim": {
+     "name": "FC Porto",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/437.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "PSV Eindhoven",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/148.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "437": "https://a.espncdn.com/i/teamlogos/soccer/500/437.png",
+    "148": "https://a.espncdn.com/i/teamlogos/soccer/500/148.png"
+   },
+   "tag": "2026-10-20",
+   "wettbewerb": "Champions League",
+   "status": "offen",
+   "erstellt": "2026-10-20T07:01:31.743207+02:00",
+   "nachrichten": [
+    {
+     "message_id": 155,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "FC Porto – PSV Eindhoven\nChampions League · Ligaphase · Di 20.10. 21:00 Uhr · S48\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 24,
+       "type": "bold"
+      },
+      {
+       "offset": 83,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-fc-porto-psv-eindhoven.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S49": {
+   "id": "S49",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Liverpool – Villarreal",
+   "details": "Champions League · Ligaphase · Di 20.10. 21:00 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-liverpool-villarreal.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Champions League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "21:00",
+    "datum": "Dienstag · 20. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-20/hintergrund/2100-vfb-stuttgart-atletico-madrid.png",
+    "heim": {
+     "name": "Liverpool",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/364.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Villarreal",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/102.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "364": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
+    "102": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
+   },
+   "tag": "2026-10-20",
+   "wettbewerb": "Champions League",
+   "status": "offen",
+   "erstellt": "2026-10-20T07:01:36.182564+02:00",
+   "nachrichten": [
+    {
+     "message_id": 156,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Liverpool – Villarreal\nChampions League · Ligaphase · Di 20.10. 21:00 Uhr · S49\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 22,
+       "type": "bold"
+      },
+      {
+       "offset": 81,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-liverpool-villarreal.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S50": {
+   "id": "S50",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Manchester City – AEK Athens",
+   "details": "Champions League · Ligaphase · Di 20.10. 21:00 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-manchester-city-aek-athens.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Champions League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "21:00",
+    "datum": "Dienstag · 20. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-20/hintergrund/2100-vfb-stuttgart-atletico-madrid.png",
+    "heim": {
+     "name": "Manchester City",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/382.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "AEK Athens",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/887.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "382": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
+    "887": "https://a.espncdn.com/i/teamlogos/soccer/500/887.png"
+   },
+   "tag": "2026-10-20",
+   "wettbewerb": "Champions League",
+   "status": "offen",
+   "erstellt": "2026-10-20T07:01:40.264693+02:00",
+   "nachrichten": [
+    {
+     "message_id": 157,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Manchester City – AEK Athens\nChampions League · Ligaphase · Di 20.10. 21:00 Uhr · S50\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 28,
+       "type": "bold"
+      },
+      {
+       "offset": 87,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-manchester-city-aek-athens.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S51": {
+   "id": "S51",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "SSC Neapel – Bodø/Glimt",
+   "details": "Champions League · Ligaphase · Di 20.10. 21:00 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-ssc-neapel-bodo-glimt.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Champions League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "21:00",
+    "datum": "Dienstag · 20. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-20/hintergrund/2100-vfb-stuttgart-atletico-madrid.png",
+    "heim": {
+     "name": "SSC Neapel",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/114.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Bodø/Glimt",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/2980.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "114": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
+    "2980": "https://a.espncdn.com/i/teamlogos/soccer/500/2980.png"
+   },
+   "tag": "2026-10-20",
+   "wettbewerb": "Champions League",
+   "status": "offen",
+   "erstellt": "2026-10-20T07:01:44.110050+02:00",
+   "nachrichten": [
+    {
+     "message_id": 158,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "SSC Neapel – Bodø/Glimt\nChampions League · Ligaphase · Di 20.10. 21:00 Uhr · S51\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 23,
+       "type": "bold"
+      },
+      {
+       "offset": 82,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-ssc-neapel-bodo-glimt.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S52": {
+   "id": "S52",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "AS Rom – Slovan Bratislava",
+   "details": "Champions League · Ligaphase · Di 20.10. 21:00 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-as-rom-slovan-bratislava.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Champions League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "21:00",
+    "datum": "Dienstag · 20. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-20/hintergrund/2100-vfb-stuttgart-atletico-madrid.png",
+    "heim": {
+     "name": "AS Rom",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/104.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Slovan Bratislava",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/521.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "104": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
+    "521": "https://a.espncdn.com/i/teamlogos/soccer/500/521.png"
+   },
+   "tag": "2026-10-20",
+   "wettbewerb": "Champions League",
+   "status": "offen",
+   "erstellt": "2026-10-20T07:01:48.079597+02:00",
+   "nachrichten": [
+    {
+     "message_id": 159,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "AS Rom – Slovan Bratislava\nChampions League · Ligaphase · Di 20.10. 21:00 Uhr · S52\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 26,
+       "type": "bold"
+      },
+      {
+       "offset": 85,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-as-rom-slovan-bratislava.jpg"
       }
      ]
     }
