@@ -1,1053 +1,6 @@
 {
- "nr": 61,
+ "nr": 79,
  "stories": {
-  "S22": {
-   "id": "S22",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Union St.-Gilloise – Real Sociedad",
-   "details": "Europa League · Ligaphase · Do 15.10. 18:45 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-15/1845-union-st-gilloise-real-sociedad.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Europa League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "18:45",
-    "datum": "Donnerstag · 15. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-15/hintergrund/1845-lech-poznan-bayer-leverkusen.png",
-    "heim": {
-     "name": "Union St.-Gilloise",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/5807.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Real Sociedad",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/89.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "5807": "https://a.espncdn.com/i/teamlogos/soccer/500/5807.png",
-    "89": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
-   },
-   "tag": "2026-10-15",
-   "wettbewerb": "Europa League",
-   "status": "offen",
-   "erstellt": "2026-10-15T07:02:26.203298+02:00",
-   "nachrichten": [
-    {
-     "message_id": 98,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Union St.-Gilloise – Real Sociedad\nEuropa League · Ligaphase · Do 15.10. 18:45 Uhr · S22\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 34,
-       "type": "bold"
-      },
-      {
-       "offset": 90,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-15/1845-union-st-gilloise-real-sociedad.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S23": {
-   "id": "S23",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "AFC Bournemouth – SK Sturm Graz",
-   "details": "Europa League · Ligaphase · Do 15.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-15/2100-afc-bournemouth-sk-sturm-graz.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Europa League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Donnerstag · 15. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-15/hintergrund/1845-lech-poznan-bayer-leverkusen.png",
-    "heim": {
-     "name": "AFC Bournemouth",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/349.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "SK Sturm Graz",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/3746.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "349": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
-    "3746": "https://a.espncdn.com/i/teamlogos/soccer/500/3746.png"
-   },
-   "tag": "2026-10-15",
-   "wettbewerb": "Europa League",
-   "status": "offen",
-   "erstellt": "2026-10-15T07:02:30.174416+02:00",
-   "nachrichten": [
-    {
-     "message_id": 99,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "AFC Bournemouth – SK Sturm Graz\nEuropa League · Ligaphase · Do 15.10. 21:00 Uhr · S23\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 31,
-       "type": "bold"
-      },
-      {
-       "offset": 87,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-15/2100-afc-bournemouth-sk-sturm-graz.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S24": {
-   "id": "S24",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Dinamo Zagreb – Anderlecht",
-   "details": "Europa League · Ligaphase · Do 15.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-15/2100-dinamo-zagreb-anderlecht.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Europa League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Donnerstag · 15. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-15/hintergrund/1845-lech-poznan-bayer-leverkusen.png",
-    "heim": {
-     "name": "Dinamo Zagreb",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/597.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Anderlecht",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/441.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "597": "https://a.espncdn.com/i/teamlogos/soccer/500/597.png",
-    "441": "https://a.espncdn.com/i/teamlogos/soccer/500/441.png"
-   },
-   "tag": "2026-10-15",
-   "wettbewerb": "Europa League",
-   "status": "offen",
-   "erstellt": "2026-10-15T07:02:34.608266+02:00",
-   "nachrichten": [
-    {
-     "message_id": 100,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Dinamo Zagreb – Anderlecht\nEuropa League · Ligaphase · Do 15.10. 21:00 Uhr · S24\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 26,
-       "type": "bold"
-      },
-      {
-       "offset": 82,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-15/2100-dinamo-zagreb-anderlecht.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S25": {
-   "id": "S25",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Ferencvaros – Viktoria Plzen",
-   "details": "Europa League · Ligaphase · Do 15.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-15/2100-ferencvaros-viktoria-plzen.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Europa League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Donnerstag · 15. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-15/hintergrund/1845-lech-poznan-bayer-leverkusen.png",
-    "heim": {
-     "name": "Ferencvaros",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/622.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Viktoria Plzen",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/11706.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "622": "https://a.espncdn.com/i/teamlogos/soccer/500/622.png",
-    "11706": "https://a.espncdn.com/i/teamlogos/soccer/500/11706.png"
-   },
-   "tag": "2026-10-15",
-   "wettbewerb": "Europa League",
-   "status": "offen",
-   "erstellt": "2026-10-15T07:02:39.143445+02:00",
-   "nachrichten": [
-    {
-     "message_id": 101,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Ferencvaros – Viktoria Plzen\nEuropa League · Ligaphase · Do 15.10. 21:00 Uhr · S25\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 28,
-       "type": "bold"
-      },
-      {
-       "offset": 84,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-15/2100-ferencvaros-viktoria-plzen.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S26": {
-   "id": "S26",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Jagiellonia Bialystok – Ararat-Armenia",
-   "details": "Europa League · Ligaphase · Do 15.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-15/2100-jagiellonia-bialystok-ararat-armenia.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Europa League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Donnerstag · 15. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-15/hintergrund/1845-lech-poznan-bayer-leverkusen.png",
-    "heim": {
-     "name": "Jagiellonia Bialystok",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/11505.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Ararat-Armenia",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/20024.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "11505": "https://a.espncdn.com/i/teamlogos/soccer/500/11505.png",
-    "20024": "https://a.espncdn.com/i/teamlogos/soccer/500/20024.png"
-   },
-   "tag": "2026-10-15",
-   "wettbewerb": "Europa League",
-   "status": "offen",
-   "erstellt": "2026-10-15T07:02:42.887256+02:00",
-   "nachrichten": [
-    {
-     "message_id": 102,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Jagiellonia Bialystok – Ararat-Armenia\nEuropa League · Ligaphase · Do 15.10. 21:00 Uhr · S26\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 38,
-       "type": "bold"
-      },
-      {
-       "offset": 94,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-15/2100-jagiellonia-bialystok-ararat-armenia.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S27": {
-   "id": "S27",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Marseille – Olympiakos Piräus",
-   "details": "Europa League · Ligaphase · Do 15.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-15/2100-marseille-olympiakos-piraeus.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Europa League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Donnerstag · 15. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-15/hintergrund/1845-lech-poznan-bayer-leverkusen.png",
-    "heim": {
-     "name": "Marseille",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/176.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Olympiakos Piräus",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/435.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "176": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
-    "435": "https://a.espncdn.com/i/teamlogos/soccer/500/435.png"
-   },
-   "tag": "2026-10-15",
-   "wettbewerb": "Europa League",
-   "status": "offen",
-   "erstellt": "2026-10-15T07:02:46.879947+02:00",
-   "nachrichten": [
-    {
-     "message_id": 103,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Marseille – Olympiakos Piräus\nEuropa League · Ligaphase · Do 15.10. 21:00 Uhr · S27\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 29,
-       "type": "bold"
-      },
-      {
-       "offset": 85,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-15/2100-marseille-olympiakos-piraeus.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S28": {
-   "id": "S28",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "NEC Nijmegen – Levski Sofia",
-   "details": "Europa League · Ligaphase · Do 15.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-15/2100-nec-nijmegen-levski-sofia.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Europa League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Donnerstag · 15. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-15/hintergrund/1845-lech-poznan-bayer-leverkusen.png",
-    "heim": {
-     "name": "NEC Nijmegen",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/147.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Levski Sofia",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/490.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "147": "https://a.espncdn.com/i/teamlogos/soccer/500/147.png",
-    "490": "https://a.espncdn.com/i/teamlogos/soccer/500/490.png"
-   },
-   "tag": "2026-10-15",
-   "wettbewerb": "Europa League",
-   "status": "offen",
-   "erstellt": "2026-10-15T07:02:50.811974+02:00",
-   "nachrichten": [
-    {
-     "message_id": 104,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "NEC Nijmegen – Levski Sofia\nEuropa League · Ligaphase · Do 15.10. 21:00 Uhr · S28\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 27,
-       "type": "bold"
-      },
-      {
-       "offset": 83,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-15/2100-nec-nijmegen-levski-sofia.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S29": {
-   "id": "S29",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Stade Rennais – OFI Crete",
-   "details": "Europa League · Ligaphase · Do 15.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-15/2100-stade-rennais-ofi-crete.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Europa League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Donnerstag · 15. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-15/hintergrund/1845-lech-poznan-bayer-leverkusen.png",
-    "heim": {
-     "name": "Stade Rennais",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/169.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "OFI Crete",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/1010.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "169": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
-    "1010": "https://a.espncdn.com/i/teamlogos/soccer/500/1010.png"
-   },
-   "tag": "2026-10-15",
-   "wettbewerb": "Europa League",
-   "status": "offen",
-   "erstellt": "2026-10-15T07:02:54.323810+02:00",
-   "nachrichten": [
-    {
-     "message_id": 105,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Stade Rennais – OFI Crete\nEuropa League · Ligaphase · Do 15.10. 21:00 Uhr · S29\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 25,
-       "type": "bold"
-      },
-      {
-       "offset": 81,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-15/2100-stade-rennais-ofi-crete.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S30": {
-   "id": "S30",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Eintracht Frankfurt – 1. FC Köln",
-   "details": "Bundesliga · Fr 16.10. 20:30 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-16/2030-eintracht-frankfurt-1-fc-koeln.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Bundesliga",
-    "runde": "",
-    "leg": "",
-    "uhrzeit": "20:30",
-    "datum": "Freitag · 16. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-16/hintergrund/2030-eintracht-frankfurt-1-fc-koeln.png",
-    "heim": {
-     "name": "Eintracht Frankfurt",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/125.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "1. FC Köln",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/122.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "125": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png",
-    "122": "https://a.espncdn.com/i/teamlogos/soccer/500/122.png"
-   },
-   "tag": "2026-10-16",
-   "wettbewerb": "Bundesliga",
-   "status": "offen",
-   "erstellt": "2026-10-16T07:01:33.462365+02:00",
-   "nachrichten": [
-    {
-     "message_id": 109,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Eintracht Frankfurt – 1. FC Köln\nBundesliga · Fr 16.10. 20:30 Uhr · S30\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 32,
-       "type": "bold"
-      },
-      {
-       "offset": 73,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-16/2030-eintracht-frankfurt-1-fc-koeln.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S31": {
-   "id": "S31",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "FC Bayern München – RB Leipzig",
-   "details": "Bundesliga · Sa 17.10. 18:30 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-17/1830-fc-bayern-muenchen-rb-leipzig.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Bundesliga",
-    "runde": "",
-    "leg": "",
-    "uhrzeit": "18:30",
-    "datum": "Samstag · 17. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-17/hintergrund/1830-fc-bayern-muenchen-rb-leipzig.png",
-    "heim": {
-     "name": "FC Bayern München",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/132.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "RB Leipzig",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/11420.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "132": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
-    "11420": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png"
-   },
-   "tag": "2026-10-17",
-   "wettbewerb": "Bundesliga",
-   "status": "offen",
-   "erstellt": "2026-10-17T07:01:19.426134+02:00",
-   "nachrichten": [
-    {
-     "message_id": 110,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "⭐ Empfohlen\nFC Bayern München – RB Leipzig\nBundesliga · Sa 17.10. 18:30 Uhr · S31\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 12,
-       "length": 30,
-       "type": "bold"
-      },
-      {
-       "offset": 83,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-17/1830-fc-bayern-muenchen-rb-leipzig.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S32": {
-   "id": "S32",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Hamburger SV – VfB Stuttgart",
-   "details": "Bundesliga · Sa 17.10. 15:30 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-17/1530-hamburger-sv-vfb-stuttgart.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Bundesliga",
-    "runde": "",
-    "leg": "",
-    "uhrzeit": "15:30",
-    "datum": "Samstag · 17. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-17/hintergrund/1830-fc-bayern-muenchen-rb-leipzig.png",
-    "heim": {
-     "name": "Hamburger SV",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/127.png",
-     "flagge": true
-    },
-    "gast": {
-     "name": "VfB Stuttgart",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/134.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "127": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png",
-    "134": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png"
-   },
-   "tag": "2026-10-17",
-   "wettbewerb": "Bundesliga",
-   "status": "offen",
-   "erstellt": "2026-10-17T07:01:22.189295+02:00",
-   "nachrichten": [
-    {
-     "message_id": 111,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "⭐ Empfohlen\nHamburger SV – VfB Stuttgart\nBundesliga · Sa 17.10. 15:30 Uhr · S32\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 12,
-       "length": 28,
-       "type": "bold"
-      },
-      {
-       "offset": 81,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-17/1530-hamburger-sv-vfb-stuttgart.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S33": {
-   "id": "S33",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "1. FC Union Berlin – Borussia Dortmund",
-   "details": "Bundesliga · Sa 17.10. 15:30 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-17/1530-1-fc-union-berlin-borussia-dortmund.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Bundesliga",
-    "runde": "",
-    "leg": "",
-    "uhrzeit": "15:30",
-    "datum": "Samstag · 17. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-17/hintergrund/1830-fc-bayern-muenchen-rb-leipzig.png",
-    "heim": {
-     "name": "1. FC Union Berlin",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/598.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Borussia Dortmund",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/124.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "598": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png",
-    "124": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png"
-   },
-   "tag": "2026-10-17",
-   "wettbewerb": "Bundesliga",
-   "status": "offen",
-   "erstellt": "2026-10-17T07:01:25.710776+02:00",
-   "nachrichten": [
-    {
-     "message_id": 112,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "1. FC Union Berlin – Borussia Dortmund\nBundesliga · Sa 17.10. 15:30 Uhr · S33\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 38,
-       "type": "bold"
-      },
-      {
-       "offset": 79,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-17/1530-1-fc-union-berlin-borussia-dortmund.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S34": {
-   "id": "S34",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "FC Schalke 04 – 1. FSV Mainz 05",
-   "details": "Bundesliga · Sa 17.10. 15:30 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-17/1530-fc-schalke-04-1-fsv-mainz-05.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Bundesliga",
-    "runde": "",
-    "leg": "",
-    "uhrzeit": "15:30",
-    "datum": "Samstag · 17. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-17/hintergrund/1830-fc-bayern-muenchen-rb-leipzig.png",
-    "heim": {
-     "name": "FC Schalke 04",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/133.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "1. FSV Mainz 05",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/2950.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "133": "https://a.espncdn.com/i/teamlogos/soccer/500/133.png",
-    "2950": "https://a.espncdn.com/i/teamlogos/soccer/500/2950.png"
-   },
-   "tag": "2026-10-17",
-   "wettbewerb": "Bundesliga",
-   "status": "offen",
-   "erstellt": "2026-10-17T07:01:29.390149+02:00",
-   "nachrichten": [
-    {
-     "message_id": 113,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "FC Schalke 04 – 1. FSV Mainz 05\nBundesliga · Sa 17.10. 15:30 Uhr · S34\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 31,
-       "type": "bold"
-      },
-      {
-       "offset": 72,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-17/1530-fc-schalke-04-1-fsv-mainz-05.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S35": {
-   "id": "S35",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "SV Elversberg – FC Augsburg",
-   "details": "Bundesliga · Sa 17.10. 15:30 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-17/1530-sv-elversberg-fc-augsburg.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Bundesliga",
-    "runde": "",
-    "leg": "",
-    "uhrzeit": "15:30",
-    "datum": "Samstag · 17. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-17/hintergrund/1830-fc-bayern-muenchen-rb-leipzig.png",
-    "heim": {
-     "name": "SV Elversberg",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/10388.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "FC Augsburg",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/3841.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "10388": "https://a.espncdn.com/i/teamlogos/soccer/500/10388.png",
-    "3841": "https://a.espncdn.com/i/teamlogos/soccer/500/3841.png"
-   },
-   "tag": "2026-10-17",
-   "wettbewerb": "Bundesliga",
-   "status": "offen",
-   "erstellt": "2026-10-17T07:01:33.240422+02:00",
-   "nachrichten": [
-    {
-     "message_id": 114,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "SV Elversberg – FC Augsburg\nBundesliga · Sa 17.10. 15:30 Uhr · S35\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 27,
-       "type": "bold"
-      },
-      {
-       "offset": 68,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-17/1530-sv-elversberg-fc-augsburg.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S36": {
-   "id": "S36",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "SV Werder Bremen – SC Paderborn 07",
-   "details": "Bundesliga · Sa 17.10. 15:30 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-17/1530-sv-werder-bremen-sc-paderborn-07.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Bundesliga",
-    "runde": "",
-    "leg": "",
-    "uhrzeit": "15:30",
-    "datum": "Samstag · 17. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-17/hintergrund/1830-fc-bayern-muenchen-rb-leipzig.png",
-    "heim": {
-     "name": "SV Werder Bremen",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/137.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "SC Paderborn 07",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/3307.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "137": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
-    "3307": "https://a.espncdn.com/i/teamlogos/soccer/500/3307.png"
-   },
-   "tag": "2026-10-17",
-   "wettbewerb": "Bundesliga",
-   "status": "offen",
-   "erstellt": "2026-10-17T07:01:36.807321+02:00",
-   "nachrichten": [
-    {
-     "message_id": 115,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "SV Werder Bremen – SC Paderborn 07\nBundesliga · Sa 17.10. 15:30 Uhr · S36\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 34,
-       "type": "bold"
-      },
-      {
-       "offset": 75,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-17/1530-sv-werder-bremen-sc-paderborn-07.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S37": {
-   "id": "S37",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Bayer Leverkusen – SC Freiburg",
-   "details": "Bundesliga · So 18.10. 15:30 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-18/1530-bayer-leverkusen-sc-freiburg.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Bundesliga",
-    "runde": "",
-    "leg": "",
-    "uhrzeit": "15:30",
-    "datum": "Sonntag · 18. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-18/hintergrund/1530-bayer-leverkusen-sc-freiburg.png",
-    "heim": {
-     "name": "Bayer Leverkusen",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/131.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "SC Freiburg",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/126.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "131": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png",
-    "126": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png"
-   },
-   "tag": "2026-10-18",
-   "wettbewerb": "Bundesliga",
-   "status": "offen",
-   "erstellt": "2026-10-18T07:06:05.321900+02:00",
-   "nachrichten": [
-    {
-     "message_id": 116,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Bayer Leverkusen – SC Freiburg\nBundesliga · So 18.10. 15:30 Uhr · S37\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 30,
-       "type": "bold"
-      },
-      {
-       "offset": 71,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-18/1530-bayer-leverkusen-sc-freiburg.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S38": {
-   "id": "S38",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Borussia M'gladbach – TSG Hoffenheim",
-   "details": "Bundesliga · So 18.10. 17:30 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-18/1730-borussia-m-gladbach-tsg-hoffenheim.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Bundesliga",
-    "runde": "",
-    "leg": "",
-    "uhrzeit": "17:30",
-    "datum": "Sonntag · 18. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-18/hintergrund/1530-bayer-leverkusen-sc-freiburg.png",
-    "heim": {
-     "name": "Borussia M'gladbach",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/268.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "TSG Hoffenheim",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/7911.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "268": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png",
-    "7911": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png"
-   },
-   "tag": "2026-10-18",
-   "wettbewerb": "Bundesliga",
-   "status": "offen",
-   "erstellt": "2026-10-18T07:06:09.890349+02:00",
-   "nachrichten": [
-    {
-     "message_id": 117,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Borussia M'gladbach – TSG Hoffenheim\nBundesliga · So 18.10. 17:30 Uhr · S38\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 36,
-       "type": "bold"
-      },
-      {
-       "offset": 77,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-18/1730-borussia-m-gladbach-tsg-hoffenheim.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S39": {
-   "id": "S39",
-   "art": "allgemein",
-   "vorlage": "allgemein",
-   "titel": "Zeit für einen Drink",
-   "details": "Allgemeine Story",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-19/cocktails-082710.jpg",
-   "daten": {
-    "kicker": "Feierabend",
-    "titel": "Zeit für einen *Drink*",
-    "unter": "Cocktails und Longdrinks, heute von *14 bis 3 Uhr*.",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/assets/fotos/cocktail-cuba-libre.jpg",
-    "weich": false
-   },
-   "logos": {},
-   "tag": "2026-10-19",
-   "wettbewerb": "",
-   "status": "gepostet",
-   "erstellt": "2026-10-19T10:27:23.187095+02:00",
-   "nachrichten": [
-    {
-     "message_id": 125,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Zeit für einen Drink\nAllgemeine Story · S39\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 20,
-       "type": "bold"
-      },
-      {
-       "offset": 45,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-19/cocktails-082710.jpg"
-      }
-     ]
-    }
-   ]
-  },
   "S40": {
    "id": "S40",
    "art": "spiel",
@@ -2297,6 +1250,1068 @@
        "length": 20,
        "type": "text_link",
        "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-21/2100-sporting-lissabon-lask-linz.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S62": {
+   "id": "S62",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "OFI Crete – Bayer Leverkusen",
+   "details": "Europa League · Ligaphase · Do 22.10. 18:45 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/1845-ofi-crete-bayer-leverkusen.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Europa League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "18:45",
+    "datum": "Donnerstag · 22. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-22/hintergrund/1845-ofi-crete-bayer-leverkusen.png",
+    "heim": {
+     "name": "OFI Crete",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/1010.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Bayer Leverkusen",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/131.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "1010": "https://a.espncdn.com/i/teamlogos/soccer/500/1010.png",
+    "131": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png"
+   },
+   "tag": "2026-10-22",
+   "wettbewerb": "Europa League",
+   "status": "offen",
+   "erstellt": "2026-10-22T07:01:19.957683+02:00",
+   "nachrichten": [
+    {
+     "message_id": 173,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "⭐ Empfohlen\nOFI Crete – Bayer Leverkusen\nEuropa League · Ligaphase · Do 22.10. 18:45 Uhr · S62\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 12,
+       "length": 28,
+       "type": "bold"
+      },
+      {
+       "offset": 96,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/1845-ofi-crete-bayer-leverkusen.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S63": {
+   "id": "S63",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "TSG Hoffenheim – Lyon",
+   "details": "Europa League · Ligaphase · Do 22.10. 21:00 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-tsg-hoffenheim-lyon.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Europa League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "21:00",
+    "datum": "Donnerstag · 22. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-22/hintergrund/1845-ofi-crete-bayer-leverkusen.png",
+    "heim": {
+     "name": "TSG Hoffenheim",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/7911.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Lyon",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/167.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "7911": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png",
+    "167": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png"
+   },
+   "tag": "2026-10-22",
+   "wettbewerb": "Europa League",
+   "status": "offen",
+   "erstellt": "2026-10-22T07:01:23.486768+02:00",
+   "nachrichten": [
+    {
+     "message_id": 174,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "⭐ Empfohlen\nTSG Hoffenheim – Lyon\nEuropa League · Ligaphase · Do 22.10. 21:00 Uhr · S63\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 12,
+       "length": 21,
+       "type": "bold"
+      },
+      {
+       "offset": 89,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-tsg-hoffenheim-lyon.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S64": {
+   "id": "S64",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Juventus Turin – Stade Rennais",
+   "details": "Europa League · Ligaphase · Do 22.10. 18:45 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/1845-juventus-turin-stade-rennais.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Europa League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "18:45",
+    "datum": "Donnerstag · 22. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-22/hintergrund/1845-ofi-crete-bayer-leverkusen.png",
+    "heim": {
+     "name": "Juventus Turin",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/111.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Stade Rennais",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/169.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "111": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png",
+    "169": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png"
+   },
+   "tag": "2026-10-22",
+   "wettbewerb": "Europa League",
+   "status": "offen",
+   "erstellt": "2026-10-22T07:01:27.219813+02:00",
+   "nachrichten": [
+    {
+     "message_id": 175,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Juventus Turin – Stade Rennais\nEuropa League · Ligaphase · Do 22.10. 18:45 Uhr · S64\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 30,
+       "type": "bold"
+      },
+      {
+       "offset": 86,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/1845-juventus-turin-stade-rennais.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S65": {
+   "id": "S65",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "AFC Bournemouth – AC Mailand",
+   "details": "Europa League · Ligaphase · Do 22.10. 21:00 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-afc-bournemouth-ac-mailand.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Europa League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "21:00",
+    "datum": "Donnerstag · 22. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-22/hintergrund/1845-ofi-crete-bayer-leverkusen.png",
+    "heim": {
+     "name": "AFC Bournemouth",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/349.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "AC Mailand",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/103.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "349": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
+    "103": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png"
+   },
+   "tag": "2026-10-22",
+   "wettbewerb": "Europa League",
+   "status": "offen",
+   "erstellt": "2026-10-22T07:01:31.072793+02:00",
+   "nachrichten": [
+    {
+     "message_id": 176,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "AFC Bournemouth – AC Mailand\nEuropa League · Ligaphase · Do 22.10. 21:00 Uhr · S65\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 28,
+       "type": "bold"
+      },
+      {
+       "offset": 84,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-afc-bournemouth-ac-mailand.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S66": {
+   "id": "S66",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Beşiktaş – Crystal Palace",
+   "details": "Europa League · Ligaphase · Do 22.10. 21:00 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-besiktas-crystal-palace.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Europa League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "21:00",
+    "datum": "Donnerstag · 22. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-22/hintergrund/1845-ofi-crete-bayer-leverkusen.png",
+    "heim": {
+     "name": "Beşiktaş",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/1895.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Crystal Palace",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/384.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "1895": "https://a.espncdn.com/i/teamlogos/soccer/500/1895.png",
+    "384": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png"
+   },
+   "tag": "2026-10-22",
+   "wettbewerb": "Europa League",
+   "status": "offen",
+   "erstellt": "2026-10-22T07:01:34.816120+02:00",
+   "nachrichten": [
+    {
+     "message_id": 177,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Beşiktaş – Crystal Palace\nEuropa League · Ligaphase · Do 22.10. 21:00 Uhr · S66\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 25,
+       "type": "bold"
+      },
+      {
+       "offset": 81,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-besiktas-crystal-palace.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S67": {
+   "id": "S67",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Omonia Nicosia – Benfica Lissabon",
+   "details": "Europa League · Ligaphase · Do 22.10. 21:00 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-omonia-nicosia-benfica-lissabon.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Europa League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "21:00",
+    "datum": "Donnerstag · 22. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-22/hintergrund/1845-ofi-crete-bayer-leverkusen.png",
+    "heim": {
+     "name": "Omonia Nicosia",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/617.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Benfica Lissabon",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/1929.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "617": "https://a.espncdn.com/i/teamlogos/soccer/500/617.png",
+    "1929": "https://a.espncdn.com/i/teamlogos/soccer/500/1929.png"
+   },
+   "tag": "2026-10-22",
+   "wettbewerb": "Europa League",
+   "status": "offen",
+   "erstellt": "2026-10-22T07:01:38.555669+02:00",
+   "nachrichten": [
+    {
+     "message_id": 178,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Omonia Nicosia – Benfica Lissabon\nEuropa League · Ligaphase · Do 22.10. 21:00 Uhr · S67\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 33,
+       "type": "bold"
+      },
+      {
+       "offset": 89,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-omonia-nicosia-benfica-lissabon.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S68": {
+   "id": "S68",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Ararat-Armenia – AZ Alkmaar",
+   "details": "Europa League · Ligaphase · Do 22.10. 18:45 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/1845-ararat-armenia-az-alkmaar.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Europa League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "18:45",
+    "datum": "Donnerstag · 22. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-22/hintergrund/1845-ofi-crete-bayer-leverkusen.png",
+    "heim": {
+     "name": "Ararat-Armenia",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/20024.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "AZ Alkmaar",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/140.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "20024": "https://a.espncdn.com/i/teamlogos/soccer/500/20024.png",
+    "140": "https://a.espncdn.com/i/teamlogos/soccer/500/140.png"
+   },
+   "tag": "2026-10-22",
+   "wettbewerb": "Europa League",
+   "status": "offen",
+   "erstellt": "2026-10-22T07:01:42.230877+02:00",
+   "nachrichten": [
+    {
+     "message_id": 179,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Ararat-Armenia – AZ Alkmaar\nEuropa League · Ligaphase · Do 22.10. 18:45 Uhr · S68\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 27,
+       "type": "bold"
+      },
+      {
+       "offset": 83,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/1845-ararat-armenia-az-alkmaar.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S69": {
+   "id": "S69",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Dinamo Zagreb – NEC Nijmegen",
+   "details": "Europa League · Ligaphase · Do 22.10. 18:45 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/1845-dinamo-zagreb-nec-nijmegen.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Europa League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "18:45",
+    "datum": "Donnerstag · 22. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-22/hintergrund/1845-ofi-crete-bayer-leverkusen.png",
+    "heim": {
+     "name": "Dinamo Zagreb",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/597.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "NEC Nijmegen",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/147.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "597": "https://a.espncdn.com/i/teamlogos/soccer/500/597.png",
+    "147": "https://a.espncdn.com/i/teamlogos/soccer/500/147.png"
+   },
+   "tag": "2026-10-22",
+   "wettbewerb": "Europa League",
+   "status": "offen",
+   "erstellt": "2026-10-22T07:01:46.180847+02:00",
+   "nachrichten": [
+    {
+     "message_id": 180,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Dinamo Zagreb – NEC Nijmegen\nEuropa League · Ligaphase · Do 22.10. 18:45 Uhr · S69\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 28,
+       "type": "bold"
+      },
+      {
+       "offset": 84,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/1845-dinamo-zagreb-nec-nijmegen.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S70": {
+   "id": "S70",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Ferencvaros – Torreense",
+   "details": "Europa League · Ligaphase · Do 22.10. 18:45 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/1845-ferencvaros-torreense.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Europa League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "18:45",
+    "datum": "Donnerstag · 22. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-22/hintergrund/1845-ofi-crete-bayer-leverkusen.png",
+    "heim": {
+     "name": "Ferencvaros",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/622.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Torreense",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/21615.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "622": "https://a.espncdn.com/i/teamlogos/soccer/500/622.png",
+    "21615": "https://a.espncdn.com/i/teamlogos/soccer/500/21615.png"
+   },
+   "tag": "2026-10-22",
+   "wettbewerb": "Europa League",
+   "status": "offen",
+   "erstellt": "2026-10-22T07:01:50.039203+02:00",
+   "nachrichten": [
+    {
+     "message_id": 181,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Ferencvaros – Torreense\nEuropa League · Ligaphase · Do 22.10. 18:45 Uhr · S70\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 23,
+       "type": "bold"
+      },
+      {
+       "offset": 79,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/1845-ferencvaros-torreense.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S71": {
+   "id": "S71",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Lech Poznan – Sunderland",
+   "details": "Europa League · Ligaphase · Do 22.10. 18:45 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/1845-lech-poznan-sunderland.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Europa League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "18:45",
+    "datum": "Donnerstag · 22. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-22/hintergrund/1845-ofi-crete-bayer-leverkusen.png",
+    "heim": {
+     "name": "Lech Poznan",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/2990.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Sunderland",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/366.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "2990": "https://a.espncdn.com/i/teamlogos/soccer/500/2990.png",
+    "366": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png"
+   },
+   "tag": "2026-10-22",
+   "wettbewerb": "Europa League",
+   "status": "offen",
+   "erstellt": "2026-10-22T07:01:55.096964+02:00",
+   "nachrichten": [
+    {
+     "message_id": 182,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Lech Poznan – Sunderland\nEuropa League · Ligaphase · Do 22.10. 18:45 Uhr · S71\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 24,
+       "type": "bold"
+      },
+      {
+       "offset": 80,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/1845-lech-poznan-sunderland.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S72": {
+   "id": "S72",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "SK Sturm Graz – Marseille",
+   "details": "Europa League · Ligaphase · Do 22.10. 18:45 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/1845-sk-sturm-graz-marseille.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Europa League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "18:45",
+    "datum": "Donnerstag · 22. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-22/hintergrund/1845-ofi-crete-bayer-leverkusen.png",
+    "heim": {
+     "name": "SK Sturm Graz",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/3746.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Marseille",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/176.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "3746": "https://a.espncdn.com/i/teamlogos/soccer/500/3746.png",
+    "176": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png"
+   },
+   "tag": "2026-10-22",
+   "wettbewerb": "Europa League",
+   "status": "offen",
+   "erstellt": "2026-10-22T07:01:58.914424+02:00",
+   "nachrichten": [
+    {
+     "message_id": 183,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "SK Sturm Graz – Marseille\nEuropa League · Ligaphase · Do 22.10. 18:45 Uhr · S72\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 25,
+       "type": "bold"
+      },
+      {
+       "offset": 81,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/1845-sk-sturm-graz-marseille.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S73": {
+   "id": "S73",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Union St.-Gilloise – Hapoel Be'er",
+   "details": "Europa League · Ligaphase · Do 22.10. 18:45 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/1845-union-st-gilloise-hapoel-be-er.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Europa League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "18:45",
+    "datum": "Donnerstag · 22. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-22/hintergrund/1845-ofi-crete-bayer-leverkusen.png",
+    "heim": {
+     "name": "Union St.-Gilloise",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/5807.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Hapoel Be'er",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/13083.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "5807": "https://a.espncdn.com/i/teamlogos/soccer/500/5807.png",
+    "13083": "https://a.espncdn.com/i/teamlogos/soccer/500/13083.png"
+   },
+   "tag": "2026-10-22",
+   "wettbewerb": "Europa League",
+   "status": "offen",
+   "erstellt": "2026-10-22T07:02:02.861608+02:00",
+   "nachrichten": [
+    {
+     "message_id": 184,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Union St.-Gilloise – Hapoel Be'er\nEuropa League · Ligaphase · Do 22.10. 18:45 Uhr · S73\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 33,
+       "type": "bold"
+      },
+      {
+       "offset": 89,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/1845-union-st-gilloise-hapoel-be-er.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S74": {
+   "id": "S74",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Celtic Glasgow – Celta Vigo",
+   "details": "Europa League · Ligaphase · Do 22.10. 21:00 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-celtic-glasgow-celta-vigo.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Europa League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "21:00",
+    "datum": "Donnerstag · 22. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-22/hintergrund/1845-ofi-crete-bayer-leverkusen.png",
+    "heim": {
+     "name": "Celtic Glasgow",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/256.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Celta Vigo",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/85.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "256": "https://a.espncdn.com/i/teamlogos/soccer/500/256.png",
+    "85": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png"
+   },
+   "tag": "2026-10-22",
+   "wettbewerb": "Europa League",
+   "status": "offen",
+   "erstellt": "2026-10-22T07:02:06.779425+02:00",
+   "nachrichten": [
+    {
+     "message_id": 185,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Celtic Glasgow – Celta Vigo\nEuropa League · Ligaphase · Do 22.10. 21:00 Uhr · S74\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 27,
+       "type": "bold"
+      },
+      {
+       "offset": 83,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-celtic-glasgow-celta-vigo.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S75": {
+   "id": "S75",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Jagiellonia Bialystok – Anderlecht",
+   "details": "Europa League · Ligaphase · Do 22.10. 21:00 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-jagiellonia-bialystok-anderlecht.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Europa League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "21:00",
+    "datum": "Donnerstag · 22. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-22/hintergrund/1845-ofi-crete-bayer-leverkusen.png",
+    "heim": {
+     "name": "Jagiellonia Bialystok",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/11505.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Anderlecht",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/441.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "11505": "https://a.espncdn.com/i/teamlogos/soccer/500/11505.png",
+    "441": "https://a.espncdn.com/i/teamlogos/soccer/500/441.png"
+   },
+   "tag": "2026-10-22",
+   "wettbewerb": "Europa League",
+   "status": "offen",
+   "erstellt": "2026-10-22T07:02:10.464830+02:00",
+   "nachrichten": [
+    {
+     "message_id": 186,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Jagiellonia Bialystok – Anderlecht\nEuropa League · Ligaphase · Do 22.10. 21:00 Uhr · S75\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 34,
+       "type": "bold"
+      },
+      {
+       "offset": 90,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-jagiellonia-bialystok-anderlecht.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S76": {
+   "id": "S76",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Lillestrom – Real Sociedad",
+   "details": "Europa League · Ligaphase · Do 22.10. 21:00 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-lillestrom-real-sociedad.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Europa League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "21:00",
+    "datum": "Donnerstag · 22. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-22/hintergrund/1845-ofi-crete-bayer-leverkusen.png",
+    "heim": {
+     "name": "Lillestrom",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/987.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Real Sociedad",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/89.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "987": "https://a.espncdn.com/i/teamlogos/soccer/500/987.png",
+    "89": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png"
+   },
+   "tag": "2026-10-22",
+   "wettbewerb": "Europa League",
+   "status": "offen",
+   "erstellt": "2026-10-22T07:02:14.110906+02:00",
+   "nachrichten": [
+    {
+     "message_id": 187,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Lillestrom – Real Sociedad\nEuropa League · Ligaphase · Do 22.10. 21:00 Uhr · S76\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 26,
+       "type": "bold"
+      },
+      {
+       "offset": 82,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-lillestrom-real-sociedad.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S77": {
+   "id": "S77",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "NK Celje – RB Salzburg",
+   "details": "Europa League · Ligaphase · Do 22.10. 21:00 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-nk-celje-rb-salzburg.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Europa League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "21:00",
+    "datum": "Donnerstag · 22. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-22/hintergrund/1845-ofi-crete-bayer-leverkusen.png",
+    "heim": {
+     "name": "NK Celje",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/3362.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "RB Salzburg",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/2790.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "3362": "https://a.espncdn.com/i/teamlogos/soccer/500/3362.png",
+    "2790": "https://a.espncdn.com/i/teamlogos/soccer/500/2790.png"
+   },
+   "tag": "2026-10-22",
+   "wettbewerb": "Europa League",
+   "status": "offen",
+   "erstellt": "2026-10-22T07:02:17.605829+02:00",
+   "nachrichten": [
+    {
+     "message_id": 188,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "NK Celje – RB Salzburg\nEuropa League · Ligaphase · Do 22.10. 21:00 Uhr · S77\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 22,
+       "type": "bold"
+      },
+      {
+       "offset": 78,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-nk-celje-rb-salzburg.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S78": {
+   "id": "S78",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Olympiakos Piräus – Sparta Prag",
+   "details": "Europa League · Ligaphase · Do 22.10. 21:00 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-olympiakos-piraeus-sparta-prag.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Europa League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "21:00",
+    "datum": "Donnerstag · 22. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-22/hintergrund/1845-ofi-crete-bayer-leverkusen.png",
+    "heim": {
+     "name": "Olympiakos Piräus",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/435.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Sparta Prag",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/433.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "435": "https://a.espncdn.com/i/teamlogos/soccer/500/435.png",
+    "433": "https://a.espncdn.com/i/teamlogos/soccer/500/433.png"
+   },
+   "tag": "2026-10-22",
+   "wettbewerb": "Europa League",
+   "status": "offen",
+   "erstellt": "2026-10-22T07:02:21.308101+02:00",
+   "nachrichten": [
+    {
+     "message_id": 189,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Olympiakos Piräus – Sparta Prag\nEuropa League · Ligaphase · Do 22.10. 21:00 Uhr · S78\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 31,
+       "type": "bold"
+      },
+      {
+       "offset": 87,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-olympiakos-piraeus-sparta-prag.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S79": {
+   "id": "S79",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Viktoria Plzen – Levski Sofia",
+   "details": "Europa League · Ligaphase · Do 22.10. 21:00 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-viktoria-plzen-levski-sofia.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Europa League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "21:00",
+    "datum": "Donnerstag · 22. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-22/hintergrund/1845-ofi-crete-bayer-leverkusen.png",
+    "heim": {
+     "name": "Viktoria Plzen",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/11706.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Levski Sofia",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/490.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "11706": "https://a.espncdn.com/i/teamlogos/soccer/500/11706.png",
+    "490": "https://a.espncdn.com/i/teamlogos/soccer/500/490.png"
+   },
+   "tag": "2026-10-22",
+   "wettbewerb": "Europa League",
+   "status": "offen",
+   "erstellt": "2026-10-22T07:02:25.292035+02:00",
+   "nachrichten": [
+    {
+     "message_id": 190,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Viktoria Plzen – Levski Sofia\nEuropa League · Ligaphase · Do 22.10. 21:00 Uhr · S79\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 29,
+       "type": "bold"
+      },
+      {
+       "offset": 85,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-viktoria-plzen-levski-sofia.jpg"
       }
      ]
     }
