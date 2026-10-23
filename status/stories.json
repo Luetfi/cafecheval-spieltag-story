@@ -1,65 +1,6 @@
 {
- "nr": 79,
+ "nr": 80,
  "stories": {
-  "S40": {
-   "id": "S40",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "VfB Stuttgart – Atlético Madrid",
-   "details": "Champions League · Ligaphase · Di 20.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-vfb-stuttgart-atletico-madrid.jpg",
-   "daten": {
-    "kicker": "Morgen live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Dienstag · 20. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-20/hintergrund/2100-vfb-stuttgart-atletico-madrid.png",
-    "heim": {
-     "name": "VfB Stuttgart",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/134.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Atlético Madrid",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/1068.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "134": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
-    "1068": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
-   },
-   "tag": "2026-10-20",
-   "wettbewerb": "Champions League",
-   "status": "gepostet",
-   "erstellt": "2026-10-19T14:38:13.501253+02:00",
-   "nachrichten": [
-    {
-     "message_id": 131,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "⭐ Empfohlen\nVfB Stuttgart – Atlético Madrid\nChampions League · Ligaphase · Di 20.10. 21:00 Uhr · S40\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 12,
-       "length": 31,
-       "type": "bold"
-      },
-      {
-       "offset": 102,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-vfb-stuttgart-atletico-madrid.jpg"
-      }
-     ]
-    }
-   ]
-  },
   "S41": {
    "id": "S41",
    "art": "allgemein",
@@ -2312,6 +2253,65 @@
        "length": 20,
        "type": "text_link",
        "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-22/2100-viktoria-plzen-levski-sofia.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S80": {
+   "id": "S80",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "VfB Stuttgart – Borussia M'gladbach",
+   "details": "Bundesliga · Fr 23.10. 20:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-23/2030-vfb-stuttgart-borussia-m-gladbach.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "20:30",
+    "datum": "Freitag · 23. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-23/hintergrund/2030-vfb-stuttgart-borussia-m-gladbach.png",
+    "heim": {
+     "name": "VfB Stuttgart",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/134.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Borussia M'gladbach",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/268.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "134": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
+    "268": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png"
+   },
+   "tag": "2026-10-23",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-10-23T07:01:38.472990+02:00",
+   "nachrichten": [
+    {
+     "message_id": 193,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "⭐ Empfohlen\nVfB Stuttgart – Borussia M'gladbach\nBundesliga · Fr 23.10. 20:30 Uhr · S80\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 12,
+       "length": 35,
+       "type": "bold"
+      },
+      {
+       "offset": 88,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-23/2030-vfb-stuttgart-borussia-m-gladbach.jpg"
       }
      ]
     }
