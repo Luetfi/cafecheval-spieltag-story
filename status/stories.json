@@ -1,316 +1,6 @@
 {
- "nr": 80,
+ "nr": 86,
  "stories": {
-  "S41": {
-   "id": "S41",
-   "art": "allgemein",
-   "vorlage": "allgemein",
-   "titel": "Champions League",
-   "details": "Allgemeine Story",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-19/eigen-124041.jpg",
-   "daten": {
-    "kicker": "Morgen live bei uns",
-    "titel": "Champions League",
-    "unter": "am *Dienstag* | 18:45 Fenerbahçe – Slavia Prag · Sabah FK – Borussia Dortmund · 21:00 AS Rom – Slovan Bratislava · FC Porto – PSV Eindhoven · Liverpool – Villarreal · Manchester City – AEK Athen · SSC Neapel – Bodø/Glimt · Paris Saint-Germain – FC Barcelona · VfB Stuttgart – Atlético Madrid",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/hintergruende/f741166d2f81f5700ac299ac09d95a0e.png",
-    "weich": true
-   },
-   "logos": {},
-   "tag": "2026-10-19",
-   "wettbewerb": "",
-   "status": "ersetzt",
-   "erstellt": "2026-10-19T14:40:44.981761+02:00",
-   "nachrichten": [
-    {
-     "message_id": 141,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Champions League\nAllgemeine Story · S41\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 16,
-       "type": "bold"
-      },
-      {
-       "offset": 41,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-19/eigen-124041.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S42": {
-   "id": "S42",
-   "art": "allgemein",
-   "vorlage": "allgemein",
-   "titel": "Champions League",
-   "details": "Allgemeine Story",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-19/42-124117.jpg",
-   "daten": {
-    "kicker": "Morgen live bei uns",
-    "titel": "Champions League",
-    "unter": "am *Dienstag* | *18:45* | Fenerbahçe – Slavia Prag | Sabah FK – Borussia Dortmund | *21:00* | AS Rom – Slovan Bratislava | FC Porto – PSV Eindhoven | Liverpool – Villarreal | Manchester City – AEK Athen | SSC Neapel – Bodø/Glimt | Paris Saint-Germain – FC Barcelona | VfB Stuttgart – Atlético Madrid",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/hintergruende/f741166d2f81f5700ac299ac09d95a0e.png",
-    "weich": true
-   },
-   "logos": {},
-   "tag": "2026-10-19",
-   "wettbewerb": "",
-   "status": "ersetzt",
-   "erstellt": "2026-10-19T14:41:21.011448+02:00",
-   "nachrichten": [
-    {
-     "message_id": 145,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Champions League\nAllgemeine Story · S42\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 16,
-       "type": "bold"
-      },
-      {
-       "offset": 41,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-19/42-124117.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S43": {
-   "id": "S43",
-   "art": "allgemein",
-   "vorlage": "allgemein",
-   "titel": "18:45 Fenerbahçe – Slavia Prag Sabah FK – Borussia Dortmund 21:00 AS Rom – Slovan Bratislava FC Porto – PSV Eindhoven Liverpool – Villarreal Manchester City – AEK Athen SSC Neapel – Bodø/Glimt Paris Saint-Germain – FC Barcelona VfB Stuttgart – Atlético Madrid",
-   "details": "Allgemeine Story",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-19/43-124651.jpg",
-   "daten": {
-    "kicker": "Morgen live bei uns",
-    "titel": "*18:45* Fenerbahçe – Slavia Prag|Sabah FK – Borussia Dortmund|*21:00* AS Rom – Slovan Bratislava|FC Porto – PSV Eindhoven|Liverpool – Villarreal|Manchester City – AEK Athen|SSC Neapel – Bodø/Glimt|Paris Saint-Germain – FC Barcelona|VfB Stuttgart – Atlético Madrid",
-    "unter": "Champions League am *Dienstag*",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/hintergruende/f741166d2f81f5700ac299ac09d95a0e.png",
-    "weich": true,
-    "titel_px": 96
-   },
-   "logos": {},
-   "tag": "2026-10-19",
-   "wettbewerb": "",
-   "status": "offen",
-   "erstellt": "2026-10-19T14:46:54.856036+02:00",
-   "nachrichten": [
-    {
-     "message_id": 149,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "18:45 Fenerbahçe – Slavia Prag Sabah FK – Borussia Dortmund 21:00 AS Rom – Slovan Bratislava FC Porto – PSV Eindhoven Liverpool – Villarreal Manchester City – AEK Athen SSC Neapel – Bodø/Glimt Paris Saint-Germain – FC Barcelona VfB Stuttgart – Atlético Madrid\nAllgemeine Story · S43\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 259,
-       "type": "bold"
-      },
-      {
-       "offset": 284,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-19/43-124651.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S44": {
-   "id": "S44",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "VfB Stuttgart – Atlético Madrid",
-   "details": "Champions League · Ligaphase · Di 20.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-vfb-stuttgart-atletico-madrid.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Dienstag · 20. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-20/hintergrund/2100-vfb-stuttgart-atletico-madrid.png",
-    "heim": {
-     "name": "VfB Stuttgart",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/134.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Atlético Madrid",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/1068.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "134": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
-    "1068": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
-   },
-   "tag": "2026-10-20",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-20T07:01:15.789725+02:00",
-   "nachrichten": [
-    {
-     "message_id": 151,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "⭐ Empfohlen\nVfB Stuttgart – Atlético Madrid\nChampions League · Ligaphase · Di 20.10. 21:00 Uhr · S44\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 12,
-       "length": 31,
-       "type": "bold"
-      },
-      {
-       "offset": 102,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-vfb-stuttgart-atletico-madrid.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S45": {
-   "id": "S45",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Sabah FK – Borussia Dortmund",
-   "details": "Champions League · Ligaphase · Di 20.10. 18:45 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/1845-sabah-fk-borussia-dortmund.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "18:45",
-    "datum": "Dienstag · 20. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-20/hintergrund/2100-vfb-stuttgart-atletico-madrid.png",
-    "heim": {
-     "name": "Sabah FK",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/21922.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Borussia Dortmund",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/124.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "21922": "https://a.espncdn.com/i/teamlogos/soccer/500/21922.png",
-    "124": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png"
-   },
-   "tag": "2026-10-20",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-20T07:01:19.995450+02:00",
-   "nachrichten": [
-    {
-     "message_id": 152,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "⭐ Empfohlen\nSabah FK – Borussia Dortmund\nChampions League · Ligaphase · Di 20.10. 18:45 Uhr · S45\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 12,
-       "length": 28,
-       "type": "bold"
-      },
-      {
-       "offset": 99,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/1845-sabah-fk-borussia-dortmund.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S46": {
-   "id": "S46",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Paris Saint-Germain – FC Barcelona",
-   "details": "Champions League · Ligaphase · Di 20.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-paris-saint-germain-fc-barcelona.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Dienstag · 20. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-20/hintergrund/2100-vfb-stuttgart-atletico-madrid.png",
-    "heim": {
-     "name": "Paris Saint-Germain",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/160.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "FC Barcelona",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/83.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "160": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
-    "83": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
-   },
-   "tag": "2026-10-20",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-20T07:01:23.922598+02:00",
-   "nachrichten": [
-    {
-     "message_id": 153,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Paris Saint-Germain – FC Barcelona\nChampions League · Ligaphase · Di 20.10. 21:00 Uhr · S46\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 34,
-       "type": "bold"
-      },
-      {
-       "offset": 93,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-paris-saint-germain-fc-barcelona.jpg"
-      }
-     ]
-    }
-   ]
-  },
   "S47": {
    "id": "S47",
    "art": "spiel",
@@ -2312,6 +2002,360 @@
        "length": 20,
        "type": "text_link",
        "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-23/2030-vfb-stuttgart-borussia-m-gladbach.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S81": {
+   "id": "S81",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Borussia Dortmund – Eintracht Frankfurt",
+   "details": "Bundesliga · Sa 24.10. 18:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-24/1830-borussia-dortmund-eintracht-frankfurt.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "18:30",
+    "datum": "Samstag · 24. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-24/hintergrund/1830-borussia-dortmund-eintracht-frankfurt.png",
+    "heim": {
+     "name": "Borussia Dortmund",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/124.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Eintracht Frankfurt",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/125.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "124": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png",
+    "125": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png"
+   },
+   "tag": "2026-10-24",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-10-24T07:01:30.559655+02:00",
+   "nachrichten": [
+    {
+     "message_id": 196,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "⭐ Empfohlen\nBorussia Dortmund – Eintracht Frankfurt\nBundesliga · Sa 24.10. 18:30 Uhr · S81\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 12,
+       "length": 39,
+       "type": "bold"
+      },
+      {
+       "offset": 92,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-24/1830-borussia-dortmund-eintracht-frankfurt.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S82": {
+   "id": "S82",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "RB Leipzig – SV Elversberg",
+   "details": "Bundesliga · Sa 24.10. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-24/1530-rb-leipzig-sv-elversberg.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Samstag · 24. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-24/hintergrund/1830-borussia-dortmund-eintracht-frankfurt.png",
+    "heim": {
+     "name": "RB Leipzig",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/11420.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "SV Elversberg",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/10388.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "11420": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
+    "10388": "https://a.espncdn.com/i/teamlogos/soccer/500/10388.png"
+   },
+   "tag": "2026-10-24",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-10-24T07:01:33.853381+02:00",
+   "nachrichten": [
+    {
+     "message_id": 197,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "RB Leipzig – SV Elversberg\nBundesliga · Sa 24.10. 15:30 Uhr · S82\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 26,
+       "type": "bold"
+      },
+      {
+       "offset": 67,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-24/1530-rb-leipzig-sv-elversberg.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S83": {
+   "id": "S83",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "FC Augsburg – 1. FC Union Berlin",
+   "details": "Bundesliga · Sa 24.10. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-24/1530-fc-augsburg-1-fc-union-berlin.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Samstag · 24. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-24/hintergrund/1830-borussia-dortmund-eintracht-frankfurt.png",
+    "heim": {
+     "name": "FC Augsburg",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/3841.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "1. FC Union Berlin",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/598.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "3841": "https://a.espncdn.com/i/teamlogos/soccer/500/3841.png",
+    "598": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png"
+   },
+   "tag": "2026-10-24",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-10-24T07:01:37.848542+02:00",
+   "nachrichten": [
+    {
+     "message_id": 198,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "FC Augsburg – 1. FC Union Berlin\nBundesliga · Sa 24.10. 15:30 Uhr · S83\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 32,
+       "type": "bold"
+      },
+      {
+       "offset": 73,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-24/1530-fc-augsburg-1-fc-union-berlin.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S84": {
+   "id": "S84",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "1. FC Köln – FC Schalke 04",
+   "details": "Bundesliga · Sa 24.10. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-24/1530-1-fc-koeln-fc-schalke-04.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Samstag · 24. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-24/hintergrund/1830-borussia-dortmund-eintracht-frankfurt.png",
+    "heim": {
+     "name": "1. FC Köln",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/122.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "FC Schalke 04",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/133.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "122": "https://a.espncdn.com/i/teamlogos/soccer/500/122.png",
+    "133": "https://a.espncdn.com/i/teamlogos/soccer/500/133.png"
+   },
+   "tag": "2026-10-24",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-10-24T07:01:41.781824+02:00",
+   "nachrichten": [
+    {
+     "message_id": 199,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "1. FC Köln – FC Schalke 04\nBundesliga · Sa 24.10. 15:30 Uhr · S84\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 26,
+       "type": "bold"
+      },
+      {
+       "offset": 67,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-24/1530-1-fc-koeln-fc-schalke-04.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S85": {
+   "id": "S85",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "1. FSV Mainz 05 – SV Werder Bremen",
+   "details": "Bundesliga · Sa 24.10. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-24/1530-1-fsv-mainz-05-sv-werder-bremen.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Samstag · 24. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-24/hintergrund/1830-borussia-dortmund-eintracht-frankfurt.png",
+    "heim": {
+     "name": "1. FSV Mainz 05",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/2950.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "SV Werder Bremen",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/137.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "2950": "https://a.espncdn.com/i/teamlogos/soccer/500/2950.png",
+    "137": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png"
+   },
+   "tag": "2026-10-24",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-10-24T07:01:45.283532+02:00",
+   "nachrichten": [
+    {
+     "message_id": 200,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "1. FSV Mainz 05 – SV Werder Bremen\nBundesliga · Sa 24.10. 15:30 Uhr · S85\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 34,
+       "type": "bold"
+      },
+      {
+       "offset": 75,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-24/1530-1-fsv-mainz-05-sv-werder-bremen.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S86": {
+   "id": "S86",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "SC Paderborn 07 – Hamburger SV",
+   "details": "Bundesliga · Sa 24.10. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-24/1530-sc-paderborn-07-hamburger-sv.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Samstag · 24. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-24/hintergrund/1830-borussia-dortmund-eintracht-frankfurt.png",
+    "heim": {
+     "name": "SC Paderborn 07",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/3307.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Hamburger SV",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/127.png",
+     "flagge": true
+    }
+   },
+   "logos": {
+    "3307": "https://a.espncdn.com/i/teamlogos/soccer/500/3307.png",
+    "127": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png"
+   },
+   "tag": "2026-10-24",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-10-24T07:01:48.494790+02:00",
+   "nachrichten": [
+    {
+     "message_id": 201,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "SC Paderborn 07 – Hamburger SV\nBundesliga · Sa 24.10. 15:30 Uhr · S86\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 30,
+       "type": "bold"
+      },
+      {
+       "offset": 71,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-24/1530-sc-paderborn-07-hamburger-sv.jpg"
       }
      ]
     }
