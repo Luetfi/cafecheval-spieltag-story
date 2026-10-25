@@ -1,124 +1,6 @@
 {
- "nr": 86,
+ "nr": 88,
  "stories": {
-  "S47": {
-   "id": "S47",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Fenerbahçe – Slavia Prag",
-   "details": "Champions League · Ligaphase · Di 20.10. 18:45 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/1845-fenerbahce-slavia-prag.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "18:45",
-    "datum": "Dienstag · 20. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-20/hintergrund/2100-vfb-stuttgart-atletico-madrid.png",
-    "heim": {
-     "name": "Fenerbahçe",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/436.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Slavia Prag",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/494.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "436": "https://a.espncdn.com/i/teamlogos/soccer/500/436.png",
-    "494": "https://a.espncdn.com/i/teamlogos/soccer/500/494.png"
-   },
-   "tag": "2026-10-20",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-20T07:01:27.826464+02:00",
-   "nachrichten": [
-    {
-     "message_id": 154,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Fenerbahçe – Slavia Prag\nChampions League · Ligaphase · Di 20.10. 18:45 Uhr · S47\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 24,
-       "type": "bold"
-      },
-      {
-       "offset": 83,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/1845-fenerbahce-slavia-prag.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S48": {
-   "id": "S48",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "FC Porto – PSV Eindhoven",
-   "details": "Champions League · Ligaphase · Di 20.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-fc-porto-psv-eindhoven.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Dienstag · 20. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-20/hintergrund/2100-vfb-stuttgart-atletico-madrid.png",
-    "heim": {
-     "name": "FC Porto",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/437.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "PSV Eindhoven",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/148.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "437": "https://a.espncdn.com/i/teamlogos/soccer/500/437.png",
-    "148": "https://a.espncdn.com/i/teamlogos/soccer/500/148.png"
-   },
-   "tag": "2026-10-20",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-20T07:01:31.743207+02:00",
-   "nachrichten": [
-    {
-     "message_id": 155,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "FC Porto – PSV Eindhoven\nChampions League · Ligaphase · Di 20.10. 21:00 Uhr · S48\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 24,
-       "type": "bold"
-      },
-      {
-       "offset": 83,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-fc-porto-psv-eindhoven.jpg"
-      }
-     ]
-    }
-   ]
-  },
   "S49": {
    "id": "S49",
    "art": "spiel",
@@ -2356,6 +2238,124 @@
        "length": 20,
        "type": "text_link",
        "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-24/1530-sc-paderborn-07-hamburger-sv.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S87": {
+   "id": "S87",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "TSG Hoffenheim – Bayer Leverkusen",
+   "details": "Bundesliga · So 25.10. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-25/1530-tsg-hoffenheim-bayer-leverkusen.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Sonntag · 25. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-25/hintergrund/1530-tsg-hoffenheim-bayer-leverkusen.png",
+    "heim": {
+     "name": "TSG Hoffenheim",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/7911.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Bayer Leverkusen",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/131.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "7911": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png",
+    "131": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png"
+   },
+   "tag": "2026-10-25",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-10-25T07:02:07.814623+01:00",
+   "nachrichten": [
+    {
+     "message_id": 204,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "TSG Hoffenheim – Bayer Leverkusen\nBundesliga · So 25.10. 15:30 Uhr · S87\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 33,
+       "type": "bold"
+      },
+      {
+       "offset": 74,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-25/1530-tsg-hoffenheim-bayer-leverkusen.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S88": {
+   "id": "S88",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "SC Freiburg – FC Bayern München",
+   "details": "Bundesliga · So 25.10. 17:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-25/1730-sc-freiburg-fc-bayern-muenchen.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "17:30",
+    "datum": "Sonntag · 25. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-25/hintergrund/1530-tsg-hoffenheim-bayer-leverkusen.png",
+    "heim": {
+     "name": "SC Freiburg",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/126.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "FC Bayern München",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/132.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "126": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png",
+    "132": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png"
+   },
+   "tag": "2026-10-25",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-10-25T07:02:11.786435+01:00",
+   "nachrichten": [
+    {
+     "message_id": 205,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "SC Freiburg – FC Bayern München\nBundesliga · So 25.10. 17:30 Uhr · S88\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 31,
+       "type": "bold"
+      },
+      {
+       "offset": 72,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-25/1730-sc-freiburg-fc-bayern-muenchen.jpg"
       }
      ]
     }
