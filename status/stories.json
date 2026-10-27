@@ -1,65 +1,6 @@
 {
- "nr": 88,
+ "nr": 89,
  "stories": {
-  "S49": {
-   "id": "S49",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Liverpool – Villarreal",
-   "details": "Champions League · Ligaphase · Di 20.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-liverpool-villarreal.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Dienstag · 20. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-20/hintergrund/2100-vfb-stuttgart-atletico-madrid.png",
-    "heim": {
-     "name": "Liverpool",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/364.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Villarreal",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/102.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "364": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
-    "102": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
-   },
-   "tag": "2026-10-20",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-20T07:01:36.182564+02:00",
-   "nachrichten": [
-    {
-     "message_id": 156,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Liverpool – Villarreal\nChampions League · Ligaphase · Di 20.10. 21:00 Uhr · S49\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 22,
-       "type": "bold"
-      },
-      {
-       "offset": 81,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-20/2100-liverpool-villarreal.jpg"
-      }
-     ]
-    }
-   ]
-  },
   "S50": {
    "id": "S50",
    "art": "spiel",
@@ -2356,6 +2297,65 @@
        "length": 20,
        "type": "text_link",
        "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-25/1730-sc-freiburg-fc-bayern-muenchen.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S89": {
+   "id": "S89",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Hamburger SV – Eintracht Frankfurt",
+   "details": "DFB-Pokal · 2. Runde · Di 27.10. 18:00 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-27/1800-hamburger-sv-eintracht-frankfurt.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "DFB-Pokal",
+    "runde": "2. Runde",
+    "leg": "",
+    "uhrzeit": "18:00",
+    "datum": "Dienstag · 27. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-27/hintergrund/1800-hamburger-sv-eintracht-frankfurt.png",
+    "heim": {
+     "name": "Hamburger SV",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/127.png",
+     "flagge": true
+    },
+    "gast": {
+     "name": "Eintracht Frankfurt",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/125.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "127": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png",
+    "125": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png"
+   },
+   "tag": "2026-10-27",
+   "wettbewerb": "DFB-Pokal",
+   "status": "offen",
+   "erstellt": "2026-10-27T07:01:48.285127+01:00",
+   "nachrichten": [
+    {
+     "message_id": 209,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Hamburger SV – Eintracht Frankfurt\nDFB-Pokal · 2. Runde · Di 27.10. 18:00 Uhr · S89\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 34,
+       "type": "bold"
+      },
+      {
+       "offset": 85,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-27/1800-hamburger-sv-eintracht-frankfurt.jpg"
       }
      ]
     }
