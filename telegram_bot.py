@@ -34,12 +34,14 @@ def text(nachricht, chat=None):
         _api('sendMessage', chat_id=c, text=nachricht, parse_mode='HTML', disable_web_page_preview=True)
 
 
-def story_senden(bild_url, titel, details, empfohlen=False, chats=None):
+def story_senden(bild_url, titel, details, empfohlen=False, chats=None, hinweis=''):
     """Schickt die Story (an alle Empfänger oder an `chats`), mit den Knöpfen „Posten“ und „Verwerfen“.
-    Gibt die gesendeten Nachrichten zurück (eine pro Empfänger)."""
+    `hinweis` steht unter dem Link und fällt beim Abschließen weg. Gibt die gesendeten Nachrichten zurück."""
     stern = '⭐ Empfohlen\n' if empfohlen else ''
     caption = (f'{stern}<b>{html.escape(titel)}</b>\n{html.escape(details)}\n\n'
                f'<a href="{html.escape(bild_url)}">Bild in voller Größe</a>')
+    if hinweis:
+        caption += f'\n\n{html.escape(hinweis)}'
     knoepfe = {'inline_keyboard': [[{'text': '✅ Posten', 'callback_data': POSTEN},
                                     {'text': '❌ Verwerfen', 'callback_data': VERWERFEN}]]}
     return [_api('sendPhoto', chat_id=c, photo=bild_url, caption=caption, parse_mode='HTML', reply_markup=knoepfe)

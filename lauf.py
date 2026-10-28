@@ -54,7 +54,8 @@ HILFE = ('Schreib mir einfach, was du brauchst, ganz normal, zum Beispiel:\n'
          '• <i>Story, dass wir heute geöffnet haben, mit Cocktail-Foto</i>\n'
          '• <i>Ändere oben den Text zu „Heute Abend bei uns“</i> (oder antworte direkt auf eine Story)\n'
          '• <i>Anderer Hintergrund, mehr Flutlicht und Regen</i>\n\n'
-         'Gepostet wird nur, wenn du bei einer Story auf <b>Posten</b> tippst.\n\n'
+         'Gepostet wird, wenn du bei einer Story auf <b>Posten</b> tippst. Ausnahme: Beliebte Spiele '
+         '(mit 🤖 markiert) gehen zur angegebenen Uhrzeit von selbst raus, außer du tippst vorher auf <b>Verwerfen</b>.\n\n'
          'Feste Befehle: /ligen (Spiele eines Wettbewerbs), /allgemein (Vorlagen), /heute (alle Spiele von heute), '
          '<code>/text Titel | Untertitel</code> (eigener Text).\n\n'
          'Automatische Stories (ohne Freigabe): /zeitplan zeigt den Plan, /pause setzt ihn für heute aus '
@@ -104,8 +105,10 @@ class Bot:
     # Stories erzeugen, merken und schicken
 
     def senden(self, art, daten, vorlage, titel, details, chats=None, empfohlen=False, logos=None, datei=None,
-               tag=None, wettbewerb=''):
-        """Rendert (falls nötig), lädt hoch, schickt mit Knöpfen und merkt sich die Story. Gibt die Nummer zurück."""
+               tag=None, wettbewerb='', auto=None):
+        """Rendert (falls nötig), lädt hoch, schickt mit Knöpfen und merkt sich die Story. Gibt die Nummer zurück.
+        `auto`: {'um': …, 'bis': …} (ISO-Zeiten), dann postet der Bot die Story um `um` selbst, falls sie
+        bis dahin weder gepostet noch verworfen ist und `bis` (Anstoß) noch nicht vorbei ist."""
         import hintergrund
         import story
         tag = tag or jetzt().date()
@@ -115,11 +118,12 @@ class Bot:
         url = hintergrund.hochladen(datei, ordner=f'cafecheval-stories/{tag.isoformat()}')
         self.nr += 1
         sid = f'S{self.nr}'
-        nachrichten = telegram_bot.story_senden(url, titel, f'{details} · {sid}', empfohlen, chats)
+        nachrichten = telegram_bot.story_senden(url, titel, f'{details} · {sid}', empfohlen, chats,
+                                                auto_hinweis(auto))
         self.stories[sid] = {
             'id': sid, 'art': art, 'vorlage': vorlage, 'titel': titel, 'details': details, 'url': url,
             'daten': daten, 'logos': logos or {}, 'tag': tag.isoformat(), 'wettbewerb': wettbewerb,
-            'status': 'offen', 'erstellt': jetzt().isoformat(),
+            'status': 'offen', 'erstellt': jetzt().isoformat(), 'auto': auto,
             'nachrichten': [{k: m.get(k) for k in ('message_id', 'chat', 'caption', 'caption_entities')}
                             for m in nachrichten],
         }
@@ -127,7 +131,7 @@ class Bot:
         print('an Telegram geschickt:', sid, titel)
         return sid
 
-    def story(self, s, chats=None, wunsch=None, kicker_text=None):
+    def story(self, s, chats=None, wunsch=None, kicker_text=None, auto=False):
         import story
         r = story.story_bauen(s, jetzt().date(), hintergruende=self.hintergruende, wunsch=wunsch,
                               kicker_text=kicker_text)
@@ -135,13 +139,23 @@ class Bot:
         details = ' · '.join(filter(None, [s['wettbewerb'], s['runde'], s['leg'],
                                            f'{KURZ[a.weekday()]} {a:%d.%m.} {a:%H:%M} Uhr']))
         logos = {s[k]['id']: s[k].get('logo') for k in ('heim', 'gast')}
+        plan = {'um': auto_zeit(s).isoformat(), 'bis': a.isoformat()} if auto else None
         return self.senden('spiel', r['daten'], 'story', f"{s['heim']['name']} – {s['gast']['name']}", details,
-                           chats, s.get('empfohlen', False), logos, r['datei'], s['tag'], s['wettbewerb'])
+                           chats, s.get('empfohlen', False), logos, r['datei'], s['tag'], s['wettbewerb'], plan)
 
-    def tagesstories(self, tag, chats=None):
+    def tagesstories(self, tag, chats=None, automatisch=False):
+        """Alle Spiele des Tages zur Freigabe. Mit `automatisch` werden die beliebtesten zusätzlich selbst gepostet."""
         spiele = spielplan.spiele(tag)
+        auto = set()
+        if automatisch and config.AUTO_POSTEN:  # spiele() ist schon nach Wichtigkeit sortiert
+            auto = {s['id'] for s in [s for s in spiele if beliebt(s)][:config.AUTO_MAX_PRO_TAG]}
         for s in spiele:
-            self.story(s, chats)
+            try:
+                self.story(s, chats, auto=s['id'] in auto)
+            except Exception as fehler:  # ein kaputtes Spiel darf die übrigen nicht aufhalten
+                traceback.print_exc()
+                telegram_bot.text(f"⚠️ Story für {html.escape(s['heim']['name'])} – {html.escape(s['gast']['name'])} "
+                                  f'fehlgeschlagen: {html.escape(str(fehler))}', chat=chats[0] if chats else None)
         return len(spiele)
 
     def allgemeine_story(self, schluessel, chat, text=None):
@@ -186,8 +200,10 @@ class Bot:
             titel = f"{daten['heim']['name']} – {daten['gast']['name']}"
         elif alt['vorlage'] == 'allgemein' and 'titel' in (felder or {}):
             titel = str(daten['titel']).replace('*', '').replace('|', ' ')
+        # Eine geplante automatische Story bleibt geplant, nur eben mit der neuen Version.
+        auto = alt.get('auto') if alt['status'] == 'offen' else None
         neu = self.senden(alt['art'], daten, alt['vorlage'], titel, alt['details'], [chat], logos=alt['logos'],
-                          tag=dt.date.fromisoformat(alt['tag']), wettbewerb=alt.get('wettbewerb', ''))
+                          tag=dt.date.fromisoformat(alt['tag']), wettbewerb=alt.get('wettbewerb', ''), auto=auto)
         if alt['status'] == 'offen':
             alt['status'] = 'ersetzt'
             for m in alt['nachrichten']:
@@ -384,7 +400,49 @@ class Bot:
             return None
         kommend = [z for t, z, k in self.termine_heute()
                    if k not in st['erledigt'] and z + dt.timedelta(minutes=config.ZEITPLAN_NACHHOLEN) > jetzt()]
+        kommend += [dt.datetime.fromisoformat(e['auto']['um']) for e in self.geplante_spiele()]
         return min(kommend) if kommend else None
+
+    # Beliebte Spiele automatisch posten (config.AUTO_POSTEN)
+
+    def geplante_spiele(self):
+        """Offene Spiel-Stories mit Auto-Postzeit, deren Anstoß noch nicht vorbei ist."""
+        return [e for e in self.stories.values()
+                if e['status'] == 'offen' and e.get('auto') and dt.datetime.fromisoformat(e['auto']['bis']) > jetzt()]
+
+    def spiele_pruefen(self):
+        faellig = [e for e in self.geplante_spiele() if dt.datetime.fromisoformat(e['auto']['um']) <= jetzt()]
+        if not faellig:
+            return
+        pausiert = self.pausiert(self.zeitplan_status())
+        for e in faellig:
+            if pausiert:
+                e['status'] = 'pausiert'
+                for m in e['nachrichten']:
+                    telegram_bot.abschliessen(m, '⏸ Nicht automatisch gepostet (Pause)')
+                print('pausiert, nicht gepostet:', e['id'])
+                continue
+            if e['url'] in self.gepostet:
+                e['status'] = 'gepostet'
+                continue
+            e['status'] = 'wird gepostet'
+            self.speichern()  # vor dem Posten merken: lieber einmal auslassen als doppelt posten
+            try:
+                instagram.story_posten(e['url'])
+            except Exception as fehler:
+                traceback.print_exc()
+                e['status'] = 'offen'
+                e['auto'] = None  # kein zweiter Automatik-Versuch, „Posten“ in Telegram geht weiter
+                telegram_bot.text(f"⚠️ Automatische Story {e['id']} ({html.escape(e['titel'])}) fehlgeschlagen: "
+                                  f'{html.escape(str(fehler))}\nMit „Posten“ an der Story kannst du es nochmal versuchen.')
+                continue
+            self.gepostet.add(e['url'])
+            speichere_gepostet(self.gepostet)
+            e['status'] = 'gepostet'
+            for m in e['nachrichten']:
+                telegram_bot.abschliessen(m, f'🤖 Automatisch gepostet um {jetzt():%H:%M} Uhr')
+            print('automatisch gepostet:', e['id'], e['titel'])
+        self.speichern()
 
     def zeitplan_pruefen(self):
         st = self.zeitplan_status()
@@ -439,6 +497,12 @@ class Bot:
             tage = 'täglich' if len(t['tage']) == 7 else ', '.join(KURZ[i] for i in t['tage'])
             name = allgemein.VORLAGEN[t['vorlage']]['knopf']
             zeilen.append(f"• {tage}, {t['zeit']} Uhr: {html.escape(name)}")
+        if config.AUTO_POSTEN:
+            zeilen.append(f'• beliebte Spiele (höchstens {config.AUTO_MAX_PRO_TAG} pro Tag), '
+                          f'{config.AUTO_VORLAUF} Stunden vor Anstoß')
+            for e in sorted(self.geplante_spiele(), key=lambda e: e['auto']['um']):
+                um = dt.datetime.fromisoformat(e['auto']['um'])
+                zeilen.append(f"   ⚽ {um:%H:%M} Uhr: {html.escape(e['titel'])} ({e['id']})")
         st = self.zeitplan_status()
         if self.pausiert(st):
             bis = dt.date.fromisoformat(st['pause_bis'])
@@ -451,6 +515,7 @@ class Bot:
         print(f'Bot läuft bis {bis:%H:%M} Uhr')
         while jetzt() < bis:
             self.zeitplan_pruefen()
+            self.spiele_pruefen()
             warten = (bis - jetzt()).total_seconds()
             termin = self.naechster_termin()
             if termin:
@@ -466,6 +531,28 @@ class Bot:
                 self.bearbeiten(e)
         speichere_gepostet(self.gepostet)
         self.speichern()
+
+
+def beliebt(s):
+    """Spiele, die ohne Freigabe gepostet werden: empfohlen (⭐) oder mit einem Publikumsmagneten."""
+    return s.get('empfohlen') or s.get('beliebt', 0) > 0
+
+
+def auto_zeit(s):
+    """AUTO_VORLAUF Stunden vor Anstoß, begrenzt auf AUTO_FRUEHESTENS bis AUTO_SPAETESTENS am Spieltag."""
+    tag = s['tag']
+    frueh = dt.datetime.combine(tag, dt.time.fromisoformat(config.AUTO_FRUEHESTENS), spielplan.BERLIN)
+    spaet = dt.datetime.combine(tag, dt.time.fromisoformat(config.AUTO_SPAETESTENS), spielplan.BERLIN)
+    zeit = min(max(s['anstoss'] - dt.timedelta(hours=config.AUTO_VORLAUF), frueh), spaet)
+    return min(zeit, s['anstoss'] - dt.timedelta(minutes=30))  # frühe Anstöße: nicht erst nach Anpfiff
+
+
+def auto_hinweis(auto):
+    if not auto:
+        return ''
+    um = dt.datetime.fromisoformat(auto['um'])
+    wann = f'{um:%H:%M} Uhr' if um.date() == jetzt().date() else f'{KURZ[um.weekday()]} {um:%d.%m.} {um:%H:%M} Uhr'
+    return f'🤖 Wird um {wann} automatisch gepostet. „Verwerfen“ = nicht posten.'
 
 
 def ende_des_laufs(start):
@@ -491,7 +578,7 @@ def morgen(tag, start, als_bot=True):
         # nicht abreißt, falls dieser Lauf den wartenden Bot-Lauf ersetzt hat.
         print(f'Stories für {tag} wurden schon geschickt')
     else:
-        anzahl = b.tagesstories(tag)
+        anzahl = b.tagesstories(tag, automatisch=tag == jetzt().date())
         STATUS.mkdir(exist_ok=True)
         MORGEN.write_text(tag.isoformat(), encoding='utf-8')
         print(f'{anzahl} Stories für {tag} geschickt')

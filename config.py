@@ -57,6 +57,15 @@ WETTBEWERBE = [
 # Höchstens so viele Stories kommen morgens (empfohlene zuerst).
 MAX_PRO_TAG = 20
 
+# Beliebte Spiele postet der Bot ohne Freigabe selbst. Beliebt ist ein Spiel, wenn es empfohlen (⭐) ist
+# oder mindestens eine Mannschaft aus BELIEBTE spielt. Die Story kommt morgens trotzdem in Telegram,
+# dort lässt sie sich bis zum Posten noch ändern, sofort posten oder verwerfen (dann geht sie nicht raus).
+AUTO_POSTEN = True
+AUTO_MAX_PRO_TAG = 4             # mehr Spiele kommen wie bisher nur zur Freigabe
+AUTO_VORLAUF = 3                 # Stunden vor Anstoß posten …
+AUTO_FRUEHESTENS = '10:00'       # … aber nicht vor dieser Uhrzeit
+AUTO_SPAETESTENS = '20:00'       # und nicht später (wichtig für Nachtspiele, der Bot schläft ab 23 Uhr)
+
 # Nur für die Suche per Telegram-Nachricht, morgens kommen sie nicht automatisch.
 SUCH_WETTBEWERBE = [
     {'slug': 'ger.2', 'name': '2. Bundesliga'},

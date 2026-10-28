@@ -29,6 +29,13 @@ Fr 17:00 „Endlich Wochenende“, So 16:00 „Feiern bei uns“. Die Texte wech
 („wir haben morgen zu“). Verpasste Termine werden bis 60 Minuten später nachgeholt, nie doppelt
 (`status/zeitplan.json`).
 
+**Beliebte Spiele automatisch** (`AUTO_POSTEN` in `config.py`): Von den Spielen des Morgens werden bis zu
+`AUTO_MAX_PRO_TAG` (4) ohne Freigabe gepostet, und zwar empfohlene (⭐) und solche mit einer Mannschaft aus
+`BELIEBTE`. Sie kommen morgens wie alle anderen in Telegram an, mit dem Hinweis „🤖 Wird um … automatisch
+gepostet“. Gepostet wird 3 Stunden vor Anstoß, frühestens 10 Uhr, spätestens 20 Uhr. Bis dahin lässt sich die
+Story ändern (die Uhrzeit bleibt), sofort posten oder verwerfen (dann geht sie nicht raus). `/pause` gilt auch
+hier, `/zeitplan` zeigt die geplanten Spiele.
+
 **Instagram-Token:** gilt 60 Tage, beim Verlängern gibt Instagram einen neuen Token aus. Montags verlängert der
 Morgen-Lauf ihn und speichert ihn als Secret, wenn das Secret `GH_PAT` existiert (Fine-grained Token, nur dieses
 Repo, Rechte „Secrets: Read and write“). Ohne `GH_PAT` warnt der Bot in Telegram, sobald der zuletzt gespeicherte

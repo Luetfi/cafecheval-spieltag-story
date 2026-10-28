@@ -61,7 +61,9 @@ def wappen(team):
     Gibt (Datei, ist_flagge) zurück. Bei Flaggen wird der schmale dunkle Rahmen von ESPN entfernt."""
     WAPPEN.mkdir(parents=True, exist_ok=True)
     datei = WAPPEN / f"{team['id']}.png"
-    if not datei.exists() and team.get('logo'):
+    if not datei.exists() and not team.get('logo'):
+        return ersatzwappen(team.get('name', ''), datei), False
+    if not datei.exists():
         req = urllib.request.Request(team['logo'], headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(req, timeout=30) as r:
             datei.write_bytes(r.read())
@@ -72,6 +74,28 @@ def wappen(team):
             bild = bild.crop((rand, rand, bild.width - rand, bild.height - rand))
         bild.save(datei)
     return datei, ist_flagge(Image.open(datei).convert('RGBA'))
+
+
+def ersatzwappen(name, datei):
+    """Für Mannschaften ohne Logo bei ESPN (z. B. Amateurvereine im Pokal): Rund mit Initialen in den Hausfarben."""
+    from PIL import ImageDraw, ImageFont
+    woerter = [w for w in re.split(r'[\s.\-/]+', name) if w and not w.isdigit()
+               and w.upper() not in {'FC', 'SV', 'SC', 'VFB', 'VFL', 'TSV', 'SSV', 'FSV', 'TSG', 'SPVGG', 'II', 'U23'}]
+    initialen = ''.join(w[0] for w in woerter[:2]).upper() or (name[:1].upper() or '?')
+    groesse = 400
+    bild = Image.new('RGBA', (groesse, groesse), (0, 0, 0, 0))
+    zeichnen = ImageDraw.Draw(bild)
+    zeichnen.ellipse((8, 8, groesse - 8, groesse - 8), fill=(22, 48, 38, 255), outline=(184, 115, 51, 255), width=14)
+    try:
+        schrift = ImageFont.truetype('DejaVuSans-Bold.ttf', 150)
+    except OSError:
+        try:
+            schrift = ImageFont.truetype('arialbd.ttf', 150)
+        except OSError:
+            schrift = ImageFont.load_default(size=150)
+    zeichnen.text((groesse / 2, groesse / 2), initialen, font=schrift, fill=(240, 226, 205, 255), anchor='mm')
+    bild.save(datei)
+    return datei
 
 
 def rendern(daten, ziel: pathlib.Path, vorlage=VORLAGE):
@@ -135,9 +159,9 @@ def story_bauen(s, heute: dt.date, ki=True, hintergruende=None, nr=0, wunsch=Non
 def pfade_reparieren(daten, logos):
     """Nach einem Neustart fehlen Cache-Dateien (Wappen, KI-Hintergrund). Lädt Wappen neu bzw. nimmt
     einen Hintergrund aus dem Vorrat. `logos`: {Team-ID: Logo-URL}."""
-    def pruefen(wert, schluessel=''):
+    def pruefen(wert, schluessel='', name=''):
         if isinstance(wert, dict):
-            return {k: pruefen(v, k) for k, v in wert.items()}
+            return {k: pruefen(v, k, wert.get('name', '')) for k, v in wert.items()}
         if isinstance(wert, list):
             return [pruefen(v) for v in wert]
         if isinstance(wert, str) and wert.startswith('file:'):
@@ -145,7 +169,7 @@ def pfade_reparieren(daten, logos):
             if pfad.exists():
                 return wert
             if pfad.parent == WAPPEN and pfad.stem in logos:
-                return wappen({'id': pfad.stem, 'logo': logos[pfad.stem]})[0].as_uri()
+                return wappen({'id': pfad.stem, 'logo': logos[pfad.stem], 'name': name})[0].as_uri()
             if schluessel == 'hintergrund':
                 ersatz = hintergrund.aus_vorrat()
                 return ersatz.as_uri() if ersatz else ''
