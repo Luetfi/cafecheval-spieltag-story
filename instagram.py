@@ -43,7 +43,14 @@ def story_posten(bild_url):
         if status in ('ERROR', 'EXPIRED'):
             raise RuntimeError(f'Instagram konnte das Bild nicht verarbeiten ({status})')
         time.sleep(4)
-    return _call('POST', f'{user}/media_publish', creation_id=container)['id']
+    # Manchmal meldet Instagram trotz FINISHED noch „Media ID is not available“ (2207027): kurz warten, nochmal.
+    for versuch in range(5):
+        try:
+            return _call('POST', f'{user}/media_publish', creation_id=container)['id']
+        except RuntimeError as fehler:
+            if '2207027' not in str(fehler) or versuch == 4:
+                raise
+            time.sleep(10)
 
 
 def token_verlaengern():
