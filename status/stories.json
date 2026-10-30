@@ -1,65 +1,6 @@
 {
- "nr": 94,
+ "nr": 95,
  "stories": {
-  "S55": {
-   "id": "S55",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Como – Manchester United",
-   "details": "Champions League · Ligaphase · Mi 21.10. 18:45 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-21/1845-como-manchester-united.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "18:45",
-    "datum": "Mittwoch · 21. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-21/hintergrund/2100-fc-bayern-muenchen-arsenal.png",
-    "heim": {
-     "name": "Como",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/2572.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Manchester United",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/360.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "2572": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png",
-    "360": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png"
-   },
-   "tag": "2026-10-21",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-21T07:01:36.283795+02:00",
-   "nachrichten": [
-    {
-     "message_id": 164,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Como – Manchester United\nChampions League · Ligaphase · Mi 21.10. 18:45 Uhr · S55\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 24,
-       "type": "bold"
-      },
-      {
-       "offset": 83,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-21/1845-como-manchester-united.jpg"
-      }
-     ]
-    }
-   ]
-  },
   "S56": {
    "id": "S56",
    "art": "spiel",
@@ -2356,6 +2297,66 @@
        "length": 20,
        "type": "text_link",
        "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-28/1800-sc-freiburg-vfl-wolfsburg.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S95": {
+   "id": "S95",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "SV Elversberg – 1. FSV Mainz 05",
+   "details": "Bundesliga · Fr 30.10. 20:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-30/2030-sv-elversberg-1-fsv-mainz-05.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "20:30",
+    "datum": "Freitag · 30. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-30/hintergrund/2030-sv-elversberg-1-fsv-mainz-05.png",
+    "heim": {
+     "name": "SV Elversberg",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/10388.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "1. FSV Mainz 05",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/2950.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "10388": "https://a.espncdn.com/i/teamlogos/soccer/500/10388.png",
+    "2950": "https://a.espncdn.com/i/teamlogos/soccer/500/2950.png"
+   },
+   "tag": "2026-10-30",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-10-30T07:01:20.733811+01:00",
+   "auto": null,
+   "nachrichten": [
+    {
+     "message_id": 223,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "SV Elversberg – 1. FSV Mainz 05\nBundesliga · Fr 30.10. 20:30 Uhr · S95\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 31,
+       "type": "bold"
+      },
+      {
+       "offset": 72,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-30/2030-sv-elversberg-1-fsv-mainz-05.jpg"
       }
      ]
     }
