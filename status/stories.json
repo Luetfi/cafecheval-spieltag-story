@@ -1,360 +1,6 @@
 {
- "nr": 95,
+ "nr": 101,
  "stories": {
-  "S56": {
-   "id": "S56",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Lille – Galatasaray",
-   "details": "Champions League · Ligaphase · Mi 21.10. 18:45 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-21/1845-lille-galatasaray.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "18:45",
-    "datum": "Mittwoch · 21. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-21/hintergrund/2100-fc-bayern-muenchen-arsenal.png",
-    "heim": {
-     "name": "Lille",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/166.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Galatasaray",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/432.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "166": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
-    "432": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png"
-   },
-   "tag": "2026-10-21",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-21T07:01:40.098619+02:00",
-   "nachrichten": [
-    {
-     "message_id": 165,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Lille – Galatasaray\nChampions League · Ligaphase · Mi 21.10. 18:45 Uhr · S56\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 19,
-       "type": "bold"
-      },
-      {
-       "offset": 78,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-21/1845-lille-galatasaray.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S57": {
-   "id": "S57",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Inter Mailand – Schachtar Donezk",
-   "details": "Champions League · Ligaphase · Mi 21.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-21/2100-inter-mailand-schachtar-donezk.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Mittwoch · 21. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-21/hintergrund/2100-fc-bayern-muenchen-arsenal.png",
-    "heim": {
-     "name": "Inter Mailand",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/110.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Schachtar Donezk",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/493.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "110": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
-    "493": "https://a.espncdn.com/i/teamlogos/soccer/500/493.png"
-   },
-   "tag": "2026-10-21",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-21T07:01:43.844122+02:00",
-   "nachrichten": [
-    {
-     "message_id": 166,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Inter Mailand – Schachtar Donezk\nChampions League · Ligaphase · Mi 21.10. 21:00 Uhr · S57\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 32,
-       "type": "bold"
-      },
-      {
-       "offset": 91,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-21/2100-inter-mailand-schachtar-donezk.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S58": {
-   "id": "S58",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Aston Villa – Viking FK",
-   "details": "Champions League · Ligaphase · Mi 21.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-21/2100-aston-villa-viking-fk.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Mittwoch · 21. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-21/hintergrund/2100-fc-bayern-muenchen-arsenal.png",
-    "heim": {
-     "name": "Aston Villa",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/362.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Viking FK",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/510.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "362": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
-    "510": "https://a.espncdn.com/i/teamlogos/soccer/500/510.png"
-   },
-   "tag": "2026-10-21",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-21T07:01:47.641209+02:00",
-   "nachrichten": [
-    {
-     "message_id": 167,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Aston Villa – Viking FK\nChampions League · Ligaphase · Mi 21.10. 21:00 Uhr · S58\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 23,
-       "type": "bold"
-      },
-      {
-       "offset": 82,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-21/2100-aston-villa-viking-fk.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S59": {
-   "id": "S59",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "FC Brügge – Lens",
-   "details": "Champions League · Ligaphase · Mi 21.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-21/2100-fc-bruegge-lens.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Mittwoch · 21. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-21/hintergrund/2100-fc-bayern-muenchen-arsenal.png",
-    "heim": {
-     "name": "FC Brügge",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/570.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Lens",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/175.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "570": "https://a.espncdn.com/i/teamlogos/soccer/500/570.png",
-    "175": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png"
-   },
-   "tag": "2026-10-21",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-21T07:01:51.289805+02:00",
-   "nachrichten": [
-    {
-     "message_id": 168,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "FC Brügge – Lens\nChampions League · Ligaphase · Mi 21.10. 21:00 Uhr · S59\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 16,
-       "type": "bold"
-      },
-      {
-       "offset": 75,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-21/2100-fc-bruegge-lens.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S60": {
-   "id": "S60",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Real Betis – Feyenoord Rotterdam",
-   "details": "Champions League · Ligaphase · Mi 21.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-21/2100-real-betis-feyenoord-rotterdam.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Mittwoch · 21. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-21/hintergrund/2100-fc-bayern-muenchen-arsenal.png",
-    "heim": {
-     "name": "Real Betis",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/244.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Feyenoord Rotterdam",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/142.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "244": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
-    "142": "https://a.espncdn.com/i/teamlogos/soccer/500/142.png"
-   },
-   "tag": "2026-10-21",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-21T07:01:55.662473+02:00",
-   "nachrichten": [
-    {
-     "message_id": 169,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Real Betis – Feyenoord Rotterdam\nChampions League · Ligaphase · Mi 21.10. 21:00 Uhr · S60\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 32,
-       "type": "bold"
-      },
-      {
-       "offset": 91,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-21/2100-real-betis-feyenoord-rotterdam.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S61": {
-   "id": "S61",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Sporting Lissabon – LASK Linz",
-   "details": "Champions League · Ligaphase · Mi 21.10. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-21/2100-sporting-lissabon-lask-linz.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Mittwoch · 21. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-21/hintergrund/2100-fc-bayern-muenchen-arsenal.png",
-    "heim": {
-     "name": "Sporting Lissabon",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/2250.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "LASK Linz",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/4411.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "2250": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png",
-    "4411": "https://a.espncdn.com/i/teamlogos/soccer/500/4411.png"
-   },
-   "tag": "2026-10-21",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-10-21T07:01:59.589949+02:00",
-   "nachrichten": [
-    {
-     "message_id": 170,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Sporting Lissabon – LASK Linz\nChampions League · Ligaphase · Mi 21.10. 21:00 Uhr · S61\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 29,
-       "type": "bold"
-      },
-      {
-       "offset": 88,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-21/2100-sporting-lissabon-lask-linz.jpg"
-      }
-     ]
-    }
-   ]
-  },
   "S62": {
    "id": "S62",
    "art": "spiel",
@@ -2357,6 +2003,375 @@
        "length": 20,
        "type": "text_link",
        "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-30/2030-sv-elversberg-1-fsv-mainz-05.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S96": {
+   "id": "S96",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Bayer Leverkusen – VfB Stuttgart",
+   "details": "Bundesliga · Sa 31.10. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-31/1530-bayer-leverkusen-vfb-stuttgart.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Samstag · 31. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-31/hintergrund/1530-bayer-leverkusen-vfb-stuttgart.png",
+    "heim": {
+     "name": "Bayer Leverkusen",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/131.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "VfB Stuttgart",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/134.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "131": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png",
+    "134": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png"
+   },
+   "tag": "2026-10-31",
+   "wettbewerb": "Bundesliga",
+   "status": "gepostet",
+   "erstellt": "2026-10-31T07:01:26.510637+01:00",
+   "auto": {
+    "um": "2026-10-31T12:30:00+01:00",
+    "bis": "2026-10-31T15:30:00+01:00"
+   },
+   "nachrichten": [
+    {
+     "message_id": 226,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "⭐ Empfohlen\nBayer Leverkusen – VfB Stuttgart\nBundesliga · Sa 31.10. 15:30 Uhr · S96\n\nBild in voller Größe\n\n🤖 Wird um 12:30 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
+     "caption_entities": [
+      {
+       "offset": 12,
+       "length": 32,
+       "type": "bold"
+      },
+      {
+       "offset": 85,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-31/1530-bayer-leverkusen-vfb-stuttgart.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S97": {
+   "id": "S97",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "FC Bayern München – Borussia Dortmund",
+   "details": "Bundesliga · Sa 31.10. 18:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-31/1830-fc-bayern-muenchen-borussia-dortmund.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "18:30",
+    "datum": "Samstag · 31. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-31/hintergrund/1530-bayer-leverkusen-vfb-stuttgart.png",
+    "heim": {
+     "name": "FC Bayern München",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/132.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Borussia Dortmund",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/124.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "132": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
+    "124": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png"
+   },
+   "tag": "2026-10-31",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-10-31T07:01:31.489933+01:00",
+   "auto": {
+    "um": "2026-10-31T15:30:00+01:00",
+    "bis": "2026-10-31T18:30:00+01:00"
+   },
+   "nachrichten": [
+    {
+     "message_id": 227,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "⭐ Empfohlen\nFC Bayern München – Borussia Dortmund\nBundesliga · Sa 31.10. 18:30 Uhr · S97\n\nBild in voller Größe\n\n🤖 Wird um 15:30 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
+     "caption_entities": [
+      {
+       "offset": 12,
+       "length": 37,
+       "type": "bold"
+      },
+      {
+       "offset": 90,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-31/1830-fc-bayern-muenchen-borussia-dortmund.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S98": {
+   "id": "S98",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "FC Schalke 04 – RB Leipzig",
+   "details": "Bundesliga · Sa 31.10. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-31/1530-fc-schalke-04-rb-leipzig.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Samstag · 31. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-31/hintergrund/1530-bayer-leverkusen-vfb-stuttgart.png",
+    "heim": {
+     "name": "FC Schalke 04",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/133.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "RB Leipzig",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/11420.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "133": "https://a.espncdn.com/i/teamlogos/soccer/500/133.png",
+    "11420": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png"
+   },
+   "tag": "2026-10-31",
+   "wettbewerb": "Bundesliga",
+   "status": "gepostet",
+   "erstellt": "2026-10-31T07:01:35.456035+01:00",
+   "auto": {
+    "um": "2026-10-31T12:30:00+01:00",
+    "bis": "2026-10-31T15:30:00+01:00"
+   },
+   "nachrichten": [
+    {
+     "message_id": 228,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "FC Schalke 04 – RB Leipzig\nBundesliga · Sa 31.10. 15:30 Uhr · S98\n\nBild in voller Größe\n\n🤖 Wird um 12:30 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 26,
+       "type": "bold"
+      },
+      {
+       "offset": 67,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-31/1530-fc-schalke-04-rb-leipzig.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S99": {
+   "id": "S99",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Borussia M'gladbach – SC Paderborn 07",
+   "details": "Bundesliga · Sa 31.10. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-31/1530-borussia-m-gladbach-sc-paderborn-07.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Samstag · 31. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-31/hintergrund/1530-bayer-leverkusen-vfb-stuttgart.png",
+    "heim": {
+     "name": "Borussia M'gladbach",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/268.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "SC Paderborn 07",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/3307.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "268": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png",
+    "3307": "https://a.espncdn.com/i/teamlogos/soccer/500/3307.png"
+   },
+   "tag": "2026-10-31",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-10-31T07:01:39.233570+01:00",
+   "auto": null,
+   "nachrichten": [
+    {
+     "message_id": 229,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Borussia M'gladbach – SC Paderborn 07\nBundesliga · Sa 31.10. 15:30 Uhr · S99\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 37,
+       "type": "bold"
+      },
+      {
+       "offset": 78,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-31/1530-borussia-m-gladbach-sc-paderborn-07.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S100": {
+   "id": "S100",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "FC Augsburg – SC Freiburg",
+   "details": "Bundesliga · Sa 31.10. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-31/1530-fc-augsburg-sc-freiburg.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Samstag · 31. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-31/hintergrund/1530-bayer-leverkusen-vfb-stuttgart.png",
+    "heim": {
+     "name": "FC Augsburg",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/3841.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "SC Freiburg",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/126.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "3841": "https://a.espncdn.com/i/teamlogos/soccer/500/3841.png",
+    "126": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png"
+   },
+   "tag": "2026-10-31",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-10-31T07:01:42.687470+01:00",
+   "auto": null,
+   "nachrichten": [
+    {
+     "message_id": 230,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "FC Augsburg – SC Freiburg\nBundesliga · Sa 31.10. 15:30 Uhr · S100\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 25,
+       "type": "bold"
+      },
+      {
+       "offset": 67,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-31/1530-fc-augsburg-sc-freiburg.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S101": {
+   "id": "S101",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "SV Werder Bremen – TSG Hoffenheim",
+   "details": "Bundesliga · Sa 31.10. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-31/1530-sv-werder-bremen-tsg-hoffenheim.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Samstag · 31. Oktober",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-31/hintergrund/1530-bayer-leverkusen-vfb-stuttgart.png",
+    "heim": {
+     "name": "SV Werder Bremen",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/137.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "TSG Hoffenheim",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/7911.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "137": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
+    "7911": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png"
+   },
+   "tag": "2026-10-31",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-10-31T07:01:46.222002+01:00",
+   "auto": null,
+   "nachrichten": [
+    {
+     "message_id": 231,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "SV Werder Bremen – TSG Hoffenheim\nBundesliga · Sa 31.10. 15:30 Uhr · S101\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 33,
+       "type": "bold"
+      },
+      {
+       "offset": 75,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-31/1530-sv-werder-bremen-tsg-hoffenheim.jpg"
       }
      ]
     }
