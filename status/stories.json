@@ -1,66 +1,6 @@
 {
- "nr": 139,
+ "nr": 140,
  "stories": {
-  "S100": {
-   "id": "S100",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "FC Augsburg – SC Freiburg",
-   "details": "Bundesliga · Sa 31.10. 15:30 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-31/1530-fc-augsburg-sc-freiburg.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Bundesliga",
-    "runde": "",
-    "leg": "",
-    "uhrzeit": "15:30",
-    "datum": "Samstag · 31. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-31/hintergrund/1530-bayer-leverkusen-vfb-stuttgart.png",
-    "heim": {
-     "name": "FC Augsburg",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/3841.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "SC Freiburg",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/126.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "3841": "https://a.espncdn.com/i/teamlogos/soccer/500/3841.png",
-    "126": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png"
-   },
-   "tag": "2026-10-31",
-   "wettbewerb": "Bundesliga",
-   "status": "offen",
-   "erstellt": "2026-10-31T07:01:42.687470+01:00",
-   "auto": null,
-   "nachrichten": [
-    {
-     "message_id": 230,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "FC Augsburg – SC Freiburg\nBundesliga · Sa 31.10. 15:30 Uhr · S100\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 25,
-       "type": "bold"
-      },
-      {
-       "offset": 67,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-31/1530-fc-augsburg-sc-freiburg.jpg"
-      }
-     ]
-    }
-   ]
-  },
   "S101": {
    "id": "S101",
    "art": "spiel",
@@ -2435,6 +2375,66 @@
        "length": 20,
        "type": "text_link",
        "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-05/2100-torreense-ararat-armenia.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S140": {
+   "id": "S140",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Hamburger SV – Borussia M'gladbach",
+   "details": "Bundesliga · Fr 06.11. 20:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-06/2030-hamburger-sv-borussia-m-gladbach.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "20:30",
+    "datum": "Freitag · 6. November",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-06/hintergrund/2030-hamburger-sv-borussia-m-gladbach.png",
+    "heim": {
+     "name": "Hamburger SV",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/127.png",
+     "flagge": true
+    },
+    "gast": {
+     "name": "Borussia M'gladbach",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/268.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "127": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png",
+    "268": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png"
+   },
+   "tag": "2026-11-06",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-11-06T07:02:07.022680+01:00",
+   "auto": null,
+   "nachrichten": [
+    {
+     "message_id": 281,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Hamburger SV – Borussia M'gladbach\nBundesliga · Fr 06.11. 20:30 Uhr · S140\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 34,
+       "type": "bold"
+      },
+      {
+       "offset": 76,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-06/2030-hamburger-sv-borussia-m-gladbach.jpg"
       }
      ]
     }
