@@ -1,315 +1,6 @@
 {
- "nr": 140,
+ "nr": 145,
  "stories": {
-  "S101": {
-   "id": "S101",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "SV Werder Bremen – TSG Hoffenheim",
-   "details": "Bundesliga · Sa 31.10. 15:30 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-31/1530-sv-werder-bremen-tsg-hoffenheim.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Bundesliga",
-    "runde": "",
-    "leg": "",
-    "uhrzeit": "15:30",
-    "datum": "Samstag · 31. Oktober",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-10-31/hintergrund/1530-bayer-leverkusen-vfb-stuttgart.png",
-    "heim": {
-     "name": "SV Werder Bremen",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/137.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "TSG Hoffenheim",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/7911.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "137": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
-    "7911": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png"
-   },
-   "tag": "2026-10-31",
-   "wettbewerb": "Bundesliga",
-   "status": "offen",
-   "erstellt": "2026-10-31T07:01:46.222002+01:00",
-   "auto": null,
-   "nachrichten": [
-    {
-     "message_id": 231,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "SV Werder Bremen – TSG Hoffenheim\nBundesliga · Sa 31.10. 15:30 Uhr · S101\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 33,
-       "type": "bold"
-      },
-      {
-       "offset": 75,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-10-31/1530-sv-werder-bremen-tsg-hoffenheim.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S102": {
-   "id": "S102",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Eintracht Frankfurt – Hamburger SV",
-   "details": "Bundesliga · So 01.11. 17:30 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-01/1730-eintracht-frankfurt-hamburger-sv.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Bundesliga",
-    "runde": "",
-    "leg": "",
-    "uhrzeit": "17:30",
-    "datum": "Sonntag · 1. November",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-01/hintergrund/1730-eintracht-frankfurt-hamburger-sv.png",
-    "heim": {
-     "name": "Eintracht Frankfurt",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/125.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Hamburger SV",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/127.png",
-     "flagge": true
-    }
-   },
-   "logos": {
-    "125": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png",
-    "127": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png"
-   },
-   "tag": "2026-11-01",
-   "wettbewerb": "Bundesliga",
-   "status": "gepostet",
-   "erstellt": "2026-11-01T07:01:56.032483+01:00",
-   "auto": {
-    "um": "2026-11-01T14:30:00+01:00",
-    "bis": "2026-11-01T17:30:00+01:00"
-   },
-   "nachrichten": [
-    {
-     "message_id": 234,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Eintracht Frankfurt – Hamburger SV\nBundesliga · So 01.11. 17:30 Uhr · S102\n\nBild in voller Größe\n\n🤖 Wird um 14:30 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 34,
-       "type": "bold"
-      },
-      {
-       "offset": 76,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-01/1730-eintracht-frankfurt-hamburger-sv.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S103": {
-   "id": "S103",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "1. FC Union Berlin – 1. FC Köln",
-   "details": "Bundesliga · So 01.11. 15:30 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-01/1530-1-fc-union-berlin-1-fc-koeln.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Bundesliga",
-    "runde": "",
-    "leg": "",
-    "uhrzeit": "15:30",
-    "datum": "Sonntag · 1. November",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-01/hintergrund/1730-eintracht-frankfurt-hamburger-sv.png",
-    "heim": {
-     "name": "1. FC Union Berlin",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/598.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "1. FC Köln",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/122.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "598": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png",
-    "122": "https://a.espncdn.com/i/teamlogos/soccer/500/122.png"
-   },
-   "tag": "2026-11-01",
-   "wettbewerb": "Bundesliga",
-   "status": "offen",
-   "erstellt": "2026-11-01T07:01:59.364133+01:00",
-   "auto": null,
-   "nachrichten": [
-    {
-     "message_id": 235,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "1. FC Union Berlin – 1. FC Köln\nBundesliga · So 01.11. 15:30 Uhr · S103\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 31,
-       "type": "bold"
-      },
-      {
-       "offset": 73,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-01/1530-1-fc-union-berlin-1-fc-koeln.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S104": {
-   "id": "S104",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Galatasaray – VfB Stuttgart",
-   "details": "Champions League · Ligaphase · Di 03.11. 18:45 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-03/1845-galatasaray-vfb-stuttgart.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "18:45",
-    "datum": "Dienstag · 3. November",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-03/hintergrund/1845-galatasaray-vfb-stuttgart.png",
-    "heim": {
-     "name": "Galatasaray",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/432.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "VfB Stuttgart",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/134.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "432": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png",
-    "134": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png"
-   },
-   "tag": "2026-11-03",
-   "wettbewerb": "Champions League",
-   "status": "gepostet",
-   "erstellt": "2026-11-03T07:01:20.820299+01:00",
-   "auto": {
-    "um": "2026-11-03T15:45:00+01:00",
-    "bis": "2026-11-03T18:45:00+01:00"
-   },
-   "nachrichten": [
-    {
-     "message_id": 239,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "⭐ Empfohlen\nGalatasaray – VfB Stuttgart\nChampions League · Ligaphase · Di 03.11. 18:45 Uhr · S104\n\nBild in voller Größe\n\n🤖 Wird um 15:45 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
-     "caption_entities": [
-      {
-       "offset": 12,
-       "length": 27,
-       "type": "bold"
-      },
-      {
-       "offset": 99,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-03/1845-galatasaray-vfb-stuttgart.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S105": {
-   "id": "S105",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Atlético Madrid – FC Bayern München",
-   "details": "Champions League · Ligaphase · Di 03.11. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-03/2100-atletico-madrid-fc-bayern-muenchen.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Dienstag · 3. November",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-03/hintergrund/1845-galatasaray-vfb-stuttgart.png",
-    "heim": {
-     "name": "Atlético Madrid",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/1068.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "FC Bayern München",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/132.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "1068": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
-    "132": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png"
-   },
-   "tag": "2026-11-03",
-   "wettbewerb": "Champions League",
-   "status": "gepostet",
-   "erstellt": "2026-11-03T07:01:24.424281+01:00",
-   "auto": {
-    "um": "2026-11-03T18:00:00+01:00",
-    "bis": "2026-11-03T21:00:00+01:00"
-   },
-   "nachrichten": [
-    {
-     "message_id": 240,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "⭐ Empfohlen\nAtlético Madrid – FC Bayern München\nChampions League · Ligaphase · Di 03.11. 21:00 Uhr · S105\n\nBild in voller Größe\n\n🤖 Wird um 18:00 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
-     "caption_entities": [
-      {
-       "offset": 12,
-       "length": 35,
-       "type": "bold"
-      },
-      {
-       "offset": 107,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-03/2100-atletico-madrid-fc-bayern-muenchen.jpg"
-      }
-     ]
-    }
-   ]
-  },
   "S106": {
    "id": "S106",
    "art": "spiel",
@@ -2435,6 +2126,318 @@
        "length": 20,
        "type": "text_link",
        "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-06/2030-hamburger-sv-borussia-m-gladbach.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S141": {
+   "id": "S141",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "VfB Stuttgart – SV Werder Bremen",
+   "details": "Bundesliga · Sa 07.11. 18:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-07/1830-vfb-stuttgart-sv-werder-bremen.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "18:30",
+    "datum": "Samstag · 7. November",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-07/hintergrund/1830-vfb-stuttgart-sv-werder-bremen.png",
+    "heim": {
+     "name": "VfB Stuttgart",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/134.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "SV Werder Bremen",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/137.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "134": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
+    "137": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png"
+   },
+   "tag": "2026-11-07",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-11-07T07:01:19.537886+01:00",
+   "auto": {
+    "um": "2026-11-07T15:30:00+01:00",
+    "bis": "2026-11-07T18:30:00+01:00"
+   },
+   "nachrichten": [
+    {
+     "message_id": 284,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "⭐ Empfohlen\nVfB Stuttgart – SV Werder Bremen\nBundesliga · Sa 07.11. 18:30 Uhr · S141\n\nBild in voller Größe\n\n🤖 Wird um 15:30 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
+     "caption_entities": [
+      {
+       "offset": 12,
+       "length": 32,
+       "type": "bold"
+      },
+      {
+       "offset": 86,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-07/1830-vfb-stuttgart-sv-werder-bremen.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S142": {
+   "id": "S142",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Borussia Dortmund – SV Elversberg",
+   "details": "Bundesliga · Sa 07.11. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-07/1530-borussia-dortmund-sv-elversberg.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Samstag · 7. November",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-07/hintergrund/1830-vfb-stuttgart-sv-werder-bremen.png",
+    "heim": {
+     "name": "Borussia Dortmund",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/124.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "SV Elversberg",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/10388.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "124": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png",
+    "10388": "https://a.espncdn.com/i/teamlogos/soccer/500/10388.png"
+   },
+   "tag": "2026-11-07",
+   "wettbewerb": "Bundesliga",
+   "status": "gepostet",
+   "erstellt": "2026-11-07T07:01:23.735077+01:00",
+   "auto": {
+    "um": "2026-11-07T12:30:00+01:00",
+    "bis": "2026-11-07T15:30:00+01:00"
+   },
+   "nachrichten": [
+    {
+     "message_id": 285,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Borussia Dortmund – SV Elversberg\nBundesliga · Sa 07.11. 15:30 Uhr · S142\n\nBild in voller Größe\n\n🤖 Wird um 12:30 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 33,
+       "type": "bold"
+      },
+      {
+       "offset": 75,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-07/1530-borussia-dortmund-sv-elversberg.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S143": {
+   "id": "S143",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "1. FSV Mainz 05 – FC Bayern München",
+   "details": "Bundesliga · Sa 07.11. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-07/1530-1-fsv-mainz-05-fc-bayern-muenchen.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Samstag · 7. November",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-07/hintergrund/1830-vfb-stuttgart-sv-werder-bremen.png",
+    "heim": {
+     "name": "1. FSV Mainz 05",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/2950.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "FC Bayern München",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/132.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "2950": "https://a.espncdn.com/i/teamlogos/soccer/500/2950.png",
+    "132": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png"
+   },
+   "tag": "2026-11-07",
+   "wettbewerb": "Bundesliga",
+   "status": "gepostet",
+   "erstellt": "2026-11-07T07:01:27.827026+01:00",
+   "auto": {
+    "um": "2026-11-07T12:30:00+01:00",
+    "bis": "2026-11-07T15:30:00+01:00"
+   },
+   "nachrichten": [
+    {
+     "message_id": 286,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "1. FSV Mainz 05 – FC Bayern München\nBundesliga · Sa 07.11. 15:30 Uhr · S143\n\nBild in voller Größe\n\n🤖 Wird um 12:30 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 35,
+       "type": "bold"
+      },
+      {
+       "offset": 77,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-07/1530-1-fsv-mainz-05-fc-bayern-muenchen.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S144": {
+   "id": "S144",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "RB Leipzig – FC Augsburg",
+   "details": "Bundesliga · Sa 07.11. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-07/1530-rb-leipzig-fc-augsburg.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Samstag · 7. November",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-07/hintergrund/1830-vfb-stuttgart-sv-werder-bremen.png",
+    "heim": {
+     "name": "RB Leipzig",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/11420.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "FC Augsburg",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/3841.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "11420": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
+    "3841": "https://a.espncdn.com/i/teamlogos/soccer/500/3841.png"
+   },
+   "tag": "2026-11-07",
+   "wettbewerb": "Bundesliga",
+   "status": "gepostet",
+   "erstellt": "2026-11-07T07:01:32.963374+01:00",
+   "auto": {
+    "um": "2026-11-07T12:30:00+01:00",
+    "bis": "2026-11-07T15:30:00+01:00"
+   },
+   "nachrichten": [
+    {
+     "message_id": 287,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "RB Leipzig – FC Augsburg\nBundesliga · Sa 07.11. 15:30 Uhr · S144\n\nBild in voller Größe\n\n🤖 Wird um 12:30 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 24,
+       "type": "bold"
+      },
+      {
+       "offset": 66,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-07/1530-rb-leipzig-fc-augsburg.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S145": {
+   "id": "S145",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "SC Paderborn 07 – Eintracht Frankfurt",
+   "details": "Bundesliga · Sa 07.11. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-07/1530-sc-paderborn-07-eintracht-frankfurt.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Samstag · 7. November",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-07/hintergrund/1830-vfb-stuttgart-sv-werder-bremen.png",
+    "heim": {
+     "name": "SC Paderborn 07",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/3307.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Eintracht Frankfurt",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/125.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "3307": "https://a.espncdn.com/i/teamlogos/soccer/500/3307.png",
+    "125": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png"
+   },
+   "tag": "2026-11-07",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-11-07T07:01:36.569765+01:00",
+   "auto": null,
+   "nachrichten": [
+    {
+     "message_id": 288,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "SC Paderborn 07 – Eintracht Frankfurt\nBundesliga · Sa 07.11. 15:30 Uhr · S145\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 37,
+       "type": "bold"
+      },
+      {
+       "offset": 79,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-07/1530-sc-paderborn-07-eintracht-frankfurt.jpg"
       }
      ]
     }
