@@ -1,192 +1,6 @@
 {
- "nr": 145,
+ "nr": 148,
  "stories": {
-  "S106": {
-   "id": "S106",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "FC Barcelona – Aston Villa",
-   "details": "Champions League · Ligaphase · Di 03.11. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-03/2100-fc-barcelona-aston-villa.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Dienstag · 3. November",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-03/hintergrund/1845-galatasaray-vfb-stuttgart.png",
-    "heim": {
-     "name": "FC Barcelona",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/83.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Aston Villa",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/362.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "83": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
-    "362": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png"
-   },
-   "tag": "2026-11-03",
-   "wettbewerb": "Champions League",
-   "status": "gepostet",
-   "erstellt": "2026-11-03T07:01:27.775635+01:00",
-   "auto": {
-    "um": "2026-11-03T18:00:00+01:00",
-    "bis": "2026-11-03T21:00:00+01:00"
-   },
-   "nachrichten": [
-    {
-     "message_id": 241,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "FC Barcelona – Aston Villa\nChampions League · Ligaphase · Di 03.11. 21:00 Uhr · S106\n\nBild in voller Größe\n\n🤖 Wird um 18:00 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 26,
-       "type": "bold"
-      },
-      {
-       "offset": 86,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-03/2100-fc-barcelona-aston-villa.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S107": {
-   "id": "S107",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Feyenoord Rotterdam – Inter Mailand",
-   "details": "Champions League · Ligaphase · Di 03.11. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-03/2100-feyenoord-rotterdam-inter-mailand.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Dienstag · 3. November",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-03/hintergrund/1845-galatasaray-vfb-stuttgart.png",
-    "heim": {
-     "name": "Feyenoord Rotterdam",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/142.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Inter Mailand",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/110.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "142": "https://a.espncdn.com/i/teamlogos/soccer/500/142.png",
-    "110": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png"
-   },
-   "tag": "2026-11-03",
-   "wettbewerb": "Champions League",
-   "status": "gepostet",
-   "erstellt": "2026-11-03T07:01:31.165961+01:00",
-   "auto": {
-    "um": "2026-11-03T18:00:00+01:00",
-    "bis": "2026-11-03T21:00:00+01:00"
-   },
-   "nachrichten": [
-    {
-     "message_id": 242,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Feyenoord Rotterdam – Inter Mailand\nChampions League · Ligaphase · Di 03.11. 21:00 Uhr · S107\n\nBild in voller Größe\n\n🤖 Wird um 18:00 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 35,
-       "type": "bold"
-      },
-      {
-       "offset": 95,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-03/2100-feyenoord-rotterdam-inter-mailand.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S108": {
-   "id": "S108",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Manchester United – AS Rom",
-   "details": "Champions League · Ligaphase · Di 03.11. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-03/2100-manchester-united-as-rom.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Dienstag · 3. November",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-03/hintergrund/1845-galatasaray-vfb-stuttgart.png",
-    "heim": {
-     "name": "Manchester United",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/360.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "AS Rom",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/104.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "360": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
-    "104": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png"
-   },
-   "tag": "2026-11-03",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-11-03T07:01:34.808513+01:00",
-   "auto": null,
-   "nachrichten": [
-    {
-     "message_id": 243,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Manchester United – AS Rom\nChampions League · Ligaphase · Di 03.11. 21:00 Uhr · S108\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 26,
-       "type": "bold"
-      },
-      {
-       "offset": 86,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-03/2100-manchester-united-as-rom.jpg"
-      }
-     ]
-    }
-   ]
-  },
   "S109": {
    "id": "S109",
    "art": "spiel",
@@ -2438,6 +2252,189 @@
        "length": 20,
        "type": "text_link",
        "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-07/1530-sc-paderborn-07-eintracht-frankfurt.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S146": {
+   "id": "S146",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "1. FC Köln – Bayer Leverkusen",
+   "details": "Bundesliga · So 08.11. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-08/1530-1-fc-koeln-bayer-leverkusen.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Sonntag · 8. November",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-08/hintergrund/1530-1-fc-koeln-bayer-leverkusen.png",
+    "heim": {
+     "name": "1. FC Köln",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/122.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Bayer Leverkusen",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/131.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "122": "https://a.espncdn.com/i/teamlogos/soccer/500/122.png",
+    "131": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png"
+   },
+   "tag": "2026-11-08",
+   "wettbewerb": "Bundesliga",
+   "status": "gepostet",
+   "erstellt": "2026-11-08T07:01:48.671913+01:00",
+   "auto": {
+    "um": "2026-11-08T12:30:00+01:00",
+    "bis": "2026-11-08T15:30:00+01:00"
+   },
+   "nachrichten": [
+    {
+     "message_id": 291,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "1. FC Köln – Bayer Leverkusen\nBundesliga · So 08.11. 15:30 Uhr · S146\n\nBild in voller Größe\n\n🤖 Wird um 12:30 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 29,
+       "type": "bold"
+      },
+      {
+       "offset": 71,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-08/1530-1-fc-koeln-bayer-leverkusen.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S147": {
+   "id": "S147",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "SC Freiburg – 1. FC Union Berlin",
+   "details": "Bundesliga · So 08.11. 17:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-08/1730-sc-freiburg-1-fc-union-berlin.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "17:30",
+    "datum": "Sonntag · 8. November",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-08/hintergrund/1530-1-fc-koeln-bayer-leverkusen.png",
+    "heim": {
+     "name": "SC Freiburg",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/126.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "1. FC Union Berlin",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/598.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "126": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png",
+    "598": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png"
+   },
+   "tag": "2026-11-08",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-11-08T07:01:53.133887+01:00",
+   "auto": null,
+   "nachrichten": [
+    {
+     "message_id": 292,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "SC Freiburg – 1. FC Union Berlin\nBundesliga · So 08.11. 17:30 Uhr · S147\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 32,
+       "type": "bold"
+      },
+      {
+       "offset": 74,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-08/1730-sc-freiburg-1-fc-union-berlin.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S148": {
+   "id": "S148",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "TSG Hoffenheim – FC Schalke 04",
+   "details": "Bundesliga · So 08.11. 19:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-08/1930-tsg-hoffenheim-fc-schalke-04.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "19:30",
+    "datum": "Sonntag · 8. November",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-08/hintergrund/1530-1-fc-koeln-bayer-leverkusen.png",
+    "heim": {
+     "name": "TSG Hoffenheim",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/7911.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "FC Schalke 04",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/133.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "7911": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png",
+    "133": "https://a.espncdn.com/i/teamlogos/soccer/500/133.png"
+   },
+   "tag": "2026-11-08",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-11-08T07:01:56.824327+01:00",
+   "auto": null,
+   "nachrichten": [
+    {
+     "message_id": 293,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "TSG Hoffenheim – FC Schalke 04\nBundesliga · So 08.11. 19:30 Uhr · S148\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 30,
+       "type": "bold"
+      },
+      {
+       "offset": 72,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-08/1930-tsg-hoffenheim-fc-schalke-04.jpg"
       }
      ]
     }
