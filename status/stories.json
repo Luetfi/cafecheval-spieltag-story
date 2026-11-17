@@ -1,66 +1,6 @@
 {
- "nr": 148,
+ "nr": 149,
  "stories": {
-  "S109": {
-   "id": "S109",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Villarreal – Paris Saint-Germain",
-   "details": "Champions League · Ligaphase · Di 03.11. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-03/2100-villarreal-paris-saint-germain.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Dienstag · 3. November",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-03/hintergrund/1845-galatasaray-vfb-stuttgart.png",
-    "heim": {
-     "name": "Villarreal",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/102.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Paris Saint-Germain",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/160.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "102": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
-    "160": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png"
-   },
-   "tag": "2026-11-03",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-11-03T07:01:38.107158+01:00",
-   "auto": null,
-   "nachrichten": [
-    {
-     "message_id": 244,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Villarreal – Paris Saint-Germain\nChampions League · Ligaphase · Di 03.11. 21:00 Uhr · S109\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 32,
-       "type": "bold"
-      },
-      {
-       "offset": 92,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-03/2100-villarreal-paris-saint-germain.jpg"
-      }
-     ]
-    }
-   ]
-  },
   "S110": {
    "id": "S110",
    "art": "spiel",
@@ -2435,6 +2375,69 @@
        "length": 20,
        "type": "text_link",
        "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-08/1930-tsg-hoffenheim-fc-schalke-04.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S149": {
+   "id": "S149",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Wales – Portugal",
+   "details": "Nations League · Ligaphase · Di 17.11. 20:45 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-17/2045-wales-portugal.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Nations League",
+    "runde": "Ligaphase",
+    "leg": "",
+    "uhrzeit": "20:45",
+    "datum": "Dienstag · 17. November",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-17/hintergrund/2045-wales-portugal.png",
+    "heim": {
+     "name": "Wales",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/578.png",
+     "flagge": true
+    },
+    "gast": {
+     "name": "Portugal",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/482.png",
+     "flagge": true
+    }
+   },
+   "logos": {
+    "578": "https://a.espncdn.com/i/teamlogos/countries/500/wal.png",
+    "482": "https://a.espncdn.com/i/teamlogos/countries/500/por.png"
+   },
+   "tag": "2026-11-17",
+   "wettbewerb": "Nations League",
+   "status": "offen",
+   "erstellt": "2026-11-17T07:01:12.337684+01:00",
+   "auto": {
+    "um": "2026-11-17T17:45:00+01:00",
+    "bis": "2026-11-17T20:45:00+01:00"
+   },
+   "nachrichten": [
+    {
+     "message_id": 323,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Wales – Portugal\nNations League · Ligaphase · Di 17.11. 20:45 Uhr · S149\n\nBild in voller Größe\n\n🤖 Wird um 17:45 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 16,
+       "type": "bold"
+      },
+      {
+       "offset": 74,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-17/2045-wales-portugal.jpg"
       }
      ]
     }
