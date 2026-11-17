@@ -5,6 +5,7 @@
     python lauf.py bot                   # Bot: Knöpfe und Spiel-Anfragen live bearbeiten
     python lauf.py freigaben             # einmal Knopfdrücke abholen (ohne Warten)
     python lauf.py token                 # Instagram-Token verlängern (läuft wöchentlich)
+    python lauf.py test                  # Zugänge prüfen (kie.ai, Instagram, Telegram), postet nichts
 
 Der Bot läuft von morgens bis 23 Uhr. Weil GitHub einen Lauf nach 6 Stunden beendet, hört jeder Lauf
 nach knapp 5¾ Stunden auf und legt die Datei `status/weiter` an. Der Workflow startet dann den nächsten Lauf.
@@ -616,6 +617,26 @@ def token_pruefen():
         print('Warnung Token:', fehler)
 
 
+def test():
+    """Prüft die Zugänge, ohne etwas zu posten: Upload zu kie.ai, Instagram-Konto, Telegram."""
+    import hintergrund
+    zeilen = []
+    try:
+        bild = hintergrund.aus_vorrat() or next((HIER / 'assets' / 'fotos').glob('*.jpg'))
+        zeilen.append(f'✅ kie.ai-Upload: <a href="{html.escape(hintergrund.hochladen(bild, ordner="cafecheval-test"))}">Testbild</a>')
+    except Exception as fehler:
+        zeilen.append(f'❌ kie.ai-Upload: {html.escape(str(fehler))}')
+    try:
+        zeilen.append(f"✅ Instagram: @{html.escape(instagram.konto()['username'])}")
+    except Exception as fehler:
+        zeilen.append(f'❌ Instagram: {html.escape(str(fehler))}')
+    text = '🔧 <b>Test der Zugänge</b> (nichts gepostet)\n' + '\n'.join(zeilen)
+    print(text)
+    telegram_bot.text(text)
+    if any(z.startswith('❌') for z in zeilen):
+        raise SystemExit(1)
+
+
 def token():
     """Verlängert den Instagram-Token. Ändert er sich, landet er in `status/neuer_token` (nicht im Repo),
     und der Workflow trägt ihn als Secret ein."""
@@ -643,6 +664,8 @@ if __name__ == '__main__':
             freigaben()
         elif befehl == 'token':
             token()
+        elif befehl == 'test':
+            test()
         else:
             raise SystemExit(__doc__)
     except Exception as fehler:

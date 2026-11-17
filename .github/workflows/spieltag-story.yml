@@ -8,7 +8,7 @@ on:
       befehl:
         description: 'Was soll laufen?'
         type: choice
-        options: [morgen, bot, freigaben, token]
+        options: [morgen, bot, freigaben, token, test]
         default: morgen
       datum:
         description: 'Nur bei „morgen“: Tag im Format JJJJ-MM-TT (leer = heute)'
