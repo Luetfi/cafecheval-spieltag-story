@@ -1,66 +1,6 @@
 {
- "nr": 149,
+ "nr": 150,
  "stories": {
-  "S110": {
-   "id": "S110",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Schachtar Donezk – Sporting Lissabon",
-   "details": "Champions League · Ligaphase · Di 03.11. 18:45 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-03/1845-schachtar-donezk-sporting-lissabon.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "18:45",
-    "datum": "Dienstag · 3. November",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-03/hintergrund/1845-galatasaray-vfb-stuttgart.png",
-    "heim": {
-     "name": "Schachtar Donezk",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/493.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Sporting Lissabon",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/2250.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "493": "https://a.espncdn.com/i/teamlogos/soccer/500/493.png",
-    "2250": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png"
-   },
-   "tag": "2026-11-03",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-11-03T07:01:41.783461+01:00",
-   "auto": null,
-   "nachrichten": [
-    {
-     "message_id": 245,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Schachtar Donezk – Sporting Lissabon\nChampions League · Ligaphase · Di 03.11. 18:45 Uhr · S110\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 36,
-       "type": "bold"
-      },
-      {
-       "offset": 96,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-03/1845-schachtar-donezk-sporting-lissabon.jpg"
-      }
-     ]
-    }
-   ]
-  },
   "S111": {
    "id": "S111",
    "art": "spiel",
@@ -2438,6 +2378,69 @@
        "length": 20,
        "type": "text_link",
        "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-17/2045-wales-portugal.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S150": {
+   "id": "S150",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "FC Bayern München – 1. FC Köln",
+   "details": "Bundesliga · Fr 20.11. 20:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-20/2030-fc-bayern-muenchen-1-fc-koeln.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "20:30",
+    "datum": "Freitag · 20. November",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-20/hintergrund/2030-fc-bayern-muenchen-1-fc-koeln.png",
+    "heim": {
+     "name": "FC Bayern München",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/132.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "1. FC Köln",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/122.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "132": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
+    "122": "https://a.espncdn.com/i/teamlogos/soccer/500/122.png"
+   },
+   "tag": "2026-11-20",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-11-20T07:01:47.963779+01:00",
+   "auto": {
+    "um": "2026-11-20T17:30:00+01:00",
+    "bis": "2026-11-20T20:30:00+01:00"
+   },
+   "nachrichten": [
+    {
+     "message_id": 330,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "FC Bayern München – 1. FC Köln\nBundesliga · Fr 20.11. 20:30 Uhr · S150\n\nBild in voller Größe\n\n🤖 Wird um 17:30 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 30,
+       "type": "bold"
+      },
+      {
+       "offset": 72,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-20/2030-fc-bayern-muenchen-1-fc-koeln.jpg"
       }
      ]
     }
