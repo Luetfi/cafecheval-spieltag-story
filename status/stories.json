@@ -1,378 +1,6 @@
 {
- "nr": 150,
+ "nr": 156,
  "stories": {
-  "S111": {
-   "id": "S111",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Bodø/Glimt – Lille",
-   "details": "Champions League · Ligaphase · Di 03.11. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-03/2100-bodo-glimt-lille.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Dienstag · 3. November",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-03/hintergrund/1845-galatasaray-vfb-stuttgart.png",
-    "heim": {
-     "name": "Bodø/Glimt",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/2980.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Lille",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/166.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "2980": "https://a.espncdn.com/i/teamlogos/soccer/500/2980.png",
-    "166": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png"
-   },
-   "tag": "2026-11-03",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-11-03T07:01:45.403031+01:00",
-   "auto": null,
-   "nachrichten": [
-    {
-     "message_id": 246,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Bodø/Glimt – Lille\nChampions League · Ligaphase · Di 03.11. 21:00 Uhr · S111\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 18,
-       "type": "bold"
-      },
-      {
-       "offset": 78,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-03/2100-bodo-glimt-lille.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S112": {
-   "id": "S112",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "LASK Linz – Slovan Bratislava",
-   "details": "Champions League · Ligaphase · Di 03.11. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-03/2100-lask-linz-slovan-bratislava.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Dienstag · 3. November",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-03/hintergrund/1845-galatasaray-vfb-stuttgart.png",
-    "heim": {
-     "name": "LASK Linz",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/4411.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Slovan Bratislava",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/521.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "4411": "https://a.espncdn.com/i/teamlogos/soccer/500/4411.png",
-    "521": "https://a.espncdn.com/i/teamlogos/soccer/500/521.png"
-   },
-   "tag": "2026-11-03",
-   "wettbewerb": "Champions League",
-   "status": "offen",
-   "erstellt": "2026-11-03T07:01:48.550906+01:00",
-   "auto": null,
-   "nachrichten": [
-    {
-     "message_id": 247,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "LASK Linz – Slovan Bratislava\nChampions League · Ligaphase · Di 03.11. 21:00 Uhr · S112\n\nBild in voller Größe",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 29,
-       "type": "bold"
-      },
-      {
-       "offset": 89,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-03/2100-lask-linz-slovan-bratislava.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S113": {
-   "id": "S113",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "RB Leipzig – Manchester City",
-   "details": "Champions League · Ligaphase · Mi 04.11. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-04/2100-rb-leipzig-manchester-city.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Mittwoch · 4. November",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-04/hintergrund/2100-rb-leipzig-manchester-city.png",
-    "heim": {
-     "name": "RB Leipzig",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/11420.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Manchester City",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/382.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "11420": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
-    "382": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png"
-   },
-   "tag": "2026-11-04",
-   "wettbewerb": "Champions League",
-   "status": "gepostet",
-   "erstellt": "2026-11-04T07:02:21.453062+01:00",
-   "auto": {
-    "um": "2026-11-04T18:00:00+01:00",
-    "bis": "2026-11-04T21:00:00+01:00"
-   },
-   "nachrichten": [
-    {
-     "message_id": 250,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "⭐ Empfohlen\nRB Leipzig – Manchester City\nChampions League · Ligaphase · Mi 04.11. 21:00 Uhr · S113\n\nBild in voller Größe\n\n🤖 Wird um 18:00 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
-     "caption_entities": [
-      {
-       "offset": 12,
-       "length": 28,
-       "type": "bold"
-      },
-      {
-       "offset": 100,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-04/2100-rb-leipzig-manchester-city.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S114": {
-   "id": "S114",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Borussia Dortmund – Real Betis",
-   "details": "Champions League · Ligaphase · Mi 04.11. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-04/2100-borussia-dortmund-real-betis.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Mittwoch · 4. November",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-04/hintergrund/2100-rb-leipzig-manchester-city.png",
-    "heim": {
-     "name": "Borussia Dortmund",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/124.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Real Betis",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/244.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "124": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png",
-    "244": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png"
-   },
-   "tag": "2026-11-04",
-   "wettbewerb": "Champions League",
-   "status": "gepostet",
-   "erstellt": "2026-11-04T07:02:26.336387+01:00",
-   "auto": {
-    "um": "2026-11-04T18:00:00+01:00",
-    "bis": "2026-11-04T21:00:00+01:00"
-   },
-   "nachrichten": [
-    {
-     "message_id": 251,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "⭐ Empfohlen\nBorussia Dortmund – Real Betis\nChampions League · Ligaphase · Mi 04.11. 21:00 Uhr · S114\n\nBild in voller Größe\n\n🤖 Wird um 18:00 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
-     "caption_entities": [
-      {
-       "offset": 12,
-       "length": 30,
-       "type": "bold"
-      },
-      {
-       "offset": 102,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-04/2100-borussia-dortmund-real-betis.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S115": {
-   "id": "S115",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "Fenerbahçe – Liverpool",
-   "details": "Champions League · Ligaphase · Mi 04.11. 18:45 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-04/1845-fenerbahce-liverpool.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "18:45",
-    "datum": "Mittwoch · 4. November",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-04/hintergrund/2100-rb-leipzig-manchester-city.png",
-    "heim": {
-     "name": "Fenerbahçe",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/436.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "Liverpool",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/364.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "436": "https://a.espncdn.com/i/teamlogos/soccer/500/436.png",
-    "364": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png"
-   },
-   "tag": "2026-11-04",
-   "wettbewerb": "Champions League",
-   "status": "gepostet",
-   "erstellt": "2026-11-04T07:02:34.463531+01:00",
-   "auto": {
-    "um": "2026-11-04T15:45:00+01:00",
-    "bis": "2026-11-04T18:45:00+01:00"
-   },
-   "nachrichten": [
-    {
-     "message_id": 252,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "Fenerbahçe – Liverpool\nChampions League · Ligaphase · Mi 04.11. 18:45 Uhr · S115\n\nBild in voller Größe\n\n🤖 Wird um 15:45 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 22,
-       "type": "bold"
-      },
-      {
-       "offset": 82,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-04/1845-fenerbahce-liverpool.jpg"
-      }
-     ]
-    }
-   ]
-  },
-  "S116": {
-   "id": "S116",
-   "art": "spiel",
-   "vorlage": "story",
-   "titel": "FC Porto – SSC Neapel",
-   "details": "Champions League · Ligaphase · Mi 04.11. 21:00 Uhr",
-   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-04/2100-fc-porto-ssc-neapel.jpg",
-   "daten": {
-    "kicker": "Heute live bei uns",
-    "wettbewerb": "Champions League",
-    "runde": "Ligaphase",
-    "leg": "",
-    "uhrzeit": "21:00",
-    "datum": "Mittwoch · 4. November",
-    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-04/hintergrund/2100-rb-leipzig-manchester-city.png",
-    "heim": {
-     "name": "FC Porto",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/437.png",
-     "flagge": false
-    },
-    "gast": {
-     "name": "SSC Neapel",
-     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/114.png",
-     "flagge": false
-    }
-   },
-   "logos": {
-    "437": "https://a.espncdn.com/i/teamlogos/soccer/500/437.png",
-    "114": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png"
-   },
-   "tag": "2026-11-04",
-   "wettbewerb": "Champions League",
-   "status": "gepostet",
-   "erstellt": "2026-11-04T07:02:39.164497+01:00",
-   "auto": {
-    "um": "2026-11-04T18:00:00+01:00",
-    "bis": "2026-11-04T21:00:00+01:00"
-   },
-   "nachrichten": [
-    {
-     "message_id": 253,
-     "chat": {
-      "id": 6859264885,
-      "first_name": "Fenasi",
-      "type": "private"
-     },
-     "caption": "FC Porto – SSC Neapel\nChampions League · Ligaphase · Mi 04.11. 21:00 Uhr · S116\n\nBild in voller Größe\n\n🤖 Wird um 18:00 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
-     "caption_entities": [
-      {
-       "offset": 0,
-       "length": 21,
-       "type": "bold"
-      },
-      {
-       "offset": 81,
-       "length": 20,
-       "type": "text_link",
-       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-04/2100-fc-porto-ssc-neapel.jpg"
-      }
-     ]
-    }
-   ]
-  },
   "S117": {
    "id": "S117",
    "art": "spiel",
@@ -2441,6 +2069,378 @@
        "length": 20,
        "type": "text_link",
        "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-20/2030-fc-bayern-muenchen-1-fc-koeln.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S151": {
+   "id": "S151",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "FC Schalke 04 – VfB Stuttgart",
+   "details": "Bundesliga · Sa 21.11. 18:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-21/1830-fc-schalke-04-vfb-stuttgart.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "18:30",
+    "datum": "Samstag · 21. November",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-21/hintergrund/1830-fc-schalke-04-vfb-stuttgart.png",
+    "heim": {
+     "name": "FC Schalke 04",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/133.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "VfB Stuttgart",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/134.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "133": "https://a.espncdn.com/i/teamlogos/soccer/500/133.png",
+    "134": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png"
+   },
+   "tag": "2026-11-21",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-11-21T07:01:26.146454+01:00",
+   "auto": {
+    "um": "2026-11-21T15:30:00+01:00",
+    "bis": "2026-11-21T18:30:00+01:00"
+   },
+   "nachrichten": [
+    {
+     "message_id": 333,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "⭐ Empfohlen\nFC Schalke 04 – VfB Stuttgart\nBundesliga · Sa 21.11. 18:30 Uhr · S151\n\nBild in voller Größe\n\n🤖 Wird um 15:30 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
+     "caption_entities": [
+      {
+       "offset": 12,
+       "length": 29,
+       "type": "bold"
+      },
+      {
+       "offset": 83,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-21/1830-fc-schalke-04-vfb-stuttgart.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S152": {
+   "id": "S152",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "1. FC Union Berlin – RB Leipzig",
+   "details": "Bundesliga · Sa 21.11. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-21/1530-1-fc-union-berlin-rb-leipzig.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Samstag · 21. November",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-21/hintergrund/1830-fc-schalke-04-vfb-stuttgart.png",
+    "heim": {
+     "name": "1. FC Union Berlin",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/598.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "RB Leipzig",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/11420.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "598": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png",
+    "11420": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png"
+   },
+   "tag": "2026-11-21",
+   "wettbewerb": "Bundesliga",
+   "status": "gepostet",
+   "erstellt": "2026-11-21T07:01:29.380317+01:00",
+   "auto": {
+    "um": "2026-11-21T12:30:00+01:00",
+    "bis": "2026-11-21T15:30:00+01:00"
+   },
+   "nachrichten": [
+    {
+     "message_id": 334,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "1. FC Union Berlin – RB Leipzig\nBundesliga · Sa 21.11. 15:30 Uhr · S152\n\nBild in voller Größe\n\n🤖 Wird um 12:30 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 31,
+       "type": "bold"
+      },
+      {
+       "offset": 73,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-21/1530-1-fc-union-berlin-rb-leipzig.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S153": {
+   "id": "S153",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Bayer Leverkusen – SC Paderborn 07",
+   "details": "Bundesliga · Sa 21.11. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-21/1530-bayer-leverkusen-sc-paderborn-07.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Samstag · 21. November",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-21/hintergrund/1830-fc-schalke-04-vfb-stuttgart.png",
+    "heim": {
+     "name": "Bayer Leverkusen",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/131.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "SC Paderborn 07",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/3307.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "131": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png",
+    "3307": "https://a.espncdn.com/i/teamlogos/soccer/500/3307.png"
+   },
+   "tag": "2026-11-21",
+   "wettbewerb": "Bundesliga",
+   "status": "gepostet",
+   "erstellt": "2026-11-21T07:01:32.725155+01:00",
+   "auto": {
+    "um": "2026-11-21T12:30:00+01:00",
+    "bis": "2026-11-21T15:30:00+01:00"
+   },
+   "nachrichten": [
+    {
+     "message_id": 335,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Bayer Leverkusen – SC Paderborn 07\nBundesliga · Sa 21.11. 15:30 Uhr · S153\n\nBild in voller Größe\n\n🤖 Wird um 12:30 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 34,
+       "type": "bold"
+      },
+      {
+       "offset": 76,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-21/1530-bayer-leverkusen-sc-paderborn-07.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S154": {
+   "id": "S154",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Borussia M'gladbach – Borussia Dortmund",
+   "details": "Bundesliga · Sa 21.11. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-21/1530-borussia-m-gladbach-borussia-dortmund.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Samstag · 21. November",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-21/hintergrund/1830-fc-schalke-04-vfb-stuttgart.png",
+    "heim": {
+     "name": "Borussia M'gladbach",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/268.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "Borussia Dortmund",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/124.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "268": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png",
+    "124": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png"
+   },
+   "tag": "2026-11-21",
+   "wettbewerb": "Bundesliga",
+   "status": "gepostet",
+   "erstellt": "2026-11-21T07:01:36.670884+01:00",
+   "auto": {
+    "um": "2026-11-21T12:30:00+01:00",
+    "bis": "2026-11-21T15:30:00+01:00"
+   },
+   "nachrichten": [
+    {
+     "message_id": 336,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Borussia M'gladbach – Borussia Dortmund\nBundesliga · Sa 21.11. 15:30 Uhr · S154\n\nBild in voller Größe\n\n🤖 Wird um 12:30 Uhr automatisch gepostet. „Verwerfen“ = nicht posten.",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 39,
+       "type": "bold"
+      },
+      {
+       "offset": 81,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-21/1530-borussia-m-gladbach-borussia-dortmund.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S155": {
+   "id": "S155",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "Eintracht Frankfurt – TSG Hoffenheim",
+   "details": "Bundesliga · Sa 21.11. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-21/1530-eintracht-frankfurt-tsg-hoffenheim.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Samstag · 21. November",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-21/hintergrund/1830-fc-schalke-04-vfb-stuttgart.png",
+    "heim": {
+     "name": "Eintracht Frankfurt",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/125.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "TSG Hoffenheim",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/7911.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "125": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png",
+    "7911": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png"
+   },
+   "tag": "2026-11-21",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-11-21T07:01:40.873248+01:00",
+   "auto": null,
+   "nachrichten": [
+    {
+     "message_id": 337,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "Eintracht Frankfurt – TSG Hoffenheim\nBundesliga · Sa 21.11. 15:30 Uhr · S155\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 36,
+       "type": "bold"
+      },
+      {
+       "offset": 78,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-21/1530-eintracht-frankfurt-tsg-hoffenheim.jpg"
+      }
+     ]
+    }
+   ]
+  },
+  "S156": {
+   "id": "S156",
+   "art": "spiel",
+   "vorlage": "story",
+   "titel": "SV Elversberg – SC Freiburg",
+   "details": "Bundesliga · Sa 21.11. 15:30 Uhr",
+   "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-21/1530-sv-elversberg-sc-freiburg.jpg",
+   "daten": {
+    "kicker": "Heute live bei uns",
+    "wettbewerb": "Bundesliga",
+    "runde": "",
+    "leg": "",
+    "uhrzeit": "15:30",
+    "datum": "Samstag · 21. November",
+    "hintergrund": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/ausgabe/2026-11-21/hintergrund/1830-fc-schalke-04-vfb-stuttgart.png",
+    "heim": {
+     "name": "SV Elversberg",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/10388.png",
+     "flagge": false
+    },
+    "gast": {
+     "name": "SC Freiburg",
+     "wappen": "file:///home/runner/work/cafecheval-spieltag-story/cafecheval-spieltag-story/cache/wappen/126.png",
+     "flagge": false
+    }
+   },
+   "logos": {
+    "10388": "https://a.espncdn.com/i/teamlogos/soccer/500/10388.png",
+    "126": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png"
+   },
+   "tag": "2026-11-21",
+   "wettbewerb": "Bundesliga",
+   "status": "offen",
+   "erstellt": "2026-11-21T07:01:44.282337+01:00",
+   "auto": null,
+   "nachrichten": [
+    {
+     "message_id": 338,
+     "chat": {
+      "id": 6859264885,
+      "first_name": "Fenasi",
+      "type": "private"
+     },
+     "caption": "SV Elversberg – SC Freiburg\nBundesliga · Sa 21.11. 15:30 Uhr · S156\n\nBild in voller Größe",
+     "caption_entities": [
+      {
+       "offset": 0,
+       "length": 27,
+       "type": "bold"
+      },
+      {
+       "offset": 69,
+       "length": 20,
+       "type": "text_link",
+       "url": "https://tempfile.redpandaai.co/kieai/732827/cafecheval-stories/2026-11-21/1530-sv-elversberg-sc-freiburg.jpg"
       }
      ]
     }
